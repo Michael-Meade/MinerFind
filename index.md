@@ -2,8 +2,10 @@
 layout: default
 ---
 
-I was searching through hybrid-analysis.com and I stumbled on to a bash script that looked like its used for deploying mining scripts on Linux machines. From looking at the file, it looks like that it's job is to download a couple of other scripts that will download a bunch of other scripts.\
-[Imgur](https://i.imgur.com/pvtH2iu.png)
+I was searching through hybrid-analysis.com and I stumbled on to a bash script that looked like its used for deploying mining scripts on Linux machines. From looking at the file, it looks like that it's job is to download a couple of other scripts that will download a bunch of other scripts.<br>
+<br>
+
+[Imgur](https://i.imgur.com/pvtH2iu.png ){:height="36px" width="36px"}
 
 
 [Link to another page](./another-page.html).
