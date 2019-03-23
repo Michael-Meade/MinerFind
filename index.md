@@ -10,7 +10,7 @@ I was searching through hybrid-analysis.com and I stumbled on to a bash script t
 From what I understand from Bash, the script creates a function called ```Check()``` that will download the other files. Check() has two argurments, I labled the arguments <b><font color="red">1</font></b> and <b><font color="blue">2</font></b>.
 <br>
 <br>
-The first argument <font color="red"><b>1,</b></font> is the url where the scritp is hosted. The second argument <font color="blue"><b>2,</b></font> is the where it wil download the script to on the victims machine. 
+The first argument <font color="red"><b>1,</b></font> is the url where the scritp is hosted. The second argument <font color="blue"><b>2,</b></font> is the where it will download the script on the victim's machine. 
 <br><br>
 The first file that the scripts downloads is: ```http://132.148.148.79/plus/kok```
 [Link to another page](./another-page.html).
