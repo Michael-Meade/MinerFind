@@ -2,7 +2,7 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
+I was searching through hybrid-analysis.com and I stumbled on to a bash script that looked like its used for deploying mining scripts on Linux machines.
 
 [Link to another page](./another-page.html).
 
