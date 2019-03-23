@@ -7,7 +7,7 @@ I was searching through hybrid-analysis.com and I stumbled on to a bash script t
 
 ![Octocat](https://i.imgur.com/pvtH2iu.png =100x20)
 
-From what I understand from Bash, the script creates a function called ```Check()``` that will download the other files. Check() has two argurments, I labled the arguments <b<font color="red">1</font></b> and <b><font color="blue">2</font></b>.
+From what I understand from Bash, the script creates a function called ```Check()``` that will download the other files. Check() has two argurments, I labled the arguments <b><font color="red">1</font></b> and <b><font color="blue">2</font></b>.
 <br>
 <br>
 The first argument <font color="red"><b>1,</b></font> is the url where the scritp is hosted. The second argument <font color="blue"><b>2,</b></font> is the where it wil download the script to on the victims machine. 
