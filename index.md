@@ -7,7 +7,9 @@ I was searching through hybrid-analysis.com and I stumbled on to a bash script t
 
 ![Octocat](https://i.imgur.com/pvtH2iu.png =100x20)
 
-From what I understand from Bash, the script creates a function called ```Check()``` that will download the other files. Check() has two argurments, I labled the arguments <font color="red">A</font> and <font color="blue">B</font>
+From what I understand from Bash, the script creates a function called ```Check()``` that will download the other files. Check() has two argurments, I labled the arguments <font color="red"><b>1</b></font> and <font color="blue"><b>2</b></font>. The first argument <font color="red"><b>1,</b> is the url where the scritp is hosted. The second argument <font color="blue"><b>2,</b> is the where it wil download the script to on the victims machine. 
+<br><br>
+The first file that the scripts downloads is: ```http://132.148.148.79/plus/kok```
 [Link to another page](./another-page.html).
 
 There should be whitespace between paragraphs.
