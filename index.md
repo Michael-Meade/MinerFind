@@ -1,4 +1,5 @@
 
-## Script Information
+## Posts
+
+[Inside Linux Mining Malware](./LinuxMalware.md).<br>
 March 23 2019
-[Inside Linux Mining Malware](./LinuxMalware.md).
