@@ -1,3 +1,3 @@
 
 ## Script Information
-[Link to another page](./LinuxMalware.md).
+[Inside Linux Mining Malware](./LinuxMalware.md).
