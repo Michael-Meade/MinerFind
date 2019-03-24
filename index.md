@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-
+## Script Information
 I was searching through hybrid-analysis.com and I stumbled on to a bash script that looked like its used for deploying mining scripts on Linux machines. From looking at the file, it looks like that it's job is to download a couple of other scripts that will download a bunch of other scripts.<br>
 <br>
 
@@ -41,112 +41,23 @@ From the data available on minexmr, they started to mine on Jan 3 2019.
 The website ```https://www.xmrhunter.com/``` is a handy site that scrapes a bunch of xmr pools and returns how much a certain address has made on that site. According to the xmrhunter the person or people behind this mining campaign also used the mining pool, dwarfpool. They only made $0.02 on this pool and was last seen January 14, 2019. They were never paid for the $0.02. 
 
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+## ICO
+- <b>IPs || Sites</b>
+  - hxxp://132.148.148.79
+  - hxxp://pastebin.com/raw/zwJ7M9et
+  - hxxp://minexmr.com
+  - hxxp://139.99.120.75:443
+  - hxxp://139.224.20.173
+- <b>XMR address</b>
+  - 4Ak4rRJHzo4SsxQWRcMGJpBRKCokRVRGc5v599tJhQBSczmvXRBAmWETEDX8xYhwUhAVZCCupHULDJFPNrmb9AErLtZfEaK
+- <b>Hashes</b>
+  - SHA1 e09e9b2d8fbd25b8129c0577eeba82d3eb783415 2e2c93911f787a72422d41d7c8858a073e081a4181e27091fff558dc9ed3f7be.sh
+  - SHA1 ebf60b6e4ca6a3d7c59b4f950d58196a69412b05 kok
+  - SHA1 1eb6978d0e463248ad36f6ce8da7b13b488e5260 nx.2.sh
+  - SHA1 8ffc58caa11dd7efedf0d4fb655231a99a10cf20 wow
+  - SHA1 59e96f96ecd1af0745eb705a4545bf0eb3f69028 zwJ7M9et
+  - SHA1 82433c8374a954a7daa7fbdb9e35e346dbd78bd3 nx 
+  - SHA1 dcfbdb2fe2f0d29c213e23b6b10e9da813bae9d3 rc7
+  
+- AV
+  - hxxps://www.hybrid-analysis.com/sample/2e2c93911f787a72422d41d7c8858a073e081a4181e27091fff558dc9ed3f7be
