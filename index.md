@@ -27,6 +27,7 @@ The last script that the orginal script download is the actual payload. The orgi
 <br><br>
 I installed the script on my subsystem so it might be a little different than a pure Linux box. 
 But the last script downloads all the payloads to the ```/tmp/.dbb/``` directory. 
+## Pool and Address Info
 The Attackers are using the open source miner  ```xmr-stak```.  
 Looks Like they are using the MineXmr.com as the pool and the link we found might be a proxy. Both malicious and legit miners use  proxy so they don't overload the pool with traffic and it allows legit miners to better mangage their hash rate. Malicious miners like to use it because it decreases the chances of them getting banned from the pool because to the pool it looks like only one worker is made instead of huge amound of workers. 
 <br><br>
@@ -38,8 +39,7 @@ At the time of the writing the actors have made $110.33. They also have only $4.
 ![Octocat](https://i.imgur.com/4N9h0iu.png =100x20)
 From the data available on minexmr, they started to mine on Jan 3 2019.
 The website ```https://www.xmrhunter.com/``` is a handy site that scrapes a bunch of xmr pools and returns how much a certain address has made on that site. According to the xmrhunter the person or people behind this mining campaign also used the mining pool, dwarfpool. They only made $0.02 on this pool and was last seen January 14, 2019. They were never paid for the $0.02. 
-https://dwarfpool.com/xmr/address?wallet=4Ak4rRJHzo4SsxQWRcMGJpBRKCokRVRGc5v599tJhQBSczmvXRBAmWETEDX8xYhwUhAVZCCupHULDJFPNrmb9AErLtZfEaK
-# Header 1
+
 
 This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
 
