@@ -43,20 +43,20 @@ The website ```https://www.xmrhunter.com/``` is a handy site that scrapes a bunc
 
 ## ICO
 <b>IPs || Sites</b> ll
-  -   hxxp://132.148.148.79
-  -   hxxp://pastebin.com/raw/zwJ7M9et
-  -   hxxp://minexmr.com
-  -   hxxp://139.99.120.75:443
-  -   hxxp://139.224.20.173
+      hxxp://132.148.148.79
+      hxxp://pastebin.com/raw/zwJ7M9et
+      hxxp://minexmr.com
+      hxxp://139.99.120.75:443
+      hxxp://139.224.20.173
 <b>XMR address</b>
-  -   4Ak4rRJHzo4SsxQWRcMGJpBRKCokRVRGc5v599tJhQBSczmvXRBAmWETEDX8xYhwUhAVZCCupHULDJFPNrmb9AErLtZfEaK
+      4Ak4rRJHzo4SsxQWRcMGJpBRKCokRVRGc5v599tJhQBSczmvXRBAmWETEDX8xYhwUhAVZCCupHULDJFPNrmb9AErLtZfEaK
 <b>Hashes</b>
-  -   SHA1 e09e9b2d8fbd25b8129c0577eeba82d3eb783415 2e2c93911f787a72422d41d7c8858a073e081a4181e27091fff558dc9ed3f7be.sh
-  -   SHA1 ebf60b6e4ca6a3d7c59b4f950d58196a69412b05 kok
-  -   SHA1 1eb6978d0e463248ad36f6ce8da7b13b488e5260 nx.2.sh
-  -   SHA1 8ffc58caa11dd7efedf0d4fb655231a99a10cf20 wow
-  -   SHA1 59e96f96ecd1af0745eb705a4545bf0eb3f69028 zwJ7M9et
-  -   SHA1 82433c8374a954a7daa7fbdb9e35e346dbd78bd3 nx 
-  -   SHA1 dcfbdb2fe2f0d29c213e23b6b10e9da813bae9d3 rc7
+      SHA1 e09e9b2d8fbd25b8129c0577eeba82d3eb783415 2e2c93911f787a72422d41d7c8858a073e081a4181e27091fff558dc9ed3f7be.sh
+      SHA1 ebf60b6e4ca6a3d7c59b4f950d58196a69412b05 kok
+      SHA1 1eb6978d0e463248ad36f6ce8da7b13b488e5260 nx.2.sh
+      SHA1 8ffc58caa11dd7efedf0d4fb655231a99a10cf20 wow
+      SHA1 59e96f96ecd1af0745eb705a4545bf0eb3f69028 zwJ7M9et
+      SHA1 82433c8374a954a7daa7fbdb9e35e346dbd78bd3 nx 
+      SHA1 dcfbdb2fe2f0d29c213e23b6b10e9da813bae9d3 rc7
 <b>AV</b>
-  -   hxxps://www.hybrid-analysis.com/sample/2e2c93911f787a72422d41d7c8858a073e081a4181e27091fff558dc9ed3f7be
+      hxxps://www.hybrid-analysis.com/sample/2e2c93911f787a72422d41d7c8858a073e081a4181e27091fff558dc9ed3f7be
