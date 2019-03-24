@@ -4,5 +4,5 @@
 
 [Inside Linux Mining Malware](./LinuxMalware.md).<br>
 March 23 2019<br>
-[Xmr Malware](./XmrMalware.md)<br>
+[KORKERDS-Miner](./KORKERDS-Miner.md)<br>
 March 24 2019
