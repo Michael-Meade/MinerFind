@@ -12,8 +12,16 @@ From what I understand from Bash, the script creates a function called ```Check(
 <br>
 The first argument <font color="red"><b>1,</b></font> is the url where the scritp is hosted. The second argument <font color="blue"><b>2,</b></font> is the where it will download the script on the victim's machine. 
 <br><br>
-The first file that the scripts downloads is: ```http://132.148.148.79/plus/kok```
-[Link to another page](./another-page.html).
+The first file that the scripts downloads is: ```http://132.148.148.79/plus/kok```. The downloaded script will check and remvoe any other competing miners. The script checks if there are any matching strings in the cronjob and uses the grep command to check for anyother strings in the proccess. It wil then kill the processes. 
+<br>
+<br>
+The second url in the first script will download a script from ```http://132.148.148.79/plus/wow```. This script once ran will download a file from ```https://pastebin.com/raw/zwJ7M9et```. The script that is hosted on pastebin is base64 obfuscated. 
+THe deobfuscated script looks like this: <br>
+
+![Octocat](https://i.imgur.com/esGa2VS.png =100x20)
+<br>
+<br>
+
 
 There should be whitespace between paragraphs.
 
