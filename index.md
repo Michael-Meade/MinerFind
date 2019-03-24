@@ -43,13 +43,17 @@ The website ```https://www.xmrhunter.com/``` is a handy site that scrapes a bunc
 
 ## ICO
 <b>IPs || Sites</b><br>
-      hxxp://132.148.148.79
-      hxxp://pastebin.com/raw/zwJ7M9et
-      hxxp://minexmr.com
-      hxxp://139.99.120.75:443
-      hxxp://139.224.20.173
-<b>XMR address</b><b>
-      4Ak4rRJHzo4SsxQWRcMGJpBRKCokRVRGc5v599tJhQBSczmvXRBAmWETEDX8xYhwUhAVZCCupHULDJFPNrmb9AErLtZfEaK
+      <p>
+            hxxp://132.148.148.79<br>
+            hxxp://pastebin.com/raw/zwJ7M9et<br>
+            hxxp://minexmr.com<br>
+            hxxp://139.99.120.75:443<br>
+            hxxp://139.224.20.173<br>
+      </p>
+<b>XMR address</b><br>
+      <p>
+            4Ak4rRJHzo4SsxQWRcMGJpBRKCokRVRGc5v599tJhQBSczmvXRBAmWETEDX8xYhwUhAVZCCupHULDJFPNrmb9AErLtZfEaK<br>
+      </p>
 <b>Hashes</b><b>
       <p>
             SHA1 e09e9b2d8fbd25b8129c0577eeba82d3eb783415 2e2c93911f787a72422d41d7c8858a073e081a4181e27091fff558dc9ed3f7be.sh
@@ -61,4 +65,6 @@ The website ```https://www.xmrhunter.com/``` is a handy site that scrapes a bunc
             SHA1 dcfbdb2fe2f0d29c213e23b6b10e9da813bae9d3 rc7
       </P>
 <b>AV</b><br>
-      hxxps://www.hybrid-analysis.com/sample/2e2c93911f787a72422d41d7c8858a073e081a4181e27091fff558dc9ed3f7be
+      <p>
+            hxxps://www.hybrid-analysis.com/sample/2e2c93911f787a72422d41d7c8858a073e081a4181e27091fff558dc9ed3f7be
+      </p>
