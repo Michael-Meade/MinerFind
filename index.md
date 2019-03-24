@@ -43,13 +43,11 @@ The website ```https://www.xmrhunter.com/``` is a handy site that scrapes a bunc
 
 ## ICO
 <b>IPs || Sites</b><br>
-      <p>
             hxxp://132.148.148.79<br>
             hxxp://pastebin.com/raw/zwJ7M9et<br>
             hxxp://minexmr.com<br>
             hxxp://139.99.120.75:443<br>
             hxxp://139.224.20.173<br>
-      </p>
 <br><b>XMR address</b><br>
       <p>
             4Ak4rRJHzo4SsxQWRcMGJpBRKCokRVRGc5v599tJhQBSczmvXRBAmWETEDX8xYhwUhAVZCCupHULDJFPNrmb9AErLtZfEaK<br>
