@@ -12,4 +12,6 @@ The troll feature was my favorite part of creating it. There are a bunch of thin
 
 ## <center>  Volume Troll </center>
 This feature randomly picks ```0``` or ```1``` from an array. It uses Ruby's .sample feature. This module allows you to pck the amount of times that you want to loop through.<br>
-If it picks a ```0``` it will turn down the volume. But if it picks a ```1``` than it will turn up the volume.
+If it picks a ```0``` it will turn down the volume. But if it picks a ```1``` than it will turn up the volume.<br><br>
+
+## <center> Reverse & Forward Troll </center>
