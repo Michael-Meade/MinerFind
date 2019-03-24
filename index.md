@@ -59,4 +59,4 @@ The website ```https://www.xmrhunter.com/``` is a handy site that scrapes a bunc
 &nbsp;&nbsp;&nbsp;&nbsp;SHA1 82433c8374a954a7daa7fbdb9e35e346dbd78bd3 nx<br> 
 &nbsp;&nbsp;&nbsp;&nbsp;SHA1 dcfbdb2fe2f0d29c213e23b6b10e9da813bae9d3 rc7<br>
 <br><b>AV</b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;hxxps://www.hybrid-analysis.com/sample/2e2c93911f787a72422d41d7c8858a073e081a4181e27091fff558dc9ed3f7be<br>
+&nbsp;&nbsp;&nbsp;&nbsp;hxxps:/hybrid-analysis.com/sample/2e2c93911f787a72422d41d7c8858a073e081a4181e27091fff558dc9ed3f7be<br>
