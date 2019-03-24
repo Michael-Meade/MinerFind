@@ -1,6 +1,4 @@
----
-layout: default
----
+
 ## Script Information
 I was searching through hybrid-analysis.com and I stumbled on to a bash script that looked like its used for deploying mining scripts on Linux machines. From looking at the file, it looks like that it's job is to download a couple of other scripts that will download a bunch of other scripts.<br>
 <br>
