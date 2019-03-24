@@ -42,7 +42,7 @@ The website ```https://www.xmrhunter.com/``` is a handy site that scrapes a bunc
 
 
 ## ICO
-<b>IPs || Sites</b> ll
+<b>IPs || Sites</b>
       hxxp://132.148.148.79
       hxxp://pastebin.com/raw/zwJ7M9et
       hxxp://minexmr.com
