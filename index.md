@@ -4,3 +4,5 @@
 
 [Inside Linux Mining Malware](./LinuxMalware.md).<br>
 March 23 2019
+[Xmr Malware](./XmrMalware.md)<br>
+March 24 2019
