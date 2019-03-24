@@ -51,12 +51,12 @@ The website ```https://www.xmrhunter.com/``` is a handy site that scrapes a bunc
 <br><b>XMR address</b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;4Ak4rRJHzo4SsxQWRcMGJpBRKCokRVRGc5v599tJhQBSczmvXRBAmWETEDX8xYhwUhAVZCCupHULDJFPNrmb9AErLtZfEaK<br>
 <br><b>Hashes</b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;SHA1 e09e9b2d8fbd25b8129c0577eeba82d3eb783415 e081a4181e27091fff558dc9ed3f7be.sh
-&nbsp;&nbsp;&nbsp;&nbsp;SHA1 ebf60b6e4ca6a3d7c59b4f950d58196a69412b05 kok
-&nbsp;&nbsp;&nbsp;&nbsp;SHA1 1eb6978d0e463248ad36f6ce8da7b13b488e5260 nx.2.sh
-&nbsp;&nbsp;&nbsp;&nbsp;SHA1 8ffc58caa11dd7efedf0d4fb655231a99a10cf20 wow
-&nbsp;&nbsp;&nbsp;&nbsp;SHA1 59e96f96ecd1af0745eb705a4545bf0eb3f69028 zwJ7M9et
-&nbsp;&nbsp;&nbsp;&nbsp;SHA1 82433c8374a954a7daa7fbdb9e35e346dbd78bd3 nx 
-&nbsp;&nbsp;&nbsp;&nbsp;SHA1 dcfbdb2fe2f0d29c213e23b6b10e9da813bae9d3 rc7
+&nbsp;&nbsp;&nbsp;&nbsp;SHA1 e09e9b2d8fbd25b8129c0577eeba82d3eb783415 e081a4181e27091fff558dc9ed3f7be.sh<br>
+&nbsp;&nbsp;&nbsp;&nbsp;SHA1 ebf60b6e4ca6a3d7c59b4f950d58196a69412b05 kok<br>
+&nbsp;&nbsp;&nbsp;&nbsp;SHA1 1eb6978d0e463248ad36f6ce8da7b13b488e5260 nx.2.sh<br>
+&nbsp;&nbsp;&nbsp;&nbsp;SHA1 8ffc58caa11dd7efedf0d4fb655231a99a10cf20 wow<br>
+&nbsp;&nbsp;&nbsp;&nbsp;SHA1 59e96f96ecd1af0745eb705a4545bf0eb3f69028 zwJ7M9et<br>
+&nbsp;&nbsp;&nbsp;&nbsp;SHA1 82433c8374a954a7daa7fbdb9e35e346dbd78bd3 nx<br> 
+&nbsp;&nbsp;&nbsp;&nbsp;SHA1 dcfbdb2fe2f0d29c213e23b6b10e9da813bae9d3 rc7<br>
 <br><b>AV</b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;hxxps://www.hybrid-analysis.com/sample/2e2c93911f787a72422d41d7c8858a073e081a4181e27091fff558dc9ed3f7be
+&nbsp;&nbsp;&nbsp;&nbsp;hxxps://www.hybrid-analysis.com/sample/2e2c93911f787a72422d41d7c8858a073e081a4181e27091fff558dc9ed3f7be<br>
