@@ -54,7 +54,7 @@ The website ```https://www.xmrhunter.com/``` is a handy site that scrapes a bunc
       <p>
             4Ak4rRJHzo4SsxQWRcMGJpBRKCokRVRGc5v599tJhQBSczmvXRBAmWETEDX8xYhwUhAVZCCupHULDJFPNrmb9AErLtZfEaK<br>
       </p>
-<b>Hashes</b><b>
+<b>Hashes</b><br>
       <p>
             SHA1 e09e9b2d8fbd25b8129c0577eeba82d3eb783415 2e2c93911f787a72422d41d7c8858a073e081a4181e27091fff558dc9ed3f7be.sh
             SHA1 ebf60b6e4ca6a3d7c59b4f950d58196a69412b05 kok
