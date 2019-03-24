@@ -20,8 +20,8 @@ The script job is to determine if the infected machine is x64 or x86 or x32. Dep
 In the orginal script ( 1.sh ) function c decodes a base64 string and then runs the decoded base64 script. As seen in figure, C.
 
 ![Octocat](https://i.imgur.com/F4SOGcU.png =100x20) <br>Figure C<br>
-The deobfuscated python script in figure C, looks like this. The script in figure B wll execute the python script that hosted at ```https://pastebin.com/raw/hQZTFAdC```. This script is also base64 obfuscated. The deobfuscated script in figure C looks like this. 
-![Octocat](https://i.imgur.com/jkJAK1P.png =100x20) <br>Figure D<br>
+The deobfuscated python script in figure C, looks like this. The script in figure B wll execute the python script that hosted at ```https://pastebin.com/raw/hQZTFAdC```. This script is also base64 obfuscated. I uploaded the deobfuscated script to ```https://pastebin.com/raw/yyrk9MZj```.
+The Python script generates a bunch of IP's and then checks to see if they are 
 
 ## Downloading of the Miner
 The creator of the script registered the domain ```master.minerxmr.ru```. Which of course the creator used privacy setting when creating the domain.<br>
