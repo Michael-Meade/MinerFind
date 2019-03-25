@@ -1,23 +1,14 @@
-### Background
-Bitcoin addresses uses secp256k1 curve. <br>
-```ruby
-# Creates the variable curve withe the Curve Key
-curve = OpenSSL::PKey::EC.new('secp256k1')
-curve.generate_key
-private_key_hex = curve.private_key.to_s(16)
-public_key_hex  = curve.public_key.to_bn.to_s(16)
-```
-<br>
-To create the ```publicKeyHash``` varaible we use the following functions to generate the public key hash. <b>
-  ```ruby
-  def public_key_hash(hex)
-    rmd160(sha256(hex))
-  end
-  def rmd160(hex)
-    Digest::RMD160.hexdigest([hex].pack("H*"))
-  end
-  def sha256(hex)
-    Digest::SHA256.hexdigest([hex].pack("H*"))
-  end
-  ```
-  <br>
+By default the script will save the created address in the wallets directory. The lib is programed to save the info with the newly created address as the filename by default. <br> 
+### Features
+ To create the a single address matching a regex.
+ ```ruby
+ Vanity.regex("1(Meade)")
+ ```
+ <br><br>
+ If you wanted to save the address info in the directory given. If the directory does not exist it will create one with the name you choose.<br> 
+ 
+ ```ruby
+ Vanity.regex("1(Meade), "Mike")
+ ```
+ This will create a new directory with the name ```Mike```<br>
+ 
