@@ -17,17 +17,16 @@ The script job is to determine if the infected machine is x64 or x86 or x32. Dep
 
 ## Scanner
 
-In the orginal script ( 1.sh ) function c decodes a base64 string and then runs the decoded base64 script. As seen in figure, C.
+In the original script ( 1.sh ) function c decodes a base64 string and then runs the decoded base64 script. As seen in the figure, C.
 
 ![Octocat](https://i.imgur.com/F4SOGcU.png =100x20) <br>Figure C<br>
-The deobfuscated python script in figure C, looks like this. The script in figure B wll execute the python script that hosted at ```https://pastebin.com/raw/hQZTFAdC```. This script is also base64 obfuscated. I uploaded the deobfuscated script to ```https://pastebin.com/raw/yyrk9MZj```.
-The Python script generates a bunch of IP's and then checks to see if they are running file server or an IP camera on TCP port 8161.
+The deobfuscated python script in figure C, looks like this. The script in figure B will execute the python script that hosted at ```https://pastebin.com/raw/hQZTFAdC```. This script is also base64 obfuscated. I uploaded the deobfuscated script to ```https://pastebin.com/raw/yyrk9MZj```.
+The Python script generates a bunch of IP's and then checks to see if they are running a file server or an IP camera on TCP port 8161.
 
 
 ## Downloading of the Miner
 The creator of the script registered the domain ```master.minerxmr.ru```. Which of course the creator used privacy setting when creating the domain.<br>
-First the bash script checks if its the Linux machine is x64 or x86. If it is x64 or x86 the script then download the miner from ```hxxps://master.minerxmr.ru/1/1551434761x2728329064.jpg```
+First, the bash script checks if its the Linux machine is x64 or x86. If it is x64 or x86 the script then download the miner from ```hxxps://master.minerxmr.ru/1/1551434761x2728329064.jpg```
 <br>
 If the script detects otherwise than it downloads the x32 bit miner from ```https://master.minerxmr.ru/2/1551434778x2728329032.jpg```
-Both versions of the mienr download to the machines ```/var/tmp/kworkerds``` directory.
-
+Both versions of the miner download to the machines ```/var/tmp/kworkerds``` directory.
