@@ -4,11 +4,12 @@ By default the script will save the created address in the wallets directory. Th
  ```ruby
  Vanity.regex("1(Meade)")
  ```
- <br><br>
+ <br>
  If you wanted to save the address info in a certain directory given. If the directory does not exist it will create one with the name you choose.<br> 
  
  ```ruby
- Vanity.regex("1(Meade), "Mike")
+ Vanity.regex("1(Meade)", "Mike")
  ```
- This will create a new directory with the name ```Mike```<br>
- 
+```ruby
+ massGenerate(count, fileToWrite=nil)
+```
