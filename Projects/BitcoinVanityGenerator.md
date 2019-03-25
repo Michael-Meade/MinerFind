@@ -1,6 +1,6 @@
-By default the script will save the created address in the wallets directory. The lib is programed to save the info with the newly created address as the filename by default. <br> 
+By default, the script will save the created address in the wallets directory. The lib is programmed to save the info with the newly created address as the filename by default. <br> 
 ### Features
- To create the a single address matching a regex.
+ To create a single address matching a regex.
  ```ruby
  Vanity.regex("1(Meade)")
  ```
