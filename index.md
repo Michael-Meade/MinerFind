@@ -6,5 +6,5 @@
 March 23 2019<br>
 [KORKERDS-Miner](./KORKERDS-Miner.md)<br>
 March 24 2019<br>
-[BitCoin Vanity Generator](.BitcoinVanityGenerator.md)<br>
+[BitCoin Vanity Generator](./BitcoinVanityGenerator.md)<br>
 March 24 2019
