@@ -32,3 +32,16 @@ Roku.mute_troll(ip, amount)
 ```
 <br>
   This feature will use Ruby's ```rand(1..50)``` method to generate a random number. If the random number is even then it will mute the volume but if it is a odd number it will turn the volume up. This module takes two arguments, ```ip``` and ```amount```.
+
+
+## <center>Volume Up & Volume Down Troll</center>
+```ruby
+Roku.volume_up_troll(ip, amount)
+```
+The module ```volume_up_troll``` takes two arguments, ```ip``` and ```amount```.  This method will turn up the volume the amount that was inputed. 
+```ruby 
+Roku.volume_down_troll(ip, amount)
+```
+<br>
+There is also a ```volume_down_troll``` that does the same thing but turn the volume down. 
+<br>
