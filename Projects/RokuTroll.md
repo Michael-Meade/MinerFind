@@ -50,5 +50,7 @@ There is also a ```volume_down_troll``` that does the same thing but turn the vo
 <br>
 <center>Control Menu</center><br>
 To print the control menu the module below is used.
-```Roku.control(ip)```
+```ruby
+Roku.control(ip)```
+<br>
 
