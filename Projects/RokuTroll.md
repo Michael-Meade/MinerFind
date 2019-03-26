@@ -45,3 +45,10 @@ Roku.volume_down_troll(ip, amount)
 <br>
 There is also a ```volume_down_troll``` that does the same thing but turn the volume down. 
 <br>
+
+## Menus
+<br>
+<center>Control Menu</center><br>
+To print the control menu the module below is used.
+```Roku.control(ip)```
+
