@@ -26,5 +26,9 @@ If it picks a ```0``` it will turn down the volume. But if it picks a ```1``` th
 
 <br>
 
-## <center>Mute Troll</center
-  This feature will use Ruby's ```rand(1..50)``` method to generate a random number. If that random number is even
+## <center>Mute Troll</center>
+```ruby
+Roku.mute_troll(ip, amount)
+```
+<br>
+  This feature will use Ruby's ```rand(1..50)``` method to generate a random number. If the random number is even then it will mute the volume but if it is a odd number it will turn the volume up. This module takes two arguments, ```ip``` and ```amount```.
