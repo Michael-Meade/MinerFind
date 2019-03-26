@@ -12,9 +12,19 @@ In order for it to work, you will need to find the IP of your Roku TV. You can f
 The troll feature was my favorite part of creating it. There are a bunch of things you can do to troll people. Keep in mind that you have to be on the same network as the TV.<br><br><br>
 
 ## <center>  Volume Troll </center>
+```ruby
+Roku.volume_troll(ip, amount)
+```
+<br>
 This feature randomly picks ```0``` or ```1``` from an array. It uses Ruby's .sample feature. This module allows you to pick the number of times that you want to loop through.<br>
 If it picks a ```0``` it will turn down the volume. But if it picks a ```1``` than it will turn up the volume.<br><br>
 
 ## <center> Reverse & Forward Troll </center>
 
 ## <center> </center>
+
+
+<br>
+
+## <center>Mute Troll</center
+  This feature will use Ruby's ```rand(1..50)``` method to generate a random number. If that random number is even
