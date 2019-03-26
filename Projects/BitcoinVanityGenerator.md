@@ -13,7 +13,8 @@ By default, the script will save the created address in the wallets directory. T
  ```
  <br>
  
-### Mass Generate
+### <center> Mass Generate </center>
+<br>
 ```ruby
  Vanity.massGenerate(count, fileToWrite=nil)
 ```
