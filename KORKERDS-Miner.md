@@ -1,3 +1,5 @@
+<a href="https://michael-meade.github.io/" style='margin-right:20px'>Home</a>
+<a href="https://michael-meade.github.io/Projects" style='margin-right:20px'>Projects</a>
 Once again, I found this sample on hybrid-analysis.com. The file named was ```1.sh```. 
 ## Killing The Competition
 Like pretty much any other XMR linux based malware, the first thing this malware does is kill any processes that might be a competing miner. <br>
