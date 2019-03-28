@@ -1,6 +1,5 @@
 I found this sample on hybrid-analysis.com.  First thing it does is get some information about the infected computer. 
-```powershell
-$osCheckMinor = [System.Environment]::OSVersion.Version | Select -Expand Minor;
+```powershell$osCheckMinor = [System.Environment]::OSVersion.Version | Select -Expand Minor;
 $osVersion = "$osCheckMajor" + '.' + "$osCheckMinor";
 $poshVersion = $PSVersionTable.PSVersion.Major;
 ```
@@ -11,3 +10,4 @@ When I printed the variable  ```$osVersion = "$osCheckMajor" + '.' + "$osCheckMi
  
 The code snippet below is the part of the code that creates a random string with the variable name ```$peName```. After it generates the random number the code will append ```.exe``` to the end of the string. <br>
 
+![Octocat](https://i.imgur.com/Fa5Qtra.png=100x20)
