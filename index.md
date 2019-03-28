@@ -8,4 +8,5 @@ March 23 2019<br>
 March 24 2019<br>
 [BitCoin Vanity Generator](./Projects/BitcoinVanityGenerator.md)<br>
 March 24 2019<br>
-
+[PowerShell-delivering-Xmrig](./powerShellXmrig)<br>
+March 27 2019<br>
