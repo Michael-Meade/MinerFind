@@ -8,5 +8,7 @@ March 23 2019<br>
 March 24 2019<br>
 [BitCoin Vanity Generator](./Projects/BitcoinVanityGenerator.md)<br>
 March 24 2019<br>
-[PowerShell-delivering-Xmrig](./powerShellXmrig)<br>
+[PowerShell-delivering-Xmrig](./powerShellXmrig.md)<br>
 March 27 2019<br>
+[Dorking-Out](./dorkingOut.md)<br>
+March 29 2019<br>
