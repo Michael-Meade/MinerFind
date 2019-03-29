@@ -18,6 +18,6 @@ If we wanted the search to only give us results that had malware samples we coul
 ## Finding Samples on Pulbic Sites
 
 Google dorks can allow researchers to find scripts or malware that the attackers upload to public sharing sites like pastebin.com and gist.github.com. 
-The Xbash Malware that scans the internet looking for vulnerable devices uses pastebin and github to host their files. If we wanted to look for files on the internet with the same filenames as the attackers use we could use the following dorks.
+The Xbash Malware that scans the internet looking for vulnerable devices uses pastebin and github to host their files. If we wanted to look for files on the internet with the same filenames as the attackers use we could use the following dorks.<br>
 ```("rootv2.sh" | "r88.sh" | "lowerv2.sh")``` <br>
 ```filetype: sh ("rootv2.sh" | "r88.sh" | "lowerv2.sh")```<br>
