@@ -1,3 +1,6 @@
+<a href="https://michael-meade.github.io/" style='margin-right:20px'>Home</a>
+<a href="https://michael-meade.github.io/Projects" style='margin-right:20px'>Projects</a>
+<br>
 By default, the script will save the created address in the wallets directory. The lib is programmed to save the info with the newly created address as the filename by default. <br> 
 ### Features
 ### <center> Single Regex </center>
@@ -23,3 +26,9 @@ By default, the script will save the created address in the wallets directory. T
 <br> The code above uses what ever is the number that the variable ```count``` is and will create that many addresses. This does not use any regex it just generates random addresses.  This module also includes the ```fileToWrite``` argument. Which if supplied with a string it will create a new directory and save all the newly created addresses in the directory.<br>
 
 
+## <center> Mass Regex Generate </center>
+<br>
+```
+regexFiles("regexFile", 3, fileToWrite=nil)
+```
+This will take the inputed file and generate as many addresses that the ```count``` parameter was given. Everytime it generates a address the script will check if the address matches any of the regexs in the given file. 
