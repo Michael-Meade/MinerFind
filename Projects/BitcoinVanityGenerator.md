@@ -19,15 +19,15 @@ By default, the script will save the created address in the wallets directory. T
  <br>
  
 ### <center> Mass Generate </center>
-<br>
 ```ruby
  Vanity.massGenerate(count, fileToWrite=nil)
 ```
+
+<br>
 <br> The code above uses what ever is the number that the variable ```count``` is and will create that many addresses. This does not use any regex it just generates random addresses.  This module also includes the ```fileToWrite``` argument. Which if supplied with a string it will create a new directory and save all the newly created addresses in the directory.<br>
 
 
 ## <center> Mass Regex Generate </center>
-<br>
 ```
 regexFiles("regexFile", 3, fileToWrite=nil)
 ```
