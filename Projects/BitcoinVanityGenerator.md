@@ -29,6 +29,6 @@ By default, the script will save the created address in the wallets directory. T
 
 ## <center> Mass Regex Generate </center>
 ```
-regexFiles("regexFile", 3, fileToWrite=nil)
+Vanity.regexFiles("regexFile", 3, fileToWrite=nil)
 ```
 This will take the inputed file and generate as many addresses that the ```count``` parameter was given. Everytime it generates a address the script will check if the address matches any of the regexs in the given file. 
