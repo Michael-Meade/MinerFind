@@ -11,5 +11,6 @@ The user parameter ```eyJwYXNzd29yZCI6IjVmNGRjYzNiNWFhNzY1ZDYxZDgzMjdkZWI4ODJjZj
 The hash included the md5 password, the language that they signed up with and the Username. The server responds to the login request by sending all the authenciated users game stats. The inforamtion that is included is the user's accessToken and the user's UID. 
 ![OCtocat(https://i.imgur.com/PlUlePj.png=100x20)<br>
 
-The  ```login(username, password)``` module is used to login in
+The ```login(username, password``` module first takes the password variable and creates a Md5 hash. Next the using the variable name of ```login_info``` the code creates a hash with the username, password and user language. 
+<br>
 ![OCtocat(https://i.imgur.com/s2d2n1u.png=100x20)
