@@ -24,7 +24,8 @@ By default, the script will save the created address in the wallets directory. T
 ```
 
 <br>
-<br> The code above uses what ever is the number that the variable ```count``` is and will create that many addresses. This does not use any regex it just generates random addresses.  This module also includes the ```fileToWrite``` argument. Which if supplied with a string it will create a new directory and save all the newly created addresses in the directory.<br>
+<br>The count variable is how many addresses that you want to create. It will create exactly the amount suplied. This module does not use any regex it just generates random addresses.  This module also includes the ```fileToWrite``` argument. Which will save all the generated information into a new created directory. It will still create a text file with the newly created wallet information in it.
+<br>
 
 
 ## <center> Mass Regex Generate </center>
