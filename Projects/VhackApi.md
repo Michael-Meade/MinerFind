@@ -17,3 +17,5 @@ The server responds to the login request by sending all the authenciated users g
 The ```login(username, password``` module first takes the password variable and creates a Md5 hash. Next the using the variable name of ```login_info``` the code creates a hash with the username, password and user language. 
 <br>
 ![OCtocat](https://i.imgur.com/AbLVy2n.png=100x20)
+<br>
+Next we convert the vaiable ```login_info```  into a json string. We are create one big string
