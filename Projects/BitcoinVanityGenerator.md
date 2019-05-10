@@ -1,7 +1,7 @@
 <a href="https://michael-meade.github.io/" style='margin-right:20px'>Home</a>
 <a href="https://michael-meade.github.io/Projects" style='margin-right:20px'>Projects</a>
 <br>
-By default, the script will save the created address in the wallets directory. The lib is programmed to save the info with the newly created address as the filename by default. <br> 
+By default, the script will save the newly created address in the "wallets" directory. The lib is programmed to save the information into a txt file with the BTC address as the file name. <br> 
 ### Features
 ### <center> Single Regex </center>
  To create a single address matching a regex.
@@ -24,7 +24,7 @@ By default, the script will save the created address in the wallets directory. T
 ```
 
 <br>
-<br>The count variable is how many addresses that you want to create. It will create exactly the amount suplied. This module does not use any regex it just generates random addresses.  This module also includes the ```fileToWrite``` argument. Which will save all the generated information into a new created directory. It will still create a text file with the newly created wallet information in it.
+<br>The count variable determines how many addresses that you want to create. This module does not use any regex it just generates random addresses.  This module also includes the ```fileToWrite``` argument. Which will save all the generated information inside the directory.  It will still create a text file with the newly created wallet information inside.
 <br>
 
 
