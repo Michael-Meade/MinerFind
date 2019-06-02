@@ -18,4 +18,4 @@ The ```login(username, password``` module first takes the password variable and 
 <br>
 ![OCtocat](https://i.imgur.com/AbLVy2n.png=100x20)
 <br>
-Next we convert the vaiable ```login_info```  into a json string. We are create one big string
+Next we convert the vaiable ```login_info```  into a json string. We are just adding to the json key & value.
