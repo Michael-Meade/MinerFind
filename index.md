@@ -4,13 +4,13 @@
 
 [Inside Linux Mining Malware](./LinuxMalware.md).<br>
 March 23 2019<br>
-[KORKERDS-Miner](./KORKERDS-Miner.md)<br>
+<br>[KORKERDS-Miner](./KORKERDS-Miner.md)<br>
 March 24 2019<br>
-[BitCoin Vanity Generator](./Projects/BitcoinVanityGenerator.md)<br>
+<br>[BitCoin Vanity Generator](./Projects/BitcoinVanityGenerator.md)<br>
 March 24 2019<br>
-[PowerShell-delivering-Xmrig](./powerShellXmrig.md)<br>
+<br>[PowerShell-delivering-Xmrig](./powerShellXmrig.md)<br>
 March 27 2019<br>
-[Dorking-Out](./dorkingOut.md)<br>
+<br>[Dorking-Out](./dorkingOut.md)<br>
 March 29 2019<br>
-[Python-based-Malware](./Python-Based-Malware.md)<br>
+<br>[Python-based-Malware](./Python-Based-Malware.md)<br>
 March 29 2019<br>
