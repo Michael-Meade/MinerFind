@@ -6,6 +6,7 @@ The third script uses curl to download a bash script from ```hxxps://pastebin.co
 <img src="https://i.imgur.com/9OUnw47.png =100x20" alt="Octocat" /><br>
 Figure 1: Shows the 1.sh script
 <br>
+<br>
 To ensure persistence on the box. The script creates a new cronjob that edits current commands every 10 minutes. There is also an option for the script to be set up in such way that it could update current commands every 13 and 27 minutes. 
 According to Figure 2, the pastebin.com link shows the malware adding the cronjob is base64 obfuscated. The deobfuscated script is uploaded to https://pastebin.com/raw/td5KhzVC. The script’s functionality is to determine if the infected machines is x64 or x86 or x32. Depending on the type of arch the machine is, it will download the minor that is compatible with the arch machine to the /tmp/kworkerds directory. The script also includes functions where it edits the command. Refer to Figure 2 for further detail of the script. 
 <img src="https://i.imgur.com/6y5wqOs.png =100x20" alt="Octocat" /><b>
