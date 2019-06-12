@@ -1,8 +1,8 @@
 <a href="https://michael-meade.github.io/" style='margin-right:20px'>Home</a>
 <a href="https://michael-meade.github.io/Projects" style='margin-right:20px'>Projects</a>
 <br>
-According to hybrid-analysis.com, there is multiple XMR Linux based malware. One of the XMR Linux based malware is known as 1.sh. Referring to Figure 1, there are multiple scripts that are listed there. The first script has the functionality of killing any processes that might be a competing miner. The second script is the “c” function where it runs: ```ruby  chattr -i /usr/local/bin/dns /etc/cron.d/root /etc/cron.d/apache /var/spool/cron/root /var/spool/cron/crontabs/root /etc/ld.so.preload.```
-The third script uses curl to download a bash script from ```hxxps://pastebin.com/raw/CnPtQ2tM.``` The script downloads the file into the user’s ```/usr/local/bin/dns``` directory. Refer to Figure 1 for further detail of the scripts. 
+According to hybrid-analysis.com, there is multiple XMR Linux based malware. One of the XMR Linux based malware is known as 1.sh. Referring to Figure 1, there are multiple scripts that are listed there. The first script has the functionality of killing any processes that might be a competing miner. The second script is the “c” function where it runs: ```chattr -i /usr/local/bin/dns /etc/cron.d/root /etc/cron.d/apache /var/spool/cron/root /var/spool/cron/crontabs/root /etc/ld.so.preload.```
+The third script uses curl to download a bash script from ```hxxps://pastebin.com/raw/CnPtQ2tM.``` The script downloads the file into the user’s ```/usr/local/bin/dns``` directory. Refer to Figure 1 for further detail of the scripts. <br>
 <img src="https://i.imgur.com/9OUnw47.png =100x20" alt="Octocat" /><br>
 Figure 1: Shows the 1.sh script
 <br>
