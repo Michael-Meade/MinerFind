@@ -1,26 +1,27 @@
 <a href="https://michael-meade.github.io/" style='margin-right:20px'>Home</a>
 <a href="https://michael-meade.github.io/Projects" style='margin-right:20px'>Projects</a>
 ## Dorking out
-Dorks can be used to find vulnerable devices or sites with sensitive information. They can be also used for finding malware samples. 
+Dorks is a tool that can be used to find vulnerable devices, sites that contains sensitive information, or malware samples online. 
 <br>
 ## Getting Alerts
-We could use https://www.google.com/alerts to get alerts if one of search queries shows up on google. Please note that Google first has to crawl the site before an alert is made.<br>
-I created a google account that all I use it for is for Google Alerts. If I am standing in line at pio ( the college's 'restaurant' ) or if I am bored I log on into the emails and read the alerts that Google sends it. The accounts inbox looks like this: 
+Google has a function that allows users to get alerts through the URL “https://www.google.com/alerts”. Google will first “crawl” the site before an alert is made. In this project, the creation of a Gmail account must be done to experiment for the use of Google’s Alert system. It is set up in such a way that it will send alerts to the Gmail account. Refer to Figure 1 as to how a Gmail account would look like when a Google Alert system is set up. 
 ![Octocat](https://i.imgur.com/1BIxuMG.png=100x20)<br>
-
-A researcher could use Google Alert to get alerts about other researcher’s reports about malware. A lot of attackers are using sites like Pastebin.com, github.com, gist.github.com. Which Google likes to crawl those. So Google Alerts can come in handy to get samples. 
+Figure 1
+<br>
+In addition, a project that could be done with the use of Google Alert is to search for other researcher’s reports on malware. Sites such as Pastebin.com, github.com, and gist.github.com may contain potential malware samples. This will help end users to be safe on the internet and also help individuals to obtain reports that a specific website may contain malware.
 <br>
 ## Hybrid 
+Google contains operators that help end users to find specific information online. In regards to Dorking Out, a specific search is used in Figure 2 that had an outcome of 370 results in the Google search. When using the quotation operator “ ” in Google, it specifies the end result to only return results that match the entire string. In the case of finding malware samples, the command to use is “grep -v grep overview login to download”. The outcome of the Google search is 24 which indicates that it is most likely be malware samples. 
 ![Octocat](https://i.imgur.com/nYbFSup.png=100x20)<br>
-In the example above we can see that there are about ```387``` results. That's a pretty good amount. <br>
-Using the ```""``` in the search makes Google only return results that matches the entire string. If we wanted the search to only give us results that had malware samples we could add ```Overview Login to Download``` to the query. This gives us, 24 results that will most likely have samples available. 
+Figure 2: shows the "" operator in Google Search
 <br>
 
 ## Finding Samples on Pulbic Sites
-Google dorks can allow researchers to find scripts or malware that the attackers upload to public sharing sites like pastebin.com and gist.github.com. The Xbash Malware uses Pastebin and GitHub to host some of their files. If we wanted to look for files on the internet with the same filenames as the attackers use we could use the following dorks. <br>
+For example, Xbash Malware can be found on Pastebin.com and Github.com through using dorks via the search:<br>
 ```("rootv2.sh" | "r88.sh" | "lowerv2.sh") ``` <br>
 ```filetype: sh ("rootv2.sh" | "r88.sh" | "lowerv2.sh") ``` <br>
-In the example above ```|``` is used as the ```OR``` operator. The OR operator is used to search a bunch of strings. That search result will give us each all results thats contain those strings.<br>
-Using the ```site:``` parameter we limit the results to  only give us results from github.com.<br> 
-For an example we could search pastebin.com for a email that is found in the sample. <br>
+
+This command will find files on the internet with the same file names as the attackers use on websites such as Pastebin.com and Github.com. In the command above, the operator <b>|</b> is used as the <b>OR</b> operator where it searches a bunch of strings that are specific to the search. Also, the site: operator is used as a parameter for Google in order to specify a limitation in the result of the search. Refer to Figure 3 as to how the search operators are used to find a specific email from pastebin.com <br>
+
 ![Octocat](https://i.imgur.com/sN30kiv.png=100x20)<br>
+Figure 3: Shows the Site: and the " " operator used to find a specific email address in a Google Search.
