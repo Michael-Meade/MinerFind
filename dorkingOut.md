@@ -4,7 +4,7 @@
 Dorks is a tool that can be used to find vulnerable devices, sites that contains sensitive information, or malware samples online. 
 <br>
 ## Getting Alerts
-Google has a function that allows users to get alerts through the URL “https://www.google.com/alerts”. Google will first “crawl” the site before an alert is made. In this project, the creation of a Gmail account must be done to experiment for the use of Google’s Alert system. It is set up in such a way that it will send alerts to the Gmail account. Refer to Figure 1 as to how a Gmail account would look like when a Google Alert system is set up. 
+Google has a function that allows users to get alerts through the URL “https://www.google.com/alerts”. Google will first “crawl” the site before an alert is made. In this project, the creation of a Gmail account must be done to experiment for the use of Google’s Alert system. It is set up in such a way that it will send alerts to the Gmail account. Refer to Figure 1 as to how a Gmail account would look like when a Google Alert system is set up. <Br>
 ![Octocat](https://i.imgur.com/1BIxuMG.png=100x20)<br>
                                  Figure 1: Shows the Gmail account that contains the Google alerts
 
