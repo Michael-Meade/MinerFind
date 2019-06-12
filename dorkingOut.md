@@ -13,7 +13,7 @@ In addition, a project that could be done with the use of Google Alert is to sea
 ## Hybrid 
 Google contains operators that help end users to find specific information online. In regards to Dorking Out, a specific search is used in Figure 2 that had an outcome of 370 results in the Google search. When using the quotation operator “ ” in Google, it specifies the end result to only return results that match the entire string. In the case of finding malware samples, the command to use is “grep -v grep overview login to download”. The outcome of the Google search is 24 which indicates that it is most likely be malware samples. 
 ![Octocat](https://i.imgur.com/nYbFSup.png=100x20)<br>
-Figure 2: shows the "" operator in Google Search
+<font size="10>Figure 2: shows the "" operator in Google Search</font>
 <br>
 
 ## Finding Samples on Pulbic Sites
