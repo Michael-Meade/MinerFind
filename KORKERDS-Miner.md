@@ -12,13 +12,13 @@ According to Figure 2, the pastebin.com link shows the malware adding the cronjo
 <img src="https://i.imgur.com/6y5wqOs.png =100x20" alt="Octocat" /><b>
   Figure 2: Shows the pastebin.com link<br>
   
-  ### Scanner 
+  ## Scanner <br>
   In the 1.sh script, the function of “c” is to decode a base64 string and runs the decoded base64 script. Refer to Figure 3 for a full picture of the script. 
 <p><img src="https://i.imgur.com/F4SOGcU.png =100x20" alt="Octocat"/><br>
   Figure 3: Shows the C function<br>
   
   The script in Figure 2 will execute the python script that is hosted on https://pastebin.com/raw/hQZTFAdC. I uploaded the deobfuscated script to https://pastebin.com/raw/yyrk9MZj. The Python script generates IP addresses and checks for any running file servers or an IP camera on TCP port 8161.
 
-### Downloading of the Miner
+## Downloading of the Miner <br>
 
 The creator of the script registered the scripts to a domain called master.minerxmr.ru. This was done privately to ensure the domain to be secure. The bash script undergoes the process of checking the type of Linux machine system. If the Linux machine is x64 or x86, the bash script will download a miner from hxxps://master.minerxmr.ru/1/1551434761x2728329064.jpg. In the scenario that the Linux system is x32 bit, then the bash script will download the miner from hxxps://master.minerxmr.ru/2/1551434778x2728329032.jpg. Both of these versions of the miners are downloaded to the machine’s ```/var/tmp/kworkerds``` directory.
