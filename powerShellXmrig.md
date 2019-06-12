@@ -1,15 +1,10 @@
-I found this sample on hybrid-analysis.com.  First thing it does is get some information about the infected computer. 
-```powershell$osCheckMinor = [System.Environment]::OSVersion.Version | Select -Expand Minor;
-$osVersion = "$osCheckMajor" + '.' + "$osCheckMinor";
-$poshVersion = $PSVersionTable.PSVersion.Major;
+On 3/13, I found a sample PowerShell script on hybrid-analysis.com where I tried to understand its functionality. To my knowledge, the script finds information on an infected system. The sample script that is shown on hybrid-analysis.com can be seen in Figure 1. 
+```powershell$osCheckMinor = [System.Environment]::OSVersion.Version | Select -Expand Minor; $osVersion = "$osCheckMajor" + '.' + "$osCheckMinor"; $poshVersion = $PSVersionTable.PSVersion.Major;
 ```
+Figure 1: Sample Script
+	
+ At this current moment in time, I am not familiar with the commands of PowerShell, however, I tested the script on a subsystem that I have available on my desktop. When the script has run, the script printed out “0” for $osCheckMinor and “"$osCheckMajor" + '.' + ” for the variable $osVersion. 
+	Refer to Figure 2 to view parts of the code that was created from a random string with the variable name “`$peName” After the script generates random numbers, the code will be appended as .exe at the end of the string as seen in Figure 2. The code will then use the variable “$savePath” to the appdata folder.
 
-
-I am not familiar with powershell so I decided to run and print the code above. When I ran the code and printed the variable ```$osCheckMinor``` the output was zero. <br>
-When I printed the variable  ```$osVersion = "$osCheckMajor" + '.' + "$osCheckMinor";``` the results where ```.0```.<br>
- 
-The code snippet below is the part of the code that creates a random string with the variable name ```$peName```. After it generates the random number the code will append ```.exe``` to the end of the string. <br> The code will then use the variable ```$savePath``` to the appdata folder.
-
-![Octocat](https://i.imgur.com/Fa5Qtra.png=100x20)
-<br> The url ```https://s3.us-east-2.amazonaws.com/aiite/gfdsdfghjjhgfvbn.jpg``` just looks like a regular jpg image. At quick glance I do not see anything funky about it.<br>
-
+Figure 2: Shows the variable name of “$peName and $savePath”
+The URL https://s3.us-east-2.amazonaws.com/aiite/gfdsdfghjjhgfvbn.jpg in Figure 2 does not seem to be suspicious as it is interpreted as a regular jpg image. At a quick glance, I do not see anything suspicious about it.
