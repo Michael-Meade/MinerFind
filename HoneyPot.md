@@ -54,7 +54,7 @@ ARCH=`uname -m`
 	fi
 echo $! > bash.pid
 ```
-Figure 4: the contents of run
+Figure 4: the contents of ```a/run```
 
 In Figure 3, we can see that the ```a/run``` file runs a file called ```./stop```. In Figure 5, we can see that its job is kill any running proccesss called cron. The stop script also removes the file named ```.proc```.
 
