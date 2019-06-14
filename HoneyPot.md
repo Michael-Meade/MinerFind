@@ -68,3 +68,7 @@ Figure 5: the contents of ```a/stop```.
 
 
 The ```a/``` is too big to share the source code. But In Figure 7, I posted the a pastebin.com of the source code. It looks like someone compiled a bash script of other miners IOC's and created a single script removing all the other miners. The code removes all the directories and kills all the processes. 
+```ruby 
+https://pastebin.com/raw/yxgk4PAi
+```
+Figure 7: The ```a/init0``` script
