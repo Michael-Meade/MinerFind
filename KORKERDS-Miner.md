@@ -1,3 +1,10 @@
+<meta property="article:tag" content="monero mining" />
+<meta property="article:tag" content="KORKERDS" />
+<meta property="article:tag" content="Linux" />
+<meta property="article:tag" content="xBash" />
+<meta property="article:section" content="Malware" />
+<meta name="keywords" content="kworkerds linux XMR miner, monero mining, linux malware, persistent linux based malware"/>
+<meta property="og:description" content="A look into a linux based monero mining malware. The malware downloads bash scripts to maintin persistent on the machine." />
 <a href="https://michael-meade.github.io/" style='margin-right:20px'>Home</a>
 <a href="https://michael-meade.github.io/Projects" style='margin-right:20px'>Projects</a>
 <br>
