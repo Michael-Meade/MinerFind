@@ -5,7 +5,8 @@ layout: default
 <small>{{ page.date | date: "%-d %B %Y" }}</small>
 <h1>{{ page.title }}</h1>
 
-<p class="view">by {{ Michael Meade | default: Michael Meade }}</p>
+
+<p class="view">by {{ page.author | default: site.author }}</p>
 
 {{content}}
 
