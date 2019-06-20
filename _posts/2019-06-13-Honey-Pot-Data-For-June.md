@@ -7,7 +7,7 @@ title:  'Analyzing Honey Pot data'
 
 We are going to look through the honey pot data from ```6-4-2019 - 6-13-2019```. I set up a simple honeypot using [Cowrie](https://github.com/cowrie/cowrie). Setting up the honey pot was pretty easy.  I choose this honey pot becuase it had a large following and a bunch of features. Instead of using the suggested output organizer, I have been exporting the logs to my pc every morning and then using ruby scripts I wrote to parse the data.
 
-## Attenmpted Logins Stats
+## Attempted Logins Stats
 
 In Figure 1 we can see that there was a staggering 44k logins with the username ```ruby root```. Which makes sense because a attacker would want root access to the machine so they could bascily do anything they want with the machine. 
 ![Octocat](https://i.imgur.com/hFOtHSN.png=100x20)<br>
