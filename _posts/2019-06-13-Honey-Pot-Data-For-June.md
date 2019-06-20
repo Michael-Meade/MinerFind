@@ -4,12 +4,6 @@ layout: post
 title:  "Analyzing Honey Pot data"
 ---
 
-<a href="https://michael-meade.github.io/" style='margin-right:20px'>Home</a>
-<a href="https://michael-meade.github.io/Projects" style='margin-right:20px'>Projects</a>
-<a href="https://michael-meade.github.io/About" style='margin-right:20px'>About</a>
-
-
-
 ## Background Info
 We are going to look through the honey pot data from ```6-4-2019 - 6-13-2019```. I set up a simple honeypot using [Cowrie](https://github.com/cowrie/cowrie). Setting up the honey pot was pretty easy.  I choose this honey pot becuase it had a large following and a bunch of features. Instead of using the suggested output organizer, I have been exporting the logs to my pc every morning and then using ruby scripts I wrote to parse the data.
 
