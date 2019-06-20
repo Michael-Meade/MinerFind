@@ -25,3 +25,10 @@ Figure 3, Most Active IP
 In Figure 4, I did some research about the IP. The IP is from a Chinese ISP named ```China Telecom Shandong```
 
 ![IP-Lookup-58.59.2.26](https://i.imgur.com/AOIiK0Q.png=100x20)<br>
+ Ip information for 58.59.2.26<br>
+ 
+ In Figure, 5 is a picture of all the commands that the attacker used on the honeypot.
+ 
+ ![commands-used-by-58.59.2.26](https://i.imgur.com/XOaWK3l.png=100x20)<br>
+ List of commands used by 58.59.2.26<br>
+ 
