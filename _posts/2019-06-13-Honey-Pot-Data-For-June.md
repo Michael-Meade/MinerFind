@@ -1,10 +1,13 @@
-<a href="https://michael-meade.github.io/" style='margin-right:20px'>Home</a><br>
-<a href="https://michael-meade.github.io/Projects" style='margin-right:20px'>Projects</a><br>
-<a href="https://michael-meade.github.io/About" style='margin-right:20px'>About</a><br>
+
 ---
 layout: post
 title:  "Analyzing Honey Pot data"
 ---
+
+<a href="https://michael-meade.github.io/" style='margin-right:20px'>Home</a>
+<a href="https://michael-meade.github.io/Projects" style='margin-right:20px'>Projects</a>
+<a href="https://michael-meade.github.io/About" style='margin-right:20px'>About</a>
+
 
 
 ## Background Info
