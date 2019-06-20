@@ -10,7 +10,7 @@ In Figure 1 we can see that there was a staggering 44k logins with the username 
 ![Top to usernames](https://i.imgur.com/hFOtHSN.png=100x20)<br>
 Figure 1, Top 10 Username logins
 
-In Figure 1, there was 44,014 logins for root but in Figure 2, there was 44,030 password logins using ```admin```. All the passwords used are common passwords that would be found in a password list. With the expection of password ``` ruby usuario```. After some Googling I found out that it is spanish for ```ruby user```. 
+In Figure 1, there was 44,014 logins for root but in Figure 2, there was 44,030 password logins using ```admin```. All the passwords used are common passwords that would be found in a password list. With the expection of password ``` usuario```. After some Googling I found out that it is spanish for ```user```. 
 ![Top 10 Passwords](https://i.imgur.com/M6kF6cG.png=100x20)<br>
 Figure 2. Top 10 Password logins
 
