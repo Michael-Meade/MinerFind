@@ -30,5 +30,26 @@ In Figure 4, I did some research about the IP. The IP is from a Chinese ISP name
  In Figure, 5 is a picture of all the commands that the attacker used on the honeypot.
  
  ![commands-used-by-58.59.2.26](https://i.imgur.com/XOaWK3l.png=100x20)<br>
- List of commands used by 58.59.2.26<br>
+ Figure 5, List of commands used by 58.59.2.26<br>
  
+
+
+## Other activities 
+What I found intresting is that a couple of attackers tired to use it as a proxy. They would request a bunch of sites, mostly cryptocurrency, popular sites such as netflix. But they also where targeting Gift Cards balance checking sites. Some of the sites they tired to use are listed bellow.
+
+```ruby
+amidacarecard.com
+ya.ru
+www.onevanilla.com
+www.myvanillabalance.com
+chekfast.zennolab.com
+www.palotterygiftcard.com
+www.mybalancenow.com
+www.alabamagiftcard.com
+www.wellnesshealthvisacard.com
+www.essilorrebatecard.com
+www.cfnarewardcard.com
+services.incommgateway.com
+heck2.zennolab.com
+www.pizzahut.com
+```
