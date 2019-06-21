@@ -57,5 +57,21 @@ chaturbate.com
 www.nrpcard.com
 api.bjs.com
 www.essilorrebatecard.com
-
+gc.mallofamerica.com
+www.mybalancenow.com
+google.com
+www.google.ca
+www.facebook.com
+www.pof.com
+paxful.com
+www.dell.com
+www.netflix.com
+www.instagram.com
+www.pof.de
+www.ourtime.com
+www.match.com
+www.kraken.com
+www.footlocker.com
+kith.com
 ```
+I used a regex to parse the ```dst_ip``` value. It might have messed some that were unable to recognize a domain. 
