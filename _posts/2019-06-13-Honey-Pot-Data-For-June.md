@@ -32,7 +32,7 @@ In Figure 4, I did some research about the IP. The IP is from a Chinese ISP name
  ![commands-used-by-58.59.2.26](https://i.imgur.com/XOaWK3l.png=100x20)<br>
  Figure 5, List of commands used by 58.59.2.26<br>
  
-
+ It looks like the attacker where just getting information about the box. They did not download or execute anything that would infect or own the system. 
 
 ## Other activities 
 What I found intresting is that a couple of attackers tired to use it as a proxy. They would request a bunch of sites, mostly cryptocurrency, popular sites such as netflix. But they also where targeting Gift Cards balance checking sites. Some of the sites they tired to use are listed bellow.
@@ -52,4 +52,10 @@ www.cfnarewardcard.com
 services.incommgateway.com
 heck2.zennolab.com
 www.pizzahut.com
+order.dominos.com
+chaturbate.com
+www.nrpcard.com
+api.bjs.com
+www.essilorrebatecard.com
+
 ```
