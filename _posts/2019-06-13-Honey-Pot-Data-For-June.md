@@ -74,4 +74,4 @@ www.kraken.com
 www.footlocker.com
 kith.com
 ```
-I used a regex to parse the ```dst_ip``` value. It might have messed some that were unable to recognize a domain. 
+I used a regex to parse the ```dst_ip``` value. It might have messed some that were unable to match a domain. 
