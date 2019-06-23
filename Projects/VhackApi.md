@@ -18,7 +18,7 @@ The ```login(username, password)``` module first takes the password variable and
 
 Next we take the ```hashed_info``` variable and then create a MD5 hash with it. This is will become the ```pass``` param when we log in.<br>
 
-Next we create the ```user``` parm by taking the string ```login_info``` ,convert it to a JSON string and base64 the string. 
+Next we create the ```user``` parm by taking  ```login_info``` and base64 encoding it for the user param.
 
 ![OCtocat](https://i.imgur.com/AbLVy2n.png=100x20)
 <br>
