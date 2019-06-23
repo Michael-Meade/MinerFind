@@ -89,3 +89,32 @@ Figure 8, cronjobs the malware created<br>
 
 The cronjob will re-infect the machine on reboot. According to the cronjob it will also reinfect the machine every 3 days.<br> 
 It will also run the script ```b/sync``` at the 8:05. <br>
+
+
+### SSH backdoor
+Using the strings command on the file ```ps``` I found what looks like a ssh backdoor. The bin ps will create a SSH server on the infected machine as well add the attackers key to the .ssh folder. This allows the attacker to access the machine they want. This also allows the attacker to carry out other attacks. This allows them to bypass the NAT and have access to the local network. Which could lead to other boxes on the network to be infected as well. <Br>
+![ssh-backdoor](https://i.imgur.com/22fOFTI.png=100x20)<br>
+Figure 9, SSH backdoor.
+
+## Looking at the Traffic generated
+In figure 10, we take a look at the network traffic that is being generated. We can see that it is accessing the IP ```192.168.52.134```.
+
+![tcp-dump](https://i.imgur.com/fZUtkQK.png=100x20)
+Figure 10, TCP dump traffic
+
+In Figure 11, we use Wireshark to help us get a better idea what is happening. 
+![Wireshark-data](https://i.imgur.com/uZtiIXH.png=100x20)
+Figure 11, the Wireshark data.
+ommuncating 
+When looking at the requests that the IP made we found that it is communicating with a XMR mining pool. Looking at the requests sent we can see that the the miner is using the config found in figure 12. Note that I put saved it as a file becuase it was too small when viewing the information using the Wireshark app. 
+
+![XMR-Mining-Config](https://i.imgur.com/o8TLTyZ.png=100x20)
+Figure 12, the miner config
+
+Putting the attacker's monero address into the site ```https://www.xmrhunter.com/```, we found that the attackers had used the mining pool ```supportxmr.com```. They might being using the the Ip we found as a proxy to make it less suspicious in the eyes of the pool. 
+
+
+# ICO
+
+Monero Address 
+45UcbvLNayefqNad3tGpHKPzviQUYHF1mCapMhgRuiiAJPYX4KyRCVg9veTmckPN7bDebx51LCuDQYyhFgVbUMhc4qY14CQ
