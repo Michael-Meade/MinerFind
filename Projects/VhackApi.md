@@ -14,7 +14,7 @@ We can see when decoding the base64 that it includes the md5 hash of the passwor
 The server responds to the login request by sending all the authenciated users game stats. The inforamtion that is included is the user's accessToken and the user's UID and their game stats.
 ![OCtocat](https://i.imgur.com/PlUlePj.png=100x20)<br>
 ## Creating the code to login.
-The ```login(username, password)``` module first takes the password variable and creates a Md5 hash. With the ```hashed_info``` we take a the ```login_info``` and create a MD5 hash with it as well as convert the varaible ```login_info``` into a josn string.<br>
+The ```login(username, password)``` module first takes the password variable and creates a Md5 hash. With the ```hashed_info``` we take the ```login_info``` and create a MD5 hash with it as well as convert the varaible ```login_info``` into a josn string.<br>
 
 Next we take the ```hashed_info``` variable and then create a MD5 hash with it. This is will become the ```pass``` param when we log in.<br>
 
