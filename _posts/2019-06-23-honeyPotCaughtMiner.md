@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "Honey Pot caught linux miner"
+by:     "Michael Meade"
+---
+
 ### What the cat brought home
 
 I was looking at my honey pot this morning and I saw a what looked like base64 strings. A lot of time attackers like base64 because it makes it easy for them to bypass detection or even becuase it can ensure that
