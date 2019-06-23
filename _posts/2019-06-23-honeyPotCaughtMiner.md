@@ -85,6 +85,6 @@ Figure 7: The ```a/init0``` script
 In Figure 8, is the cronjob that the miner created to try to stay on the infected machine as long as possible.
 
 ![crontab](https://i.imgur.com/8fSONkN.png=100x20)
-Figure 8, cronjobs the malware created
+Figure 8, cronjobs the malware created<br>
 The cronjob will re-infect the machine on reboot. According to the cronjob it will also reinfect the machine every 3 days.<br> 
 It will also run the script ```b/sync``` at the 8:05. <br>
