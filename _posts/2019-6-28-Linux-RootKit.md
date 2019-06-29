@@ -11,7 +11,8 @@ But after looking at the source code for the index page it becomes clear that it
 Figure 2, source code of the index page.<br> 
 
 In figure 2 we can see that a couple of things seems a little off. First off the year is wrong. Secondly who is ```David Colagiovanni``` that is named in the title element?
-After doing some digging with the Google. I found this site: <a href="http://classic.rhizome.org/artbase/artwork/50465/">http://classic.rhizome.org/artbase/artwork/50465/</a><br>
+After doing some digging with Google. I found this site: <a href="http://classic.rhizome.org/artbase/artwork/50465/">http://classic.rhizome.org/artbase/artwork/50465/</a><br><br>
+
 The article is about an artist named ```David Colagiovanni``` who created the site ```http://www.seizethisdoma.in/``` to try to mimic ICE's seizure.<br>
 My bet is that the author of the Linux rootkit used this site's source code as a ruse to trick researchers into thinking that the domain was seized.<br>
 
