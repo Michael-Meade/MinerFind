@@ -17,3 +17,9 @@ My bet is that the author of the Linux rootkit used this site's source code as a
 
 Looking at the whois records for the domain backs up the theory because the domain was created on the date of ```2019-06-04```. Sadly thats about all the inforamtion that the whois records can provide since the <br>
 attackers used WHOIS protection. 
+
+
+
+[b]Urls and domains[/b]
+auth.to0ls[.]com
+111.90.140[.]35
