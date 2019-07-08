@@ -28,6 +28,10 @@ The function will run a command to check if the user id is equal to ```0```. If 
 
 Next the script will create a new directory with the name of the value of ```DownloadPath```. It also gives the new directory ```777``` permissions. 
 
-[b]Urls and domains[/b]<br>
+The last thing the function does is check to see what operating system the machine is. 
+
+
+
+<b>Urls and domains</b><br>
 auth.to0ls[.]com<br>
 111.90.140[.]35<br>
