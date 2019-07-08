@@ -18,8 +18,16 @@ My bet is that the author of the Linux rootkit used this site's source code as a
 Looking at the whois records for the domain backs up the theory because the domain was created on the date of ```2019-06-04```. Sadly thats about all the inforamtion that the whois records can provide since the <br>
 attackers used WHOIS protection. 
 
+## A dive into the malware
+![BasicInitFunction](https://i.imgur.com/gMjmXcR.png=100x20)<br>
+Figure 3, BasicInit Function<br>
 
+The code in Figure 3, first checks to make sure that it is able to ping the domains ```auth.to0ls.com``` and ```111.90.140.35```. 
+The script pings the two domains to check if the domain is up. The script will then create the variable named ```remote_host``` with whatever site is up at the time the script is ran.<br>
+The function will run a command to check if the user id is equal to ```0```. If the script is determines that the user is root, then it will give the variable ```shell_privilege``` the value of 0. If it detects that the user id is something other than 0 it will give the variable  ```shell_privilege``` the value of 1. The script will also give the variable ```DownloadPath``` the value of ```/home/$USER/...```.<br>
 
-[b]Urls and domains[/b]
-auth.to0ls[.]com
-111.90.140[.]35
+Next the script will create a new directory with the name of the value of ```DownloadPath```. It also gives the new directory ```777``` permissions. 
+
+[b]Urls and domains[/b]<br>
+auth.to0ls[.]com<br>
+111.90.140[.]35<br>
