@@ -9,7 +9,3 @@ March 23 2019<br>
 ## Vhack Api
 [VhackAPI](./Projects/VhackApi.md)<br>
 March 23 2019<br>
-
-## October 
-[LeakCollectorOrganizer](./LeakCollection-organizer)<br>
-October 30 2019<br>
