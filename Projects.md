@@ -11,5 +11,5 @@ March 23 2019<br>
 March 23 2019<br>
 
 ## October 
-[LeakCollectorOrganizer](https://github.com/Michael-Meade/LeakCollection-organizer)<br>
+[LeakCollectorOrganizer](./https://github.com/Michael-Meade/LeakCollection-organizer)<br>
 October 30 2019<br>
