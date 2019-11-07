@@ -27,3 +27,4 @@ This command will find files on the internet with the same file names as the att
 
 ![Octocat](https://i.imgur.com/sN30kiv.png=100x20)<br>
 Figure 3: Shows the Site: and the " " operator used to find a specific email address in a Google Search.
+The site operator is useful if researcher wants Google to only give results that contain that domain. This can limit the amount of resutls.
