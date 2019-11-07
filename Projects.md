@@ -9,3 +9,7 @@ March 23 2019<br>
 ## Vhack Api
 [VhackAPI](./Projects/VhackApi.md)<br>
 March 23 2019<br>
+
+## Blue vs Blue
+[blue-vs-blue](./Projects/King-Of-The-Hill.md)<br>
+November 7 2019<br>
