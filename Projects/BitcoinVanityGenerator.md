@@ -1,5 +1,3 @@
-<a href="https://michael-meade.github.io/" style='margin-right:20px'>Home</a>
-<a href="https://michael-meade.github.io/Projects" style='margin-right:20px'>Projects</a>
 <br>
 By default, the script will save the newly created address in the "wallets" directory. The lib is programmed to save the information into a txt file with the BTC address as the file name. <br> 
 ### Features
