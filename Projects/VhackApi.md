@@ -1,3 +1,5 @@
+## Notice
+VhackOs no longer exists, the game dev created a whole new hacking game. Which I was device banned from the game. Not to mention I lost interest.
 ## VhackOs Api
 VhackOS is hacking sim game for android. 
 
