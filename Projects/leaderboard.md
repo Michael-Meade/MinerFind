@@ -10,11 +10,14 @@ The purpose of the scoreboard server is to handle the creation of user accounts,
   - run ```rake users```
   - Installs the needed gems
   - run ```rake install```
+  - Also creates the users.db
 - config.json
   - the config file. This holds the api key and also the settings
   
 
 ## Setting up everything
-Running ```rake install``` will install all the needed gems and download slqite. It assumes that the user does not have sqlite installed.<br>
+Running ```rake install``` will install all the needed gems and download slqite. It assumes that the user does not have sqlite installed.<br><br>
+
+After installing sqlite, now we can 
 
 
