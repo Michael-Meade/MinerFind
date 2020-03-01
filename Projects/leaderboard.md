@@ -1,6 +1,6 @@
 # How sign up works
 When the user signs up, a randomly generated password is generated. During the singup proccess, the script will use the <a href="https://github.com/net-ssh/net-ssh">net-ssh gem</a> to login into the player server and create a user on the system.  
-While that is being done, the scoreboard server eneters the new user's information into the database.
+While that is being done, the scoreboard server inserts the new user's information into the database.
 After the information is entered into database and the Linux user is created on the player server, a text file will be downloaded in the new users browser. Inside this text file, includes the players team_name, irn and the randomly generated password.<br><br>
 
 For the player to login to the player server, they need to use the following command: ```ssh team_name@player_server_ip```. After running the command, the user should be prompted for a password. The password for their account is in the text file that was downloaded.
