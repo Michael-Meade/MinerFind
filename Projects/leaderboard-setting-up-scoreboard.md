@@ -8,4 +8,7 @@ To install the gems and packages, use the command ```rake install```. This scrip
 
 To create the table, use the command ```rake users```. 
 
-
+# The files that need to be edited
+In order to SSH into the player server, we use the <a href="https://github.com/net-ssh/net-ssh">net-ssh gem</a>.
+The net-ssh gem uses password base authentication to SSH into the player server to create a user with the team name.
+Edit the following file and change the player server IP & the password: ```sql/db.rb```.
