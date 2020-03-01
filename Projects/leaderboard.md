@@ -12,10 +12,8 @@ The purpose of the scoreboard server is to handle the creation of user accounts,
   
   
 ### rakefile.rb
-   Makes it easy to creatation of the User table.
-  - run ```rake users```
-  - Installs the needed gems
-  - run ```rake install```
+  - To create the table, run ```rake users```
+  - To install the needed gems, run ```rake install```
   - Also creates the users.db<br>
   
   
