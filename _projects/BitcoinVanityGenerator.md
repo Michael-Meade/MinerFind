@@ -1,3 +1,4 @@
+---
 layout: projects
 title:  "Inside Linux Mining malware "
 by:     "Michael Meade"
