@@ -1,7 +1,17 @@
+# Setting Up blue-vs-blue leaderboard
+[leaderboard-setting-up-scoreboard](/.Projects/leaderboard-setting-up-scoreboard.md)
+March 1 2020
 
+## Bitcoin Vanity address Generator
+[Bitcoin-Vanity-generator](./Projects/BitcoinVanityGenerator.md)<br>
+March 29 2019<br>
+## Roku Troll
+[RokuTroll](./Projects/RokuTroll.md)<br>
+March 23 2019<br>
+## Vhack Api
+[VhackAPI](./Projects/VhackApi.md)<br>
+March 23 2019<br>
 
-{% for projects in site.projects %}
-  <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-  </li>
-{% endfor %}
+## Blue vs Blue
+[blue-vs-blue](./Projects/King-Of-The-Hill.md)<br>
+November 7 2019<br>
