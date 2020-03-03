@@ -1,3 +1,7 @@
+# How King of the hill works
+[how__does_king_of_the_hill_work](./Projects/King-Of-The-Hill.md)<br>
+March 1 2020
+
 # Setting Up blue-vs-blue leaderboard
 [leaderboard-setting-up-scoreboard](./Projects/leaderboard-setting-up-scoreboard.md)<br>
 March 1 2020
@@ -5,9 +9,11 @@ March 1 2020
 ## Bitcoin Vanity address Generator
 [Bitcoin-Vanity-generator](./Projects/BitcoinVanityGenerator.md)<br>
 March 29 2019<br>
+
 ## Roku Troll
 [RokuTroll](./Projects/RokuTroll.md)<br>
 March 23 2019<br>
+
 ## Vhack Api
 [VhackAPI](./Projects/VhackApi.md)<br>
 March 23 2019<br>
