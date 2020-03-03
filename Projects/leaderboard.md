@@ -1,3 +1,8 @@
+---
+layout: post
+title: How the Blue vs Blue scoreboard works.
+tags: blue-vs-blue, scoreboard, king of the hill, linux, sqlite3, ruby
+---
 # How sign up works
 When the user signs up, a randomly generated password is generated. During the singup proccess, the script will use the <a href="https://github.com/net-ssh/net-ssh">net-ssh gem</a> to login into the player server and create a user on the system.  
 While that is being done, the scoreboard server inserts the new user's information into the database.
