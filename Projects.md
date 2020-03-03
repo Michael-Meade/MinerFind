@@ -1,5 +1,5 @@
 # Setting Up blue-vs-blue leaderboard
-[leaderboard-setting-up-scoreboard](/.Projects/leaderboard-setting-up-scoreboard.md)
+[leaderboard-setting-up-scoreboard](./Projects/leaderboard-setting-up-scoreboard.md)
 March 1 2020
 
 ## Bitcoin Vanity address Generator
