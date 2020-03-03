@@ -1,10 +1,14 @@
 ## Projects
+---
+layout: default
+title: Blog
+---
+<h1>Latest Posts</h1>
 
-<ul>
-  {% for post in site.posts %}
+  {% for projects in site.posts %}
     <li>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      <p>{{ post.excerpt }}</p>
+      <h2><a href="{{ projects.url }}">{{ projects.title }}</a></h2>
+      <p>{{ projects.excerpt }}</p>
     </li>
   {% endfor %}
 </ul>
