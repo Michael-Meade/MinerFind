@@ -1,6 +1,6 @@
 
 
-{% for rojects in site.projects %}
+{% for projects in site.projects %}
   <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
   </li>
