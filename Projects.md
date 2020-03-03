@@ -4,5 +4,5 @@ layout: default
 title: Blog
 ---
 {% for Projects in site.Projects %}
-  <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+  <h3><a title="{{ page.title }}" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></h3>
 {% endfor %}
