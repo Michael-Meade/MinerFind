@@ -1,5 +1,5 @@
 # How King of the hill works
-[how__does_king_of_the_hill_work](./Projects/King-Of-The-Hill.md)<br>
+[king-of-the-hill](./Projects/King-Of-The-Hill.md)<br>
 March 1 2020
 
 # Setting Up blue-vs-blue leaderboard
