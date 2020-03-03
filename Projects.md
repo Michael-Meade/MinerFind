@@ -1,6 +1,4 @@
----
-layout: post
----
+
 ## Bitcoin Vanity address Generator
 [Bitcoin-Vanity-generator](./Projects/BitcoinVanityGenerator.md)<br>
 March 29 2019<br>
