@@ -1,14 +1,8 @@
 
-## Bitcoin Vanity address Generator
-[Bitcoin-Vanity-generator](./Projects/BitcoinVanityGenerator.md)<br>
-March 29 2019<br>
-## Roku Troll
-[RokuTroll](./Projects/RokuTroll.md)<br>
-March 23 2019<br>
-## Vhack Api
-[VhackAPI](./Projects/VhackApi.md)<br>
-March 23 2019<br>
 
-## Blue vs Blue
-[blue-vs-blue](./Projects/King-Of-The-Hill.md)<br>
-November 7 2019<br>
+{% for post in site.posts %}
+  <a href="{{ post.url }}">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.date | date_to_string }}</p>
+  </a>
+{% endfor %}
