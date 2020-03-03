@@ -4,7 +4,15 @@
 
 # Installing the Gems and Packages
 For the following sets of commands to work, it is important that you are in the same directory as ```rakefile.rb```
-To install the gems and packages, use the command ```rake install```. This script will assume that none of the gems or sqlite are already installed. 
+
+To install the gems, use the command ```rake install:gems```. This script will assume that none of the gems or sqlite are already installed. 
+Running ```rake install:gems``` will also run all the other tasks. The order that the tasks are ran is: 
+
+``` installing the gems => Installing the deps```
+
+Apache2 needs to be installed on the player server, this can be done by the following commands: ```sudo apt-get update; sudo apt-get --assume-yes install apache2```
+
+
 
 To create the table, use the command ```rake users```. 
 
