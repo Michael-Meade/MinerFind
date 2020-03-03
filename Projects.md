@@ -1,8 +1,9 @@
-## Projects
+
 ---
 layout: default
 title: Blog
 ---
+## Projects
 <h1>Latest Posts</h1>
 
   {% for projects in site.posts %}
