@@ -13,7 +13,7 @@ It currently has the following funcitonaly:
   The goal of this script was to make it easiy for the user to save all the information about the file in question in one spot that will make it 
   easier to look and write reports about. It is also written in a module way,  that would allow users to easily make it cutsomized.  
   <br>
-  ## Detecting Crytocurrency Addresses
+## Detecting Crytocurrency Addresses
   First thing the user should do if, they want to use the crypto class is make sure that it is required in the
   script. This can be done by putting the following on the top of the script. ```require_relative 'lib/crypto'```<br>
   
@@ -27,7 +27,7 @@ It currently has the following funcitonaly:
   
   The ```Crypto.detect_ssh(file_name)``` method is used to detect SSH keys that might be inside the scripts.
   
-   ## The Commands class
+## The Commands class
    
    The file command is basicly the [file comamnd](http://man7.org/linux/man-pages/man1/file.1.html). When the ```Command.file_command(file_name)``` method is used
    it will run the file command against the file and save the foutput in the file's output directory.  If the method detects that the file is dynamic linked it will run
