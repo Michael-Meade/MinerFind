@@ -1,6 +1,6 @@
 ## Purpose
 The purpose of this project is to make automate the proccess of reverse engineering scripts and binary. 
-. This project is meant to be ran on Linux operating system. The-Looker uses some of the Linux built in commands.
+This project is meant to be ran on Linux operating system. The-Looker uses some of the Linux built in commands.
 It currently has the following funcitonaly:
   [+] Runs and save the output from the strings command<br>
   [+] It could run the file command aganist the testing file<br>
