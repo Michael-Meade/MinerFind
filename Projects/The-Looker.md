@@ -2,12 +2,12 @@
 The purpose of this project is to make automate the proccess of reverse engineering scripts and binary. 
 . This project is meant to be ran on Linux operating system. The-Looker uses some of the Linux built in commands.
 It currently has the following funcitonaly:
-  [+] Runs and save the output from the strings command
-  [+] It could run the file command aganist the testing file
-  [+] The ability of detecting certain strings. The user can add strings anytime they want.
-  [+] The script also hashes the input file and saves the output. 
-  [+] It can also detect and save possible cryptocurrency addresses.
-  [+] Detect and save possible URLS.
+  [+] Runs and save the output from the strings command<br>
+  [+] It could run the file command aganist the testing file<br>
+  [+] The ability of detecting certain strings. The user can add strings anytime they want.<br>
+  [+] The script also hashes the input file and saves the output. <br>
+  [+] It can also detect and save possible cryptocurrency addresses.<br>
+  [+] Detect and save possible URLS.<br>
   [+] Detect possible SSH keys<br>
   The goal of this script was to make it easiy for the user to save all the information about the file in question in one spot that will make it 
   easier to look and write reports about. It is also written in a module way,  that would allow users to easily make it cutsomized.  
