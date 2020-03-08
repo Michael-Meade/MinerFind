@@ -12,7 +12,7 @@ It currently has the following funcitonaly:
   <br>
   The goal of this script was to make it easiy for the user to save all the information about the file in question in one spot that will make it 
   easier to look and write reports about. It is also written in a module way,  that would allow users to easily make it cutsomized.  
-  
+  <br>
   # Detecting Crytocurrency Addresses
   First thing the user should do if, they want to use the crypto class is make sure that it is required in the
   script. This can be done by putting the following on the top of the script. ```require_relative 'lib/crypto'```<br>
