@@ -9,6 +9,7 @@ It currently has the following funcitonaly:
   [+] It can also detect and save possible cryptocurrency addresses.<br>
   [+] Detect and save possible URLS.<br>
   [+] Detect possible SSH keys<br>
+  <br>
   The goal of this script was to make it easiy for the user to save all the information about the file in question in one spot that will make it 
   easier to look and write reports about. It is also written in a module way,  that would allow users to easily make it cutsomized.  
   
