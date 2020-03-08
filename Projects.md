@@ -1,3 +1,6 @@
+# Reverse Engineer: The Looker
+[the-looker](./Projects/The-Looker.md)<br>
+March 4 2019
 # How King of the hill works
 [Leaderboard](./Projects/leaderboard.md)<br>
 March 1 2020
