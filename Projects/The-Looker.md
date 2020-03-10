@@ -13,7 +13,7 @@ It currently has the following funcitonaly:
   The goal of this script was to make it easiy for the user to save all the information about the file in question in one spot that will make it 
   easier to look and write reports about. It is also written in a module way,  that would allow users to easily make it cutsomized.  
   <br>
-## Detecting Crytocurrency Addresses
+<h1>Detecting Crytocurrency Addresses</h1>
   First thing the user should do if, they want to use the crypto class is make sure that it is required in the
   script. This can be done by putting the following on the top of the script. ```require_relative 'lib/crypto'```<br>
   
@@ -27,14 +27,14 @@ It currently has the following funcitonaly:
   
   The ```Crypto.detect_ssh(file_name)``` method is used to detect SSH keys that might be inside the scripts.
   
-## The Commands class
+<h1>The Commands class>/h1>
    
    The file command is basicly the [file comamnd](http://man7.org/linux/man-pages/man1/file.1.html). When the ```Command.file_command(file_name)``` method is used
    it will run the file command against the file and save the foutput in the file's output directory.  If the method detects that the file is dynamic linked it will run
    the [ldd](http://man7.org/linux/man-pages/man1/ldd.1.html) command and saved the ouput.
    <h1>Hash_file</h1>
    ```Commands.hash_file(file_name)``` method will hash the file in [md5](https://tools.ietf.org/html/rfc1321) and add the output to the file's output folder.
-  <h1>Strings_command</h1>
+  <h2>Strings_command</h2>
   The ```Commands.strings_command(file_name)```  method will run the [strings command](https://linux.die.net/man/1/strings), by default it will save the output into a file's directory with the filename strings.txt
   There is another method named, ```Commands.detect_strings(file_name)``` that could be used with the command above. In the ```lists``` directory, the user can create a filenamed ```strings```. The user 
   could use this file to detect certain strings that they might be looking for. 
