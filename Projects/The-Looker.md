@@ -27,7 +27,7 @@ It currently has the following funcitonaly:
   
   The ```Crypto.detect_ssh(file_name)``` method is used to detect SSH keys that might be inside the scripts.
   
-<h1>The Commands class>/h1>
+<h1>The Commands class</h1>
    
    The file command is basicly the [file comamnd](http://man7.org/linux/man-pages/man1/file.1.html). When the ```Command.file_command(file_name)``` method is used
    it will run the file command against the file and save the foutput in the file's output directory.  If the method detects that the file is dynamic linked it will run
