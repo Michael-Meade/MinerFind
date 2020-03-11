@@ -41,3 +41,4 @@ It currently has the following funcitonaly:
   
   
   The method ```Crypto.detect_urls(file_name)``` uses a regex to detect URLs or IPS that may be inside the script. This script works best with uncompiled files.
+<br> [The-Looker](https://github.com/Michael-Meade/Ruby_RE)
