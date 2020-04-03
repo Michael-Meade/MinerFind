@@ -138,10 +138,15 @@ dt {
   font-weight: bold;
 }
 
-ul li {
-  list-style-image:url('../images/bullet.png');
-}
 
+ul li::before {
+  content: "\2022";
+  color: green;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
 blockquote {
   color: $blockquote-color;
   padding-left: 10px;
