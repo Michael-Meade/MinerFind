@@ -84,4 +84,15 @@
     <td>.dawg</td>
     <td>yooo dawg</td>
   </tr>
+  <tr>
+    <td>.linux</td>
+    <td>linux swag</td>
+  </tr>
+  <tr>
+    <td>.dawg</td>
+    <td>yooo dawg</td>
+  </tr>
+  <tr>
+    <td>.phat</td>
+    <td>thats phat.</td>
 </table>
