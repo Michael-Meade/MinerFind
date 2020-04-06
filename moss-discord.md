@@ -36,4 +36,52 @@
     <td>.lick</td>
     <td>licking</td>
   </tr>
+  <tr>
+    <td>.wack</td>
+    <td>Showing something is wack</td>
+  </tr>
+  <tr>
+    <td>.roasted</td>
+    <td>When you roast someone.</td>
+  </tr>
+  <tr>
+    <td>.dope</td>
+    <td>dope as the pope.</td>
+  </tr>
+  <tr>
+    <td>.firewall</td>
+    <td>figtin words</td>
+  </tr>
+  <tr>
+    <td>.dance</td>
+    <td>dancing is cool</td>
+  </tr>
+  <tr>
+    <td>.dance</td>
+    <td>dancing is cool</td>
+  </tr>
+  <tr>
+    <td>.fo</td>
+    <td>fo shizzle </td>
+  </tr>
+  <tr>
+    <td>.sad</td>
+    <td>When something is sad.</td>
+  </tr>
+  <tr>
+    <td>.plead</td>
+    <td>Plead the fifth.</td>
+  </tr>
+  <tr>
+    <td>.false</td>
+    <td>Show something false</td>
+  </tr>
+  <tr>
+    <td>.meanie</td>
+    <td>meanie</td>
+  </tr>
+  <tr>
+    <td>.dawg</td>
+    <td>yooo dawg</td>
+  </tr>
 </table>
