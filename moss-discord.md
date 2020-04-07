@@ -101,7 +101,7 @@
 <table>
   <tr>
     <th>Commands</th>
-    <th><th>What it Does</th></th>
+    <th>>What it Does</th>
   </tr>
   <tr>
     <td>.base64 mike</td>
