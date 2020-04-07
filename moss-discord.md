@@ -2,7 +2,7 @@
 <table>
   <tr>
     <th>Command</th>
-    <th>What Does It Do</th>
+    <th>What it Does</th>
   </tr>
   <tr>
     <td>.dab</td>
@@ -95,4 +95,37 @@
   <tr>
     <td>.phat</td>
     <td>thats phat.</td>
+</table>
+
+### <center>Encode</center>
+<table>
+  <tr>
+    <th>Commands</th>
+    <th><th>What it Does</th></th>
+  </tr>
+  <tr>
+    <td>.base64 mike</td>
+    <td>Base64 string</td>
+  </tr>
+  <tr>
+    <td>.unbase64 mike</td>
+    <td>base64 decode a string</td>
+  </tr>
+  <tr>
+    <td>.md5 mike</td>
+    <td>md5 a string</td>
+  </tr>
+  <tr>
+    <td>.sha1 mike</td>
+    <td>sha1 encodes a string</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>.bacon mike</td>
+    <td>uses the Bacon cipher on stirng</td>
+  </tr>
+  <tr>
+    <td>.unbacon mike</td>
+    <td>un bacons a string.</td>
+  </tr>
 </table>
