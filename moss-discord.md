@@ -118,7 +118,6 @@
   <tr>
     <td>.sha1 mike</td>
     <td>sha1 encodes a string</td>
-    <td>UK</td>
   </tr>
   <tr>
     <td>.bacon mike</td>
