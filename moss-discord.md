@@ -152,7 +152,11 @@
     <td>reverse thee latters of a string.</td>
   </tr>
   <tr>
-    <td>.hex mike</td>
-    <td>Hex a string.</td>
+    <td>.urlencode mike</td>
+    <td>url encode a string</td>
+  </tr>
+  <tr>
+    <td>.xor mike key</td>
+    <td>Xor encrypt a string with a key.</td>
   </tr>
 </table>
