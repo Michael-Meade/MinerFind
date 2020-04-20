@@ -160,3 +160,67 @@
     <td>Xor encrypt a string with a key.</td>
   </tr>
 </table>
+
+### <center>Search</center>
+<table>
+  <tr>
+    <th>Commands</th>
+    <th>>What it Does</th>
+  </tr>
+  <tr>
+    <td>.yt dog playing with cat</td>
+    <td>Searches youtube</td>
+  </tr>
+  <tr>
+    <td>.date</td>
+    <td>Get a historic fact that happened that day</td>
+  </tr>
+  <tr>
+    <td>.man ping</td>
+    <td>Search man pages</td>
+  </tr>
+  <tr>
+    <td>.moviedb ghost busters</td>
+    <td>Get imdb information</td>
+  </tr>
+  <tr>
+    <td>.strains obama</td>
+    <td>does stuff</td>
+  </tr>
+  <tr>
+    <td>.weed obama</td>
+    <td>does stuff</td>
+  </tr>
+  <tr>
+    <td>.hex mike</td>
+    <td>Hex a string.</td>
+  </tr>
+  <tr>
+    <td>.unhex mike</td>
+    <td>un Hex a string.</td>
+  </tr>
+ <tr>
+    <td>.binary mike</td>
+    <td>encode a string in binary.</td>
+  </tr> 
+  <tr>
+    <td>.unbinary mike</td>
+    <td>un binary a string.</td>
+  </tr>
+  <tr>
+    <td>.length mike</td>
+    <td>Get length of a string.</td>
+  </tr>
+  <tr>
+    <td>.reverse mike</td>
+    <td>reverse thee latters of a string.</td>
+  </tr>
+  <tr>
+    <td>.urlencode mike</td>
+    <td>url encode a string</td>
+  </tr>
+  <tr>
+    <td>.xor mike key</td>
+    <td>Xor encrypt a string with a key.</td>
+  </tr>
+</table>
