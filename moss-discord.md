@@ -192,35 +192,7 @@
     <td>does stuff</td>
   </tr>
   <tr>
-    <td>.hex mike</td>
-    <td>Hex a string.</td>
-  </tr>
-  <tr>
-    <td>.unhex mike</td>
-    <td>un Hex a string.</td>
-  </tr>
- <tr>
-    <td>.binary mike</td>
-    <td>encode a string in binary.</td>
-  </tr> 
-  <tr>
-    <td>.unbinary mike</td>
-    <td>un binary a string.</td>
-  </tr>
-  <tr>
-    <td>.length mike</td>
-    <td>Get length of a string.</td>
-  </tr>
-  <tr>
-    <td>.reverse mike</td>
-    <td>reverse thee latters of a string.</td>
-  </tr>
-  <tr>
-    <td>.urlencode mike</td>
-    <td>url encode a string</td>
-  </tr>
-  <tr>
-    <td>.xor mike key</td>
-    <td>Xor encrypt a string with a key.</td>
+    <td>.w 12304</td>
+    <td>Get weather.</td>
   </tr>
 </table>
