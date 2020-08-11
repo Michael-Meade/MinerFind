@@ -35,7 +35,7 @@ In Figure 4, I did some research about the IP. The IP is from a Chinese ISP name
  It looks like the attacker where just getting information about the box. They did not download or execute anything that would infect or own the system. 
 
 ## Other activities 
-What I found intresting is that a couple of attackers tired to use it as a proxy. They would request a bunch of sites, mostly cryptocurrency, popular sites such as netflix. But they also https://michael-meade.github.io/ targeting Gift Cards balance checking sites. Some of the sites they tired to use are listed bellow.
+What I found intresting is that a couple of attackers tired to use it as a proxy. They would request a bunch of sites, mostly cryptocurrency, popular sites such as netflix. But they also targeted Gift Cards balance checking sites. Some of the sites they tired to use are listed bellow.
 
 ```ruby
 amidacarecard.com
