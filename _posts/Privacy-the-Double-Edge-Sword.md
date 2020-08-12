@@ -12,6 +12,6 @@ Monero also incorpates ring signature. Ring singature takes a bunch of past tran
 transacation. With out it the blockchain will not process the transaction. The other members of the ring are all equal but used as decoys, this makes it impossible for anyone to 
 see who is the real sender. 
 
-
+Privacy is a tricky thing, on one hand
 
 
