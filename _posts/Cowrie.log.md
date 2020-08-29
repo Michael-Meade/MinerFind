@@ -9,3 +9,4 @@ Arrays are usually in the following format. [ "1". "2", "3". "4", "5" ]. The val
 I wanted to make sure that there were not duplicates of the same element. 
 
 ![Original code](https://i.imgur.com/cC6BbkJ.png=55x20)
+Instead of having the code above which uses Ruby's 
