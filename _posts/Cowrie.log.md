@@ -7,6 +7,7 @@ Design patterns purpose is to make the code more organized. Which makes it easie
 The whole idea of the 'get_links' method was to create an array of all the URLs that were accessed. "h" is the array I created to store all the urls. 
 Arrays are usually in the following format. ```ruby [ "1". "2", "3". "4", "5" ]```. The value between each of the " " is called an element. 
 I wanted to make sure that there were not duplicates of the same element. 
+[](https://i.imgur.com/cC6BbkJ.png=100x20)
 
 <img src="https://i.imgur.com/cC6BbkJ.png" width="150" height="250">
 Instead of having the code above which uses Ruby's 'include?' method to check to see if the the URL is not one of the arrays elements. The include? method will return true if the supplied string is an element. If it does not contain the supplied string it will return false. I used the ! operator to tell it if it [b]does not contain[/b] the supplied string to do the next step, which is to add the URL to the array. I used the << operator which will append it to the array.  But doing this way was kinda buggy and chunky. I wanted to improve on it. I was bored one day coding and was just looking at the code to decide what I should add next. It came to me there
