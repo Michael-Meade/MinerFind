@@ -8,4 +8,4 @@ The whole idea of the 'get_links' method was to create an array of all the URLs 
 Arrays are usually in the following format. [ "1". "2", "3". "4", "5" ]. The value between each of the " " is called an element. 
 I wanted to make sure that there were not duplicates of the same element. 
 
-![The-script](https://i.imgur.com/cC6BbkJ.png=100x20)
+![Original code](https://i.imgur.com/cC6BbkJ.png=55x20)
