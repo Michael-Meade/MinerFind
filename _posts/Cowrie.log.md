@@ -10,4 +10,4 @@ I wanted to make sure that there were not duplicates of the same element.
 
 
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="cC6BbkJ"><a href="https://imgur.com/cC6BbkJ">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<a href="https://i.imgur.com/cC6BbkJ.png"></a>
