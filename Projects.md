@@ -1,3 +1,7 @@
+# Cowrie oh wowey
+[Cowrie oh wowey](./Projects/cowrie_log.md)<br>
+Aug 29 2020
+
 # Reverse Engineer: The Looker
 [the-looker](./Projects/The-Looker.md)<br>
 March 4 2019
