@@ -8,7 +8,7 @@ The whole idea of the 'get_links' method was to create an array of all the URLs 
 Arrays are usually in the following format. ```[ "1". "2", "3". "4", "5" ]```. The value between each of the " " is called an element. 
 I wanted to make sure that there were not duplicates of the same element. 
 
-<img src="https://i.imgur.com/cC6BbkJ.png" alt="cowrie" width="400" height="400"><br>
+<img src="https://i.imgur.com/cC6BbkJ.png" alt="cowrie" width="400" height="350"><br>
 Instead of having the code above which uses Ruby's ```include?``` method to check to see if the the URL is not one of the arrays elements. The include? method will return true if the supplied string is an element. If it does not contain the supplied string it will return false. I used the ```!``` operator to tell it if it <b>does not contain</b> the supplied string to do the next step, which is to add the URL to the array. I used the ```<<``` operator which will append it to the array.  But doing this way was kinda buggy and chunky. I wanted to improve on it. I was bored one day coding and was just looking at the code to decide what I should add next. It came to me there
 that coding is like writting an essay for school.<br>
 
@@ -21,7 +21,7 @@ Once I am satisfied  that chunk works, I will move onto the next chunk. and so o
 
 After I get the whole idea working as a whole is when I start to pretty up the code. Its usually changing up methods, variables names, or simplizing the lines.  Sometimes I will create new folder names in my ruby directory, work on an idea in that directory. Make sure that everything works, after I am happy that everythign is working I will implement the idea into the project directory. <br>
 
-<img src="https://i.imgur.com/L3lAL1v.png" width="400" height="400"><br>
+<img src="https://i.imgur.com/L3lAL1v.png" width="400" height="350"><br>
 After doing some Googling, I found on <a href="https://stackoverflow.com/questions/14004325/add-element-to-an-array-if-its-not-there-already">stackoverflow.</a>. This cool little feature allows you enter an element into an array. It will check before it enters to make sure the element is unique and there is no repeats. I choose to do this becuase I wanted it to only show all the commands entered into terminal but not show repeats. 
 
 
