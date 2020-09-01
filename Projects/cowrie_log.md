@@ -44,3 +44,8 @@ This method does the same as the above but for the successful logins into the SS
 ```Cowrie::TopTen.success_both("cowrie.json")```<br>
 This method gets both the success and failed login attempts.
 
+```Cowrie::TopTen.top_ssh("cowrie.json")```<br>
+Get the Top Ten SSH hash. This could be used to figure out what amount attemps is the same attacker
+
+``````<br>
+
