@@ -21,18 +21,18 @@ After doing some Googling, I found on <a href="https://stackoverflow.com/questio
 
 
 ### The features
-```Cowrie::Commands.all("cowrie-9-21-2020.json")```
+```Cowrie::Commands.all("cowrie-9-21-2020.json")```<br>
 This method will get both all the commands and any links that were found in the Cowrie output. This could be used to download samples from the site.
 
-```Cowrie::SaveCommands.get_links("cowrie.json") ```
+```Cowrie::SaveCommands.get_links("cowrie.json") ```<br?
 This method coule be used to get all the URLS that is in the Cowrie output.
 
-```Cowrie::SaveCommands.get_commands("cowrie.json")```
+```Cowrie::SaveCommands.get_commands("cowrie.json")```<br>
 This method will get all the commands that the attackers have entered. This could be used to find out what command is being entered the most. 
 
-```Cowrie::TopTen.success_failed("cowrie.json")```
+```Cowrie::TopTen.success_failed("cowrie.json")```<br>
 This method will the amount of times that an attacker has failed to login into the SSH 
 
-```Cowrie::TopTen.success_success("cowrie.json")```
+```Cowrie::TopTen.success_success("cowrie.json")```<br>
 This method does the same as the above but for the successful logins into the SSH.
 
