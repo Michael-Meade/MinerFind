@@ -20,3 +20,19 @@ After I get the whole idea working as a whole is when I start to pretty up the c
 After doing some Googling, I found on <a href="https://stackoverflow.com/questions/14004325/add-element-to-an-array-if-its-not-there-already">stackoverflow.</a>. This cool little feature allows you enter an element into an array. It will check before it enters to make sure the element is unique and there is no repeats. I choose to do this becuase I wanted it to only show all the commands entered into terminal but not show repeats. 
 
 
+### The features
+```Cowrie::Commands.all("cowrie-9-21-2020.json")```
+This method will get both all the commands and any links that were found in the Cowrie output. This could be used to download samples from the site.
+
+```Cowrie::SaveCommands.get_links("cowrie.json") ```
+This method coule be used to get all the URLS that is in the Cowrie output.
+
+```Cowrie::SaveCommands.get_commands("cowrie.json")```
+This method will get all the commands that the attackers have entered. This could be used to find out what command is being entered the most. 
+
+```Cowrie::TopTen.success_failed("cowrie.json")```
+This method will the amount of times that an attacker has failed to login into the SSH 
+
+```Cowrie::TopTen.success_success("cowrie.json")```
+This method does the same as the above but for the successful logins into the SSH.
+
