@@ -55,10 +55,13 @@ Get the Top Ten SSH hash. This could be used to figure out what amount attemps i
 ```Cowrie::TopTen.daily("cowrie.json", "src_ip", "cowrie.login.success")```<br>
 The "cowrie.json" is where the user should enter what ever the name of their log file. The second argument is for what ever the user wants to scrape. In this example, it is grabbing the ```src_ip```. The last argument is for the event id. In this example, the user wanted only get information from attackers that succesfully logged in. But a user could change it to:
 - cowrie.login.failed
+- cowrie.login.success
 - cowrie.direct-tcpip.redirect
 - cowrie.client.version
 - cowrie.session.closed
-
+- cowrie.command.input
+- cowrie.direct-tcpip.request
+- 
 The top ten daily function will create a file like the following:
 ``` {"08-17-2020":[{"admin":3176,"1234":8}]} ```
 The method what ever date it is that day and create a array of that has the key and the amount of of times the data was entered. 
