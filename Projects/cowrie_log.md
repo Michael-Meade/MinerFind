@@ -52,5 +52,11 @@ This method gets both the success and failed login attempts.
 ```Cowrie::TopTen.top_ssh("cowrie.json")```<br>
 Get the Top Ten SSH hash. This could be used to figure out what amount attemps is the same attacker
 
-``````<br>
+```Cowrie::TopTen.daily("cowrie.json", "src_ip", "cowrie.login.success")```<br>
+The "cowrie.json" is where the user should enter what ever the name of their log file. The second argument is for what ever the user wants to scrape. In this example, it is grabbing the ```src_ip```. The last argument is for the event id. In this example, the user wanted only get information from attackers that succesfully logged in. But a user could change it toL:
+- cowrie.login.failed
+- cowrie.direct-tcpip.redirect
+- cowrie.client.version
+- cowrie.session.closed
+- 
 
