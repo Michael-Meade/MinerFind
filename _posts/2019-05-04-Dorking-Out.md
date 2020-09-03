@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Dorking Out"
+tags: [ google, dorks, osint, malware, linux, pastebin.com ]
 ---
 Dorks is a tool that can be used to find vulnerable devices, sites that contains sensitive information, or malware samples online. 
 <br>
