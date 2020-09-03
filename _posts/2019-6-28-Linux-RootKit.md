@@ -1,3 +1,7 @@
+---
+tags: [ linux malware, rootkit]
+---
+
 ### Looking into the domain
 
 After peaking into the bash script I noticed the following line ```declare -a temp_remote_host=("auth.to0ls.com" "111.90.140.35")```
