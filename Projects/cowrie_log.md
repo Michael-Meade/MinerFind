@@ -1,7 +1,6 @@
 # About
+This is probably my third or so time attempting to code a Cowrie log scraper. But this time is different because I experimented with design patterns. Design pattern's purpose is to make the code more organized. Which makes it easier to fix problems and add more features.
 
-This is probally my third or so time attempting to code a Cowrie log scraper. But this time is different because I experimented with design patterns.
-Design patterns purpose is to make the code more organized. Which makes it easier to fix problems and add more features.
 
 # What I learned
 The whole idea of the 'get_links' method was to create an array of all the URLs that were accessed. "h" is the array I created to store all the urls. 
