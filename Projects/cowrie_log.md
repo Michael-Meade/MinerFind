@@ -27,6 +27,8 @@ After I get the whole idea working as a whole is when I start to pretty up the c
 After doing some Googling, I found on <a href="https://stackoverflow.com/questions/14004325/add-element-to-an-array-if-its-not-there-already">stackoverflow.</a>. This cool little feature allows you enter an element into an array. It will check before it enters to make sure the element is unique and there is no repeats. I choose to do this becuase I wanted it to only show all the commands entered into terminal but not show repeats. 
 
 
+After doing some Googling, I found on <a href="https://stackoverflow.com/questions/14004325/add-element-to-an-array-if-its-not-there-already">stackoverflow.</a>. This cool little feature allows you to enter an element into an array. It will check before it enters to make sure the element is unique and there are no repeats. I choose to do this because I wanted it to only show all the commands entered into the terminal but not show repeats.
+
 ### The features
 
 ## Cowrie::Commands
