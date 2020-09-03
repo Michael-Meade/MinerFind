@@ -1,6 +1,7 @@
 ---
 title: "Cowrie Log parser"
 description: "A tool coded in ruby to parse cowrie log and save the information in json files"
+tags: [cowrie log, parser]
 ---
 
 # About
