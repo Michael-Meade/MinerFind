@@ -63,7 +63,10 @@ The "cowrie.json" is where the user should enter what ever the name of their log
 - cowrie.session.closed
 - cowrie.command.input
 - cowrie.direct-tcpip.request
-<br>
+
+
+
+<br><br>
 The top ten daily function will create a file like the following:
 ``` {"08-17-2020":[{"admin":3176,"1234":8}]} ```
 The method what ever date it is that day and create a array of that has the key and the amount of of times the data was entered. 
