@@ -1,5 +1,7 @@
+---
 title: "Cowrie Log parser"
 description: "A tool coded in ruby to parse cowrie log and save the information in json files"
+---
 
 # About
 This is probably my third or so time attempting to code a Cowrie log scraper. But this time is different because I experimented with design patterns. Design pattern's purpose is to make the code more organized. Which makes it easier to fix problems and add more features.
