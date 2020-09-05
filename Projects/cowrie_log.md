@@ -19,10 +19,10 @@ Instead of having the code above which uses Ruby's include? method to check to s
 You have to give it a look over and proof read the code. When coding something I usually have an idea of what it should do and how I should do it. When coding functions that might be complex I like to break down the idea into chunks.  I work on the first chunk.
 Once I am satisfied  that chunk works, I will move onto the next chunk. and so on. This also makes it easier to debug becuase you are only focusing on a small part of the code. This allows me to make sure that the idea of functionally is actually possible before putting all the pieces together.  But when I work on each chunk I take short cuts and use bad coding methods.<br>
 
-After I get the whole idea working as a whole is when I start to pretty up the code. Its usually changing up methods, variables names, or simplizing the lines.  Sometimes I will create new folder names in my ruby directory, work on an idea in that directory. Make sure that everything works, after I am happy that everythign is working I will implement the idea into the project directory. <br>
+After I get the whole idea working as a whole is when I start to pretty up the code. Its usually changing up methods, variables names, or simplizing the lines.  Sometimes I will create new folder names in my ruby directory, work on an idea in that directory. Make sure that everything works, after I am happy that everything is working I will implement the idea into the project directory. <br>
 
 <img src="https://i.imgur.com/L3lAL1v.png" width="400" height="350"><br>
-After doing some Googling, I found on <a href="https://stackoverflow.com/questions/14004325/add-element-to-an-array-if-its-not-there-already">stackoverflow.</a>. This cool little feature allows you enter an element into an array. It will check before it enters to make sure the element is unique and there is no repeats. I choose to do this becuase I wanted it to only show all the commands entered into terminal but not show repeats. 
+After doing some Googling, I found this on <a href="https://stackoverflow.com/questions/14004325/add-element-to-an-array-if-its-not-there-already">stackoverflow.</a>. This cool little feature allows you enter an element into an array. It will check before it enters to make sure the element is unique and there is no repeats. I choose to do this becuase I wanted it to only show all the commands entered into terminal but not show repeats. 
 
 
 ### The features
