@@ -22,7 +22,7 @@ Once I am satisfied  that chunk works, I will move onto the next chunk. and so o
 After I get the whole idea working as a whole is when I start to pretty up the code. Its usually changing up methods, variables names, or simplizing the lines.  Sometimes I will create new folder names in my ruby directory, work on an idea in that directory. Make sure that everything works, after I am happy that everything is working I will implement the idea into the project directory. <br>
 
 <img src="https://i.imgur.com/L3lAL1v.png" width="400" height="350"><br>
-After doing some Googling, I found this on <a href="https://stackoverflow.com/questions/14004325/add-element-to-an-array-if-its-not-there-already">stackoverflow.</a>. This cool little feature allows you enter an element into an array. It will check before it enters to make sure the element is unique and there is no repeats. I choose to do this becuase I wanted it to only show all the commands entered into terminal but not show repeats. 
+After doing some Googling, I found this on <a href="https://stackoverflow.com/questions/14004325/add-element-to-an-array-if-its-not-there-already">stackoverflow.</a>. This cool little feature allows you enter an element into an array. It will check before it enters to make sure the element is unique and there is no repeats. I choose to do this becuase I wanted it to only show all the commands entered into terminal but not show repeats. This can be done by using ```|=``` operator. This will only enter the element into the array if it is unique. 
 
 
 ### The features
