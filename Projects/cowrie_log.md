@@ -61,12 +61,28 @@ The "cowrie.json" is where the user should enter what ever the name of their log
 - cowrie.session.closed
 - cowrie.command.input
 - cowrie.direct-tcpip.request
-
-
-
 <br><br>
 The top ten daily function will create a file like the following:
 ``` {"08-17-2020":[{"admin":3176,"1234":8}]} ```
 The method what ever date it is that day and create a array of that has the key and the amount of of times the data was entered. 
+
+
+## Cowrie::Time
+
+```Cowrie::Time.date("9-21-2020-cowrie.json")```
+```Cowrie::Time.time("9-21-2020-cowrie.json")```
+
+These will get the days or time and save them to a file. It will save them in the time.json or date.json depending on what method is used.
+
+Example of output is: 
+
+```{"Sunday":44,"Friday":2624,"Saturday":5048,"Monday":4874}```
+
+The class it uses is named ```DateTimes```. Orginally I wanted it the class name to be ```Time``` but it gave an error. I think it already being used by the
+time class. This is a class that is built into Ruby that allows users to do stuff with the date or time. Such as get the current date, format the date in different ways.
+
+
+
+
 
 
