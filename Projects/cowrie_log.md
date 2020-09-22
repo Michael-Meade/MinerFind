@@ -78,7 +78,7 @@ Example of output is:
 
 ```{"Sunday":44,"Friday":2624,"Saturday":5048,"Monday":4874}```
 
-The class it uses is named ```DateTimes```. Orginally I wanted it the class name to be ```Time``` but it gave an error. I think it already being used by the
+The class it uses is named ```DateTimes```. Orginally I wanted it the class name to be ```Time``` but it gave an error. I think it  was already being used by the
 time class. This is a class that is built into Ruby that allows users to do stuff with the date or time. Such as get the current date, format the date in different ways.
 
 
