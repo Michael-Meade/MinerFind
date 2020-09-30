@@ -1,4 +1,4 @@
-<h1>What is SSRF?<h1>
+<h1>What is SSRF?</h1>
 SSRF stands for Server Site Request forgery. Some sites and companies will have services that run locally. For example some companies might host a Intranet inside their network.
 This is like a mini internet inside their network, in order to view it you have to be conntected to their network. 
 
