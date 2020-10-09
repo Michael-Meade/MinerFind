@@ -196,10 +196,30 @@
     <td>Get weather.</td>
   </tr>
 </table>
-### <center>Movies</center>
+<center>Movies</center>
 <table>
   <tr>
     <th>Command</th>
     <th>What it Does</th>
+  </tr>
+  <tr>
+    <td>.movie ls</td>
+    <td>Lists your movie listf</td>
+  </tr>
+  <tr>
+    <td>.movie date 1</td>
+    <td>sets the watch date. Ex: .movie date 1 10/11/2020.</td>
+  </tr>
+  <tr>
+    <td>.movie status 6</td>
+    <td>Changes the status of the movie.</td>
+  </tr>
+  <tr>
+    <td>.movie rate 8 good</td>
+    <td>Rate the movie: good, bad, okay</td>
+  </tr>
+  <tr>
+    <td>.movie add ghost buster</td>
+    <td>Adds movie to list.</td>
   </tr>
 </table>
