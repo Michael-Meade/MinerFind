@@ -5,6 +5,14 @@
     <th>What it Does</th>
   </tr>
   <tr>
+    <td>.boom</td>
+    <td>boom shalaka</td>
+  </tr>
+  <tr>
+    <td>.roast</td>
+    <td>ROASTED</td>
+  </tr>
+  <tr>
     <td>.dab</td>
     <td>Dabs for you</td>
   </tr>
