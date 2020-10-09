@@ -196,3 +196,10 @@
     <td>Get weather.</td>
   </tr>
 </table>
+### <center>Movies</center>
+<table>
+  <tr>
+    <th>Command</th>
+    <th>What it Does</th>
+  </tr>
+</table>
