@@ -204,6 +204,22 @@
     <td>.lmgtfy what is life</td>
     <td>Let me google that for you. </td>
   </tr>
+  <tr>
+    <td>.u muffins</td>
+    <td>Search urban dict</td>
+  </tr>
+  <tr>
+    <td>.yify Lock, Stock and Two Smoking Barrels</td>
+    <td>Searches yts.am</td>
+  </tr>
+   <tr>
+    <td>.tv the office</td>
+    <td>Get info about tv shows</td>
+  </tr>
+  <tr>
+    <td>.s how to tie a tie</td>
+    <td>Search DuckDuckGo</td>
+  </tr>
 </table>
 
 
