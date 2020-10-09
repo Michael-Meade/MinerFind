@@ -208,7 +208,8 @@
   </tr>
   <tr>
     <td>.movie date 1</td>
-    <td>sets the watch date. Ex: .movie date 1 10/11/2020.</td>
+    <td>sets the watch date. if not supplied a date it will get todays date.
+      Ex: .movie date 1 10/11/2020.</td>
   </tr>
   <tr>
     <td>.movie status 6</td>
