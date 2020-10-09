@@ -9,6 +9,14 @@
     <td>Dabs for you</td>
   </tr>
   <tr>
+    <td>.noice</td>
+    <td>noice</td>
+  </tr>
+  <tr>
+    <td>.good</td>
+    <td>good</td>
+  </tr>
+  <tr>
     <td>.smart</td>
     <td>When somone says something smart</td>
   </tr>
@@ -17,8 +25,37 @@
     <td>Sends a chicken butt. Good for trying to trick someone when bored.</td>
   </tr>
   <tr>
+    <td>.beans</td>
+    <td>beans</td>
+  </tr>
+  <tr>
+    <td>.save</td>
+    <td>save dat money</td>
+  </tr>
+  <tr>
+    <td>.heartache</td>
+    <td>heartache</td>
+  </td>
+  <tr>
     <td>.dead</td>
     <td>When something got u dead.</td>
+  </tr>
+  <tr>
+    <td>.great</td>
+    <td>great scott</td>
+  </tr>
+  
+  <tr>
+    <td>.hay</td>
+    <td>hay</td>
+  </tr>
+  <tr>
+    <td>.like</td>
+    <td>like i aint</td>
+  </tr>
+  <tr>
+    <td>.talk</td>
+    <td>what u talking bout willis?</td>
   </tr>
   <tr>
     <td>.ok</td>
@@ -57,8 +94,8 @@
     <td>dancing is cool</td>
   </tr>
   <tr>
-    <td>.dance</td>
-    <td>dancing is cool</td>
+    <td>.burn</td>
+    <td>burn utica</td>
   </tr>
   <tr>
     <td>.fo</td>
@@ -89,12 +126,42 @@
     <td>linux swag</td>
   </tr>
   <tr>
+    <td>.stab</td>
+    <td>stab</td>
+  </tr>
+  <tr>
+    <td>.bible</td>
+    <td>bible town</td>
+  </tr>
+  <tr>
+    <td>.crazy</td>
+    <td>crazy hazy</td>
+  </tr>
+  <tr>
+    <td>.dew</td>
+    <td>do the dew</td>
+  </tr>
+  <tr>
+    <td>.beerme</td>
+    <td>beer</td>
+  </tr>
+  <tr>
+    <td>.racism</td>
+    <td>Teach racism a lesson</td>
+  </tr>
+  <tr>
+    <td>.yup</td>
+    <td>yuuuup</td>
+  </tr>
+
+  <tr>
     <td>.dawg</td>
     <td>yooo dawg</td>
   </tr>
   <tr>
     <td>.phat</td>
     <td>thats phat.</td>
+  </tr>
 </table>
 
 ### <center>Encode</center>
