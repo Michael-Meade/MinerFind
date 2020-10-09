@@ -196,7 +196,7 @@
     <td>Get weather.</td>
   </tr>
 </table>
-<center>Movies</center>
+### <center>Movies</center>
 <table>
   <tr>
     <th>Command</th>
