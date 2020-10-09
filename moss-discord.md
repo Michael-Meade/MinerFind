@@ -195,6 +195,15 @@
     <td>.w 12304</td>
     <td>Get weather.</td>
   </tr>
+  <tr>
+    <td>.stock pep</td>
+    <td>Get stocks</td>
+  </tr>
+  
+  <tr>
+    <td>.lmgtfy what is life</td>
+    <td>Let me google that for you. </td>
+  </tr>
 </table>
 
 
