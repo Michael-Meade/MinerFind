@@ -196,6 +196,8 @@
     <td>Get weather.</td>
   </tr>
 </table>
+
+
 ### <center>Movies</center>
 <table>
   <tr>
