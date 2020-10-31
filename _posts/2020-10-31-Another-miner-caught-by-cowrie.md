@@ -48,4 +48,8 @@ systems history file contents. After all that is done, the script uses the pkill
 The attcker then following command `echo wedonehereboiz-allwgetz` to echo the text "wedonehereboiz-allwgetz".
 
 ### The Miner Config
-The bash script that was`http://45.148.10.186/config.json`
+The miner config that the attacker downloaded was using the following pool: `pool.supportxmr.com:7777`
+
+The Monero addresst he attacker was using is: `44UQBpc6HKtGDymsvkW7995ftPTjoCi1Se5QEGPG2HMYfrw1DMp3thnCutiCQFPWvVcZqYVdwN6bUgMbAMou1skr8hxmZVv`.
+
+![44UQBpc6HKtGDymsvkW7995ftPTjoCi1Se5QEGPG2HMYfrw1DMp3thnCutiCQFPWvVcZqYVdwN6bUgMbAMou1skr8hxmZVv-pools-info](https://i.imgur.com/wsallzy.png)
