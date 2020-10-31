@@ -53,3 +53,7 @@ The miner config that the attacker downloaded was using the following pool: `poo
 The Monero addresst he attacker was using is: `44UQBpc6HKtGDymsvkW7995ftPTjoCi1Se5QEGPG2HMYfrw1DMp3thnCutiCQFPWvVcZqYVdwN6bUgMbAMou1skr8hxmZVv`.
 
 ![44UQBpc6HKtGDymsvkW7995ftPTjoCi1Se5QEGPG2HMYfrw1DMp3thnCutiCQFPWvVcZqYVdwN6bUgMbAMou1skr8hxmZVv-pools-info](https://i.imgur.com/wsallzy.png)
+
+The image above is the profits that the attacker has made as of 10/31/2020. The screen shows that the has `0.00337481 XMR` that is currently pending. The attackers has been paid `0.06339700`. On this date ( 10/31/2020 ) the attackers has only made $ 8.092627049999999. The attacker also has XMR worth 0.4307944965 in 
+pending XMR. The attacker has the hash rate of `8.7 KH/s `. If the attacker was to stay at the same hash rate of 8.7 KH/s for a whole year, the pool predicts that
+the attacker would make `1.9447 XMR`. Currently this totals to `$ 248.240955`. 
