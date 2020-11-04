@@ -11,3 +11,7 @@ by:     "Michael Meade"
 
 # Get uniq bash script's that was downloaded on the honey pot
 `cat cowrie.json* | jq '. | select(.eventid | contains("cowrie.session.file_download")) .destfile' | grep ".sh" | grep -v ".ssh"  | sort | uniq`
+
+
+# top 10 downloaded files - removes null & duplicates
+`cat cowrie.json* | jq '. | select(.eventid | contains("cowrie.session.file_download")) .destfile' | grep -v "duplicate" | grep -v "null"  | sort | uniq -c | sort -bgr | head -n 10`
