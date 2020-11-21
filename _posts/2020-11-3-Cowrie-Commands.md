@@ -15,3 +15,7 @@ by:     "Michael Meade"
 
 # top 10 downloaded files - removes null & duplicates
 `cat cowrie.json* | jq '. | select(.eventid | contains("cowrie.session.file_download")) .destfile' | grep -v "duplicate" | grep -v "null"  | sort | uniq -c | sort -bgr | head -n 10`
+
+
+# Get all the hashes that were downloaded on  certain date
+```M=`ll | grep "Nov 21" |  awk ' {print  $9 } '`; file $M  | grep "text" | awk ' { print $1 } ' | cut -d ":" -f 1```
