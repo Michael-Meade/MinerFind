@@ -1,3 +1,9 @@
+
+
+# News 2.0
+[News 2.0](./Projects/News-2.0.md)<br>
+Dec 15, 2020
+
 # Cowrie oh wowey
 [Cowrie logger](./Projects/cowrie_log.md)<br>
 Aug 29 2020
