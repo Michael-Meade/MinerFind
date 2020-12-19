@@ -3,7 +3,7 @@ The purpose of this rake file is to make it easy to analyze Cowrie honey pot log
 The script has a few different features. It can get the top ten, export all the commands, view all the commands. 
 The script will read all the JSON Files in that directory.  The rakefile runs bash command with ruby 
 
-
+You can find the code at https://github.com/Michael-Meade/cowrie-rakefile
 # How to use
 
 ### Top
