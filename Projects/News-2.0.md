@@ -11,6 +11,8 @@ I also included a script that makes allows users to implment the project into a 
 ```gem install discordrb```<br>
 
 <br>
+
+
 ### News list
 
 The project also allows its users to show the list of news sites in different formants. It supports JSON and plain. 
