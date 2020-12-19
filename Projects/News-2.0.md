@@ -6,7 +6,7 @@ I also included a script that makes allows users to implment the project into a 
 
 ### Installing the gems that are needed
 
-```
+```ruby
 gem install metainspector
 
 gem install nokogiri
