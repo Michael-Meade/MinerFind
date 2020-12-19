@@ -9,3 +9,6 @@ with the name regex.json.
 ```HashSplash.new("7f83b1657ff1fc53b92dc18148a1d65dfc2d4b1fa3d677284addd200126d9069").identify```<br>
 This tool is not perfect and sometimes will detect multiple types of hashes. This is by design because I wanted a tool that might be useful for CTF. So it will keep going 
 untill it runs out of regex files in the `regex.json`
+
+
+You can get the code by going to <a href="https://github.com/Michael-Meade/HashSplash">Here</a>
