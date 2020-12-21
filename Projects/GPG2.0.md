@@ -28,3 +28,8 @@ end
 ```
 
 Since we did `< CMD`. We are able to successfully call the CMD method `run("gpg --import #{file}")` which will import a file into the key ring. 
+
+
+### The Utils Class
+
+The Utils class currently only has one method but It could be expanded to more stuff at a later time. Currently it gets the user's public key fingerprint. The GPG fingerprint is used to identify the public key. This part of the code is used by the encrypt class so that it can encrypt the file with the users public key. It was designed to work this way: the user will upload their public key. The bot will save the file as public.txt in the users directory on the bot. When ever it is needed to encrypt something with the users public key it will use the fingerprint class to get the fingerprint of public key that is located in the user's directory. Next it will use that fingerprint to ensure that the message or file will be encrypted with the users public key. 
