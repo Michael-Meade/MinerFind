@@ -39,7 +39,7 @@ The Utils class is where all the utilities scripts are stored. They make life ea
 
 
 
-Orginally I a method that would scrape the users public key file's username header. But i realized that not every public key has a username field. So I still needed to find a way to link the discord user to the right public key. 
+Orginally I had a method that would scrape the users public key username header. But i realized that not every public key has a username field. So I still needed to find a way to link the discord user to the right public key. After doing thinkinga abotu the problem and looking into GPG's  man page. I found that fingerprints would be solve my problem. 
 
-The fingerprint consists of a short hash that represents the public key. The fingerprint method's job is to read the users public key file from their profile and use the fingerprint to find their publick key on the keyring. It will the Public key and encrypt the BTC keys with the users public key. This means who ever has access to that private key that belongs to the public key will be able to read the BTC keys.
+The fingerprint consists of a short hash that represents the public key. The fingerprint method's job in the Util class is to read the users public key file from their profile and use the fingerprint to find their publick key on the keyring. It will the Public key and encrypt the BTC keys with the users public key. This means who ever has access to that private key that belongs to the public key will be able to read the BTC keys.
 
