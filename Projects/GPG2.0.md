@@ -41,6 +41,5 @@ The Utils class is where all the utilities scripts are stored. They make life ea
 
 Orginally I a method that would scrape the users public key file's username header. But i realized that not every public key has a username field. So I still needed to find a way to link the discord user to the right public key. 
 
-The fingerprint consists of a short hash that represents the public key. The fingerprint method job is to read the users public key file from their profile and create that fingerprint so I can then use that fingerprint to identify the users public key on my key ring. This ensures I encrypt the BTC keys with the users Public key. 
-
+The fingerprint consists of a short hash that represents the public key. The fingerprint method's job is to read the users public key file from their profile and use the fingerprint to find their publick key on the keyring. It will the Public key and encrypt the BTC keys with the users public key. This means who ever has access to that private key that belongs to the public key will be able to read the BTC keys.
 
