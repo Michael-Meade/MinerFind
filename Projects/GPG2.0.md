@@ -30,4 +30,13 @@ Originally I had a method that would scrape the user's public key username heade
 The fingerprint consists of a short hash that represents the public key. The fingerprint method's job in the Util class is to read the user's public key file from their profile and use the fingerprint to find their public key on the keyring. It will encrypt the BTC keys with the user's public key. This means whoever has access to that private key that belongs to the public key will be able to read the BTC keys.
 
 ### The Encrypt Class
-There are two ways to encrypt messages with GPG2.0. The first way is with the `encrypt_msg(text_to_encrypt)` method. This method encrypts text. The other method is for encrypting files. It uses the fingerpritn method in the Utils class to get the fingerprint of the public key. It will then use that fingerprint to get the users key and encrypt the file. 
+There are two ways to encrypt messages with GPG2.0. The first way is with the `encrypt_msg(text_to_encrypt)` method.This method encrypts text. This method uses gets the users public key and then encrypts text with the public key. It will return the encrypted text. 
+
+There is also a way to encrypt a file with PGP. The method that does this is: `Encrypt.encrypt_file(file_to_encrypt, public_key_path)`
+The following are examples uses:
+```ruby
+Encrypt.new.encrypt_file("encrypt Me", "path_to_publickey.pub")
+```
+```ruby
+Encrypt.new.encrypt_msg("happy Xmas", "path_to_publickey.pub")
+```
