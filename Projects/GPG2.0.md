@@ -1,3 +1,8 @@
+### GPG2
+.|.
+
+
+
 ### Orgin Story
 I have this discord chatbot named "Moss". One of his features is that he can create Bitcoin addresses. I wanted to promote good opsec and make it so that only the user who sent the command can see the keys. The code for Moss is open-sourced, so anyone could see if I was saving the BTC keys.
 So I had the idea to use GPG to encrypt the BTC keys with the user's public keys.
