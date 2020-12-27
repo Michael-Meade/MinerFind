@@ -33,6 +33,29 @@ The fingerprint consists of a short hash that represents the public key. The fin
 There are two ways to encrypt messages with GPG2.0. The first way is with the `encrypt_msg(text_to_encrypt)` method.This method encrypts text. This method uses gets the users public key and then encrypts text with the public key. It will return the encrypted text. 
 
 There is also a way to encrypt a file with PGP. The method that does this is: `Encrypt.encrypt_file(file_to_encrypt, public_key_path)`
+ 
+ The encrypt method also has a setting named: `fprint_settting` by default this setting is set to true.  Last night on 12/27/2020 I realized that the way I was doing it was stupid and made no sense. There is still a way to use read the users public key to get the fingerprint.
+ 
+ 
+ The logic is: 
+ If `fprint_setting` is not true (false) then
+ it will assume that `publickey_name` is the fingerprint of the users public key. Next it will encrypt the text or file with what ever
+ fingerprint was given in the publickey_name argument. But the programmer also has the options to read the users public key and create a fingerprint with that. 
+ 
+ But by default the `fprint_stting` is set as true. One way to implment this would be to keep the fingerprint of the users in a JSON file. When the user needs to encrypt soemthing. The script will read the config file, get the fingerprint and then encrypt what ever it needs to  encrypt. 
+ 
+
+
+
+
+Now when the user uploads their puiblic key, the bot will also create a fingerprint of the users public key. Save that hash in the user's config file. 
+This can be turned off if the programmers wants to by using the following code:
+
+```ruby
+Encrypt.new.encrypt_msg(text_to_encrypt, pubkey_name, false)
+```
+
+
 The following are examples uses:
 ```ruby
 Encrypt.new.encrypt_file("encrypt Me", "path_to_publickey.pub")
