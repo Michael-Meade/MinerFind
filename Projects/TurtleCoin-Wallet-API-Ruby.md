@@ -93,17 +93,66 @@ Wallet.new.open_wallet
 ## Addresses Import
 This will import a subwallet with the given private spend key. By default the `scanHeight` is 300000.
 ```ruby
-Wallet.new.addresses_import("3e2ced750b75cb01b85bd83a0f0a45623c51e6ba2debc506a1a3b71577ae0408"
+Wallet.new.addresses_import("3e2ced750b75cb01b85bd83a0f0a45623c51e6ba2debc506a1a3b71577ae0408")
 ```
+
+## Address Primary
+Get the primary address of the wallet.
+```ruby
+Wallet.new.address_primary
+```
+
 ## Get Address Balance
 An TRTL address needs to inputed. 
 ```ruby
 Wallet.new.balance("TRTLuxiuS26Budy7hQusmtW6T19gbfTnLiLSpXgxwFLDVaAq4JwD9h9A9HJr2ZhWwoBc8hkbEerBHXPDZq9MHSfQ3Qs5AEHRVtc")
 ```
 
-
 ## Balances
-
+Gets all the wallets Balances
 ```ruby
 Wallet.new.balances
+```
+
+## Key Mnemonic
+Gets the mnemonic seed for the address
+```ruby
+Wallet.new.keys_mnemonic("TRTLuxiuS26Budy7hQusmtW6T19gbfTnLiLSpXgxwFLDVaAq4JwD9h9A9HJr2ZhWwoBc8hkbEerBHXPDZq9MHSfQ3Qs5AEHRVtc")
+```
+
+
+## Keys
+Gets the wallet containers shared private key
+```ruby
+Wallet.new.keys
+```
+
+## Keys Address
+Gets the public & private spend key for a given address. It can't be used with a view only wallet.
+```ruby
+Wallet.new.keys_address("TRTLuxiuS26Budy7hQusmtW6T19gbfTnLiLSpXgxwFLDVaAq4JwD9h9A9HJr2ZhWwoBc8hkbEerBHXPDZq9MHSfQ3Qs5AEHRVtc")
+```
+
+## Status
+Get Wallet Status
+```ruby
+Wallet.new.status
+```
+
+
+## Set Node
+Set the node
+```ruby
+Wallet.new.set_node("127.0.0.1", "1234")
+```
+
+## Save 
+Wallet State
+```ruby
+Wallet.new.save
+```
+
+## Create Addresses
+```ruby
+Wallet.new.create_addresses
 ```
