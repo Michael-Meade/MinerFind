@@ -39,7 +39,7 @@ end
 In order to use the Wallet API, the wrapper has to send POST requests to the VPS thats hosting the Wallet API. 
 Below is the wrapper's post method. If the `j` is empty it will give the variable a nil value. IF j is not nil then it will use 'j' as the body. 
 This is done because some of the Wallet methods require authentication to use and some does. If `j` is nil then it will read from the config file
-and put that information in the body of the request. 
+and put that information in the body of the request. There is also a get method and put method too.
 ```ruby
 def post(meth, j = nil)
         if !j.nil?
@@ -58,4 +58,52 @@ def post(meth, j = nil)
             puts l.body
         end
 end
+```
+
+### The Wallet Class
+Like the config class, the Wallet Class will Inherit the HTTP class. This is needed so that we can call the get, post, put methods. Without it we would not be able to call it. This is where we use the Wallet API end points to do stuff. 
+
+Here is a quick list of what is possible:
+- open wallet
+- create addresses
+- list addresses
+- import addresses
+- get node information
+- save the wallet state
+- get an address balance
+- get the primary address
+- get the status of the wallet
+- get the addresses keys
+- get the shared private key
+- get keys mnemonic
+
+
+### How to use
+
+
+## List Addresses
+```ruby 
+Wallet.new.list_addresses
+```
+## Open Wallet
+To use a wallet you have to open it first.
+```ruby
+Wallet.new.open_wallet
+```
+## Addresses Import
+This will import a subwallet with the given private spend key. By default the `scanHeight` is 300000.
+```ruby
+Wallet.new.addresses_import("3e2ced750b75cb01b85bd83a0f0a45623c51e6ba2debc506a1a3b71577ae0408"
+```
+## Get Address Balance
+An TRTL address needs to inputed. 
+```ruby
+Wallet.new.balance("TRTLuxiuS26Budy7hQusmtW6T19gbfTnLiLSpXgxwFLDVaAq4JwD9h9A9HJr2ZhWwoBc8hkbEerBHXPDZq9MHSfQ3Qs5AEHRVtc")
+```
+
+
+## Balances
+
+```ruby
+Wallet.new.balances
 ```
