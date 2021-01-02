@@ -156,3 +156,21 @@ Wallet.new.save
 ```ruby
 Wallet.new.create_addresses
 ```
+
+
+### Examples
+
+## Creaet new TRTL addresses and save in a JSON file.
+Creates a new TRTL address and saves in a JSON file.
+```ruby
+wallet = Wallet.new.create_addresses
+File.open("wallet2.json", "w") { |file| file.write(wallet) }
+```
+
+## List TRTL Addresses
+```ruby
+t = Wallet.new
+t.list_addresses.each do |addr|
+    puts addr
+end
+```
