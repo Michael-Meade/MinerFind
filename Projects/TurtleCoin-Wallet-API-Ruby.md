@@ -1,5 +1,5 @@
 ### TurtleCoin
-<a href="https://turtlecoin.lol/">TurtleCoin</a> is a privacy focused coin that was created on February 3,2018. 
+<a href="https://turtlecoin.lol/">TurtleCoin</a> is a privacy focused coin that was created on December 09, 2017. 
 Unlike Bitcoin, the blockchain is private, meaning no one that does not have the view key is able to see the transcations. On October 20th, 
 <a href="https://blog.turtlecoin.lol/archives/trtl-v2/">TurtleCoin</a> announced that they are planning to relaunch with version2 of TurtleCoin. 
 This project is a wrapper for  <a href="https://turtlecoin.github.io/wallet-api-docs/">wallet-api</a>. It's goal is to make it easy to use the TurtleCoin's api wallet.
