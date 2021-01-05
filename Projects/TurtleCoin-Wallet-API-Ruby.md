@@ -41,17 +41,11 @@ Below is the wrapper's post method. If the `j` is empty it will give the variabl
 This is done because some of the Wallet methods require authentication to use and some does. If `j` is nil then it will read from the config file
 and put that information in the body of the request. There is also a get method and put method too.
 ```ruby
-class ReadConfig
-    def initialize(config = nil)
-        if config.nil?
-            config = File.join("data", "config.json")
-        end
-        @config = config
-    end
-    def config
-        read = @config
-        JSON.parse(File.read(read))
-    end
+def post(meth, j = nil)
+    l = Excon.post(File.join(ip,meth), :debug_request => true, :debug_response => true, :body => j,  :headers => {
+        'accept'       => "application/json",
+        'X-API-KEY'    => key
+    }).body
 end
 ```
 
