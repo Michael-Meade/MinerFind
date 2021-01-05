@@ -6,7 +6,7 @@ This project is a wrapper for  <a href="https://turtlecoin.github.io/wallet-api-
 
 
 
-
+The code can be found <a href="https://github.com/Michael-Meade/TurtleWalletRPC">here</a>
 ### How it works?
 Before coding the actually wrapper I had to set up and install the Wallet API. I did this on my VPS. I made the the IP accessible on the internet.
 In order to connect to the Wallet API, the wrapper will need the following:
@@ -41,22 +41,17 @@ Below is the wrapper's post method. If the `j` is empty it will give the variabl
 This is done because some of the Wallet methods require authentication to use and some does. If `j` is nil then it will read from the config file
 and put that information in the body of the request. There is also a get method and put method too.
 ```ruby
-def post(meth, j = nil)
-        if !j.nil?
-             l = Excon.post(File.join(ip,meth), :body => j,  :headers => {
-            'accept'       => "application/json",
-            'X-API-KEY'    => key,
-            'Content-Type' => 'application/json',
-        })
-        puts l.body
-        else
-            l = Excon.post(File.join(ip,meth), :body => "daemonHost=#{dhost}&daemonPort=#{dport}&filename=#{filename}&password=#{pass}",  :headers => {
-                'accept'       => "application/json",
-                'X-API-KEY'    => key,
-                'Content-Type' => 'application/json',
-            })
-            puts l.body
+class ReadConfig
+    def initialize(config = nil)
+        if config.nil?
+            config = File.join("data", "config.json")
         end
+        @config = config
+    end
+    def config
+        read = @config
+        JSON.parse(File.read(read))
+    end
 end
 ```
 
