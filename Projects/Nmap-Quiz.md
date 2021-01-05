@@ -74,5 +74,28 @@ end
 
 The ```update_score``` method is the main method of the class. This is what is going to be called later. First the ```update_score``` method, calls the create_file method. This method checks to make sure that a file named ```quiz_score.json``` exists. If it does not exist, it will create a file named that and write ```{}``` as its content. 
 
-After that is done, the update_score methdo will read and parse the ```quiz_score``` file. 
+After that is done, the update_score method will read and parse the ```quiz_score``` file. It will then use the user's id to get that user current score. I
   
+
+
+
+### LeaderBoard Command
+
+
+The code below is the code behind the ```.lb``` command. 
+```ruby
+out = ""
+i   = 0
+j    = File.read("quiz_score.json")
+json = JSON.parse(j).to_h
+json.each do |keys, value|
+    user = keys
+    out += "#{i}] #{event.user.display_name} #{value}"
+    i+=1
+end
+event.respond(out)
+```
+First the code empty creates a string named ```out```. This is the string that will be sent to the chat. 
+Next it crates a variable named ```i``` with the value of 0.  Next it will read and parse the ```quiz_score``` file. 
+Using ```JSON.parse``` turns the score file into an array. That allows us to use ``` each do |key, values|```. It will automatically parse the JSON's file keys and values into two different variables, ``` key ``` and ```values```. 
+The keys of the JSON file is all the players Discord user id. Next the code combines, the ```i``` variable, the user's id and the value. Which is the score of the user. After it takes the combined string adds it to the end of the out variable.  Next it will +=1 to the ```i``` variable. After it has looped through all the users, it will send the output to the channel.   
