@@ -57,7 +57,19 @@ The cURL command goes in the ```get_gamil``` method where the string URL is.
 
 
 
+The ```run``` method, will create a directory named ```configs```. It will also create a file named: ```tracking.txt``` if it does not exist. It will use Feedjira to parse the XML, loop through each line of the XML file. It use Ruby's match method to check to see if the email header contains, the text: ```You have a package!```.
+Next it will read the ```tracking.txt``` file and checks if it ```does not``` include the publish date. This is done so it does not keep sending an alert for the same email.After that it will, send the alert using the Discord Ruby gem,. After it does that it will write the publishing date to the ```tracking.txt``` file.
 
+
+```GmailAlert.new.run``` will run all that .
+
+
+
+### Edid the crontab file
+
+
+To make sure that it will check all the time, we used crontabs.
+The command I used is the following: ```* * * * * /bin/bash -l -c 'cd /root/crons/;  package.rb'```. This crontab will the ```package.rb``` file every minute. 
 
 
 
