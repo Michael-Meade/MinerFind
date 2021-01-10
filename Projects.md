@@ -1,5 +1,5 @@
 # Mail Alert
-[Mail-Alert](./DiscordMailAlerts.md)<br>
+[Mail-Alert](./Projects/DiscordMailAlerts.md)<br>
 Jan 8, 2021 
 
 # security plus Quiz
