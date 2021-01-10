@@ -1,3 +1,7 @@
+# Covid Alert
+[Covid-Alert](./Projects/CovidAlert.md)<br>
+Jan 10, 2021
+
 # Mail Alert
 [Mail-Alert](./Projects/DiscordMailAlerts.md)<br>
 Jan 8, 2021 
