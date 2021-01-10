@@ -4,8 +4,7 @@ I am not the best at always checking my Email, so I created a system that is abl
 
 
 ### How it works?
-
-< a href="https://developers.google.com/gmail/gmail_inbox_feed">Google</a> has a feature that allows you to see your mail as a RSS feed.  To get that feed you have to be currently logged in to Gmail. 
+<a href="https://developers.google.com/gmail/gmail_inbox_feed"> Google </a> has a feature that allows you to see your mail as a RSS feed.  To get that feed you have to be currently logged in to Gmail. 
 
 Next you vistit this URL: ```https://mail.google.com/mail/feed/atom```
 If you are logged in, then you should see your emails. Now that we are able to get the mail, we have to find the emails that tell me that I have mail. 
