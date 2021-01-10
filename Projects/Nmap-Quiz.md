@@ -7,7 +7,7 @@ Plus after I got the meat of the project done, I woudl have all the time in the 
   
   
 ### How does it work
-  
+  <br>
   The end user starts the quiz by using the following comamnd:
   ```ruby
   !game
