@@ -23,4 +23,4 @@ The code source code can be found <a href="https://github.com/Michael-Meade/Gmai
 ### what it looks like in action
 
 
-<img src="https://i.imgur.com/qGhCnYz.png" alt="Covid Alert Ruby" width="500" height="600">
+<img src="https://i.imgur.com/qGhCnYz.png" alt="Covid Alert Ruby">
