@@ -17,3 +17,10 @@ The code source code can be found <a href="https://github.com/Michael-Meade/Gmai
 6. Copy the whole curl command into line 35. 
 7. Edit your crontab and paste the following command:`* * * * * /bin/bash -l -c 'cd /root/crons/; ruby utica.rb' 
 8. Dont forget to change the `/root/crons` with the location of where the sript is, also change `utica.rb` to the name of your script. 
+
+
+
+### what it looks like in action
+
+
+<img src="https://i.imgur.com/qGhCnYz.png" alt="Covid Alert Ruby" width="500" height="600">
