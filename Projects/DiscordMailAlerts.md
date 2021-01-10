@@ -29,8 +29,8 @@ class GmailAlert
       end
     end
     def get_gmail
-            command = %q{URL}
-            stdout, status = Open3.capture2(command)
+      command = %q{URL}
+      stdout, status = Open3.capture2(command)
       return stdout
     end
     def run
