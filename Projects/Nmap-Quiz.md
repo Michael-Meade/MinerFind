@@ -1,4 +1,3 @@
-
 ### Orgin Story
 
 I plan on taking the <a href="https://www.comptia.org/certifications/security">Security plus</a> exam, but I wanted a easy way to study. 
@@ -6,7 +5,9 @@ I plan on taking the <a href="https://www.comptia.org/certifications/security">S
 Plus after I got the meat of the project done, I woudl have all the time in the world to figure out a way to scrape the questions and answers. 
   
   
- ### How does it work
+  
+### How does it work
+  
   The end user starts the quiz by using the following comamnd:
   ```ruby
   !game
