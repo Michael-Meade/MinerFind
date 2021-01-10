@@ -1,3 +1,7 @@
+# Mail Alert
+[Mail-Alert](./DiscordMailAlerts.md)<br>
+Jan 8, 2021 
+
 # security plus Quiz
 [security_quiz](./Projects/Nmap-Quiz.md)<br>
 Jan 5, 2021
