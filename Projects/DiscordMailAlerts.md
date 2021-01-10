@@ -18,8 +18,7 @@ require 'open3'
 require 'discordrb'
 require 'feedjira'
 class GmailAlert
-    Bot = Discordrb::Commands::CommandBot.new token: '', client_id:  
-    , prefix: '.'
+    Bot = Discordrb::Commands::CommandBot.new token: '', client_id:  , prefix: '.'
     def discord(title)
       Bot.channel(674737776092250133).send_embed do |embed|
         embed.title = "You Got Mail"
