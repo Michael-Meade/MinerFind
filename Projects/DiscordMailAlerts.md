@@ -15,6 +15,7 @@ The ```GmailAlert``` class looks like this:
 ```ruby
 require 'rss'
 require 'open3'
+require 'fileutils'
 require 'discordrb'
 require 'feedjira'
 class GmailAlert
