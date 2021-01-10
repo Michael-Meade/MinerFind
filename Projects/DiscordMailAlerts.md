@@ -65,11 +65,11 @@ Next it will read the ```tracking.txt``` file and checks if it ```does not``` in
 
 
 
-### Edid the crontab file
+### Edit the crontab file
 
 
 To make sure that it will check all the time, we used crontabs.
-The command I used is the following: ```* * * * * /bin/bash -l -c 'cd /root/crons/;  package.rb'```. This crontab will the ```package.rb``` file every minute. 
+The command I used is the following: ```* * * * * /bin/bash -l -c 'cd /root/crons/;  ruby package.rb'```. This crontab will the ```package.rb``` file every minute. 
 
 
 
