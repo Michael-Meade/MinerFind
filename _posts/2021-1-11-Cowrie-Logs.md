@@ -32,7 +32,7 @@ This gets the top ten successful logins.
 
 
 ### Top Passwords
-Top ten passwords used by attackers
+Top ten passwords used by attackers.
 ```
 9054 "admin"
 2642 "password"
@@ -44,4 +44,50 @@ Top ten passwords used by attackers
   16 "test"
   16 "123"
   15 "1q2w3e4r"
+```
+
+
+### Top Usernames
+Top Ten usernames used by attackers.
+```
+14374 "root"
+  443 "nproc"
+   23 "admin"
+   21 "user"
+   20 "Administrator"
+   19 "ubuntu"
+   17 "pi"
+   14 "test"
+   11 "ubnt"
+   10 "testuser"
+```
+
+
+### Top TCP IP
+Top ten TCP ip. Uses it to SSH tunnel.
+```
+6107 "23.14.8.147"
+4274 "ya.ru"
+2426 "i.instagram.com"
+1546 "47.91.170.222"
+1489 "52.222.137.64"
+1487 "m.youtube.com"
+1360 "sp-ad-cf.audio.tidal.com"
+1338 "api.ipify.org"
+1180 "94.23.28.176"
+ 962 "205.178.189.131"
+```
+
+### Top Ten Commands
+```
+1027 "uname -a"
+ 517 "echo -e \"\\x6F\\x6B\""
+ 460 "cat /proc/cpuinfo | grep name | wc -l"
+ 459 "free -m | grep Mem | awk '{print $2 ,$3, $4, $5, $6, $7}'"
+ 459 "cat /proc/cpuinfo | grep name | head -n 1 | awk '{print $4,$5,$6,$7,$8,$9;}'"
+ 458 "which ls"
+ 458 "ls -lh $(which ls)"
+ 458 "crontab -l"
+ 457 "w"
+ 456 "uname -m"
 ```
