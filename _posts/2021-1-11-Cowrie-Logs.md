@@ -28,3 +28,20 @@ This gets the top ten successful logins.
    5 "95.111.246.151"
    5 "106.12.115.110"
 ```
+
+
+
+### Top Passwords
+Top ten passwords used by attackers
+```
+9054 "admin"
+2642 "password"
+ 776 "WWG1WGA"
+ 442 "nproc"
+ 144 "1234"
+  90 "pgj-heu05HQM=bMvz"
+  23 "123456"
+  16 "test"
+  16 "123"
+  15 "1q2w3e4r"
+```
