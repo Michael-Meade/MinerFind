@@ -91,3 +91,16 @@ Top ten TCP ip. Uses it to SSH tunnel.
  457 "w"
  456 "uname -m"
 ```
+
+
+### Top Ten Downloads
+```
+452 "/root/.ssh/authorized_keys"
+ 12 "/tftp1.sh"
+ 10 "/Heisenbergtftp2.sh"
+ 10 "/Heisenbergtftp1.sh"
+  7 "/vegaiscoming"
+  5 "/root/.ssh/.auth_k"
+  3 "/var/tmp/.var03522123"
+  3 "/tmp/up.txt"
+```
