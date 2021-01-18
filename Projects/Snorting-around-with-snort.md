@@ -1,3 +1,6 @@
+---
+title: Snorting Around with Snort
+---
 First we have to prep the machine before we install Snort. The instruction says we have to make a temporary. To do this use can use Ubuntu's mkdir command to make the directory. Then we have to use the 
 `cd` command to change to that directory. 
 
