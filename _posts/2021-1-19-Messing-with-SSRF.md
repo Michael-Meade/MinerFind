@@ -39,6 +39,6 @@ The response was like this:
 
 The attacker would have been able to access the API keys for the application. 
 
+If the vulnerable web app was live on the internet, attackers might also be able to access internal services used on the server. Some companies will create an locally hosted site in their internal networks. This usually is not accessible if to anyone that is not connected to the network. It could allow attackers to access local files, services such as FTP, HTTP, Mysql or any other services.
 
-
-<
+<img src="https://i.imgur.com/cbMXRXd.png">
