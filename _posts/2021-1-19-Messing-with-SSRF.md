@@ -64,7 +64,7 @@ end
 
 ```
 
-Siantra allows you to use ` set :port, 3333` to set the port you want to use. A attacker could use a script like this to scan the internal network of a site. 
+Siantra allows you to use `set :port, 3333` to set the port you want to use. A attacker could use a script like this to scan the internal network of a site. 
 
 ```ruby
 require 'excon'
