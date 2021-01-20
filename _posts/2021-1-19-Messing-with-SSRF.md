@@ -33,6 +33,7 @@ http://localhost:4567/?url=.config.json
 ```
 
 
+
 The response was like this:
 
 <img src="https://i.imgur.com/isJRCF8.png">
@@ -42,3 +43,35 @@ The attacker would have been able to access the API keys for the application.
 If the vulnerable web app was live on the internet, attackers might also be able to access internal services used on the server. Some companies will create an locally hosted site in their internal networks. This usually is not accessible if to anyone that is not connected to the network. It could allow attackers to access local files, services such as FTP, HTTP, Mysql or any other services.
 
 <img src="https://i.imgur.com/cbMXRXd.png">
+
+
+### Abusing SSRF for Port checking
+
+Companies that want extra protection from hackers, might not setup a service on a standard port. They might do this to make it harder for the hackers to fingerprint the service. Most HTTP servers like  Apache and ngix have a server-name header in the response of each request made. This can be also be removed to make it harder for the attackers to figure out what HTTP server the server is using. 
+
+
+Other services like FTP have banners that they might display that will usually tell what FTP server the site is using. 
+
+
+To show how SSRF can be abused to check ports on the internal server, we have to create a new web app. The new web look like this:
+
+```ruby
+require 'sinatra'
+set :port, 3333
+get '/' do
+	puts response.status
+end
+
+```
+
+Siantra allows you to use ` set :port, 3333` to set the port you want to use. A attacker could use a script like this to scan the internal network of a site. 
+
+```ruby
+require 'excon'
+s = 3299
+for i in s..3399
+    puts Excon.get("http://localhost:4567/?url=http://localhost:#{i}").status
+end
+```
+The script will loop through a bunch of nubmers and use the puts method to print out the status of the repsonse. A attcker could use this information to map out the internal network. The attacker could even use different protocols.
+
