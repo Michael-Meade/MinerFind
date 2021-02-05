@@ -6,4 +6,3 @@ theme: jekyll-theme-hacker
 collections:
   - projects
 output: true
-plugins: jekyll-sitemap
