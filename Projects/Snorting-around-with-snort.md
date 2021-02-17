@@ -60,6 +60,10 @@ Now we have to make the file, which preps the machine seo it can be installed qu
 ```
 ./configure --enable-sourcefire && make && sudo make install
 ```
+Now we neeed to create a symbolic link to ```/usr/sbin/snort```
+```
+sudo ln -s /usr/local/bin/snort /usr/sbin/snort
+```
 
 
 ### Credits to:
