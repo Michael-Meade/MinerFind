@@ -20,3 +20,12 @@ It will also change the directory to `daq-2.0.7`
 ```
 wget https://www.snort.org/downloads/snort/daq-2.0.7.tar.gz; tar -xvzf daq-2.0.7.tar.gz; cd daq-2.0.7
 ```
+
+
+
+
+
+
+### Credits to:
+
+- https://upcloud.com/community/tutorials/install-snort-ubuntu
