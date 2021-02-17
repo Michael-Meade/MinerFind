@@ -36,7 +36,8 @@ autoreconf -f -i
 ```
 
 Next we enter the 
-```sudo ./configure && sudo make && sudo make install
+```
+sudo ./configure && sudo make && sudo make install
 ```
 These commands will compile and install DAQ. 
 
