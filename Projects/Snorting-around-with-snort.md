@@ -66,6 +66,13 @@ Now we neeed to create a symbolic link to ```/usr/sbin/snort```
 sudo ln -s /usr/local/bin/snort /usr/sbin/snort
 ```
 
+```
+sudo ldconfig
+sudo ln -s /usr/local/bin/snort /usr/sbin/snort
+sudo groupadd snort
+sudo useradd snort -r -s /sbin/nologin -c SNORT_IDS -g snort
+```
+
 
 ### Credits to:
 
