@@ -75,3 +75,13 @@ end
 ```
 The script will loop through a bunch of nubmers and use the puts method to print out the status of the repsonse. A attcker could use this information to map out the internal network. The attacker could even use different protocols.
 
+
+
+### SSRF Scan
+<a href="https://github.com/Michael-Meade/SSRF-Scan">SSRF Scan</a> is a basic tool that is able to check for SSRF vulnerabilities. The tool will scan through all the ports through 1 and 65535. If the request comes back with a status 200 code then it will assume that it is vulnerable. This might give false postives if the site responds back with a status 200 code but displays an error on the page. 
+
+### Running the program
+```
+ruby test.rb --url http://localhost:4567?url=SSRF -ps http://127.0.0.1
+```
+The SSRF is needed to tell the program what parameter to try to check to see if it is vulnerable. 
