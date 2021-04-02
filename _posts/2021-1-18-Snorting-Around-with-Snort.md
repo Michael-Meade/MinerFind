@@ -31,3 +31,12 @@ This will tell snort to listen on the loopback interface.
 ![The-script](https://i.imgur.com/OplHFRU.png=100x20)
 Figure 1, shows the machine pinging itself. 
 
+Figure 1 shows that the IP 192.168.52.143 was pinging itself. Snort also detected that it was using Intertnet Control Message Protocol.
+
+
+### Fin Scan
+![Fin_scan](https://i.imgur.com/mkpxZ0r.png=100x20)
+The Figure above shows what it looks like to Snort when a Fin scan is performed on a machine. Snort is able to detect the scan using the following rule.
+```
+alert tcp any  any -> any any (msg:"SCAN FIN"; flow:stateless; flags:F,12; reference:arachnids,27; classtype:attempted-recon; sid:621; rev:7;)
+```
