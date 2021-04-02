@@ -19,7 +19,15 @@ wget https://www.snort.org/downloads/snort/daq-2.0.7.tar.gz; tar -xvzf daq-2.0.7
 ```
 
 
+To start Snort, run the following command. 
+```
+sudo snort -A console -i lo -u snort -g snort
+```
+This will tell snort to listen on the loopback interface. 
 
 ### Pinging
 
-<a href="https://i.imgur.com/OplHFRU.png">
+
+![The-script](https://i.imgur.com/OplHFRU.png=100x20)
+Figure 1, shows the machine pinging itself. 
+
