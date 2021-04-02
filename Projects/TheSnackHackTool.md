@@ -15,3 +15,7 @@ site. It is stil in the working but it will set up a bunch of guidelines like:
 - Check  & remove any  default pages ( server-info, server-status, etc )
 - Makes sure that there is not any sensitive inforamtion that is exposed in the robots.txt file
 
+
+
+### Source code
+The code for the project can be found <a href="https://github.com/Michael-Meade/snack_hack">here</a>
