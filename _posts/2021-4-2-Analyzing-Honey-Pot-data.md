@@ -59,5 +59,14 @@ top sites that those type of attackers has visited.
 ### Commands used
 These are the top ten commands that were used after logging on to the machine. 
 ```
-
+    711 "uname -a"
+    703 "cat /proc/cpuinfo | grep name | wc -l"
+    698 "cat /proc/cpuinfo | grep name | head -n 1 | awk '{print $4,$5,$6,$7,$8,$9;}'"
+    697 "free -m | grep Mem | awk '{print $2 ,$3, $4, $5, $6, $7}'"
+    696 "which ls"
+    696 "ls -lh $(which ls)"
+    696 "crontab -l"
+    695 "w"
+    695 "uname -m"
+    693 "uname"
 ```
