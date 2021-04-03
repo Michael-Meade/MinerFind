@@ -56,3 +56,8 @@ top sites that those type of attackers has visited.
    9828 "176.103.56.236"
    8159 "176.103.56.151"
 ```
+### Commands used
+These are the top ten commands that were used after logging on to the machine. 
+```
+
+```
