@@ -22,7 +22,7 @@ The Top passwords that attackers used to gain access to the honey pot.
     150 "123456"
      67 "12345"
 ```
-The last I wrote a post like this was on  <a href="https://michael-meade.github.io/2021/01/11/Cowrie-Logs.html">11 Jan 2021</a>. Looks like the password "" stole second place from "password. Also on Jan 11th 2020 the 3rd password ranked was "WWG1WGA", which now has disappeared from the list. 
+The last I wrote a post like this was on  <a href="https://michael-meade.github.io/2021/01/11/Cowrie-Logs.html">11 Jan 2021</a>. Looks like the password "" stole second place from "password". Also on Jan 11th 2020 the 3rd password ranked was "WWG1WGA", which now has disappeared from the list. 
 
 ### Top Usernames
 The Top ten users names that were used to access the machine
