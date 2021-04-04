@@ -70,3 +70,46 @@ These are the top ten commands that were used after logging on to the machine.
     695 "uname -m"
     693 "uname"
 ```
+These were basicly the same commands that the attackers used when we last did a post like this. The attackers used some of these commands to check to see if it was a honey pot. But they also used some of the commands to see if it is worth dropping a miner on the machine. 
+
+### Top SUCCESSFUL IPS
+These are the top ten IPS that the attackers used to successfully login into the machine. 
+```
+   11377 "190.2.144.57"
+   4399 "194.88.107.163"
+   4297 "45.227.255.163"
+   3950 "5.188.86.174"
+   3043 "45.227.255.205"
+   1837 "190.2.144.45"
+   1612 "89.39.105.84"
+   1576 "109.236.89.61"
+   1440 "5.182.39.62"
+   1434 "62.112.11.8"
+```
+### Top FAILED IPS
+These are the top IPS that attempted to login but they were denied.
+```
+    245 "199.195.248.34"
+    203 "51.158.123.160"
+    120 "177.38.33.170"
+    120 "171.224.180.125"
+    113 "77.245.105.165"
+    105 "77.237.73.190"
+     96 "180.241.44.109"
+     57 "81.161.63.251"
+     44 "199.195.251.205"
+     37 "109.104.151.108"
+```
+
+
+### The top 10 downloaded file
+This list the top ten files that were downloaded by the attackers.
+```
+     681 "/root/.ssh/authorized_keys"
+     13 "/var/tmp/.var03522123"
+     12 "/tmp/up.txt"
+      2 ""
+      1 "/var/tmp/.systemcache436621"
+```
+It makes sense that the top file was a "/root/.ssh/authorized_keys". This file is used by attackers so they can 
+maintain access to the machine. 
