@@ -70,7 +70,7 @@ These are the top ten commands that were used after logging on to the machine.
     695 "uname -m"
     693 "uname"
 ```
-These were basicly the same commands that the attackers used when we last did a post like this. The attackers used some of these commands to check to see if it was a honey pot. But they also used some of the commands to see if it is worth dropping a miner on the machine. 
+These were basically all the same commands that the attackers used when we last did a post like this. The attackers used some of these commands to check to see if it was a honey pot. But they also used some of the commands to see if it is worth dropping a miner on the machine. 
 
 ### Top SUCCESSFUL IPS
 These are the top ten IPS that the attackers used to successfully login into the machine. 
