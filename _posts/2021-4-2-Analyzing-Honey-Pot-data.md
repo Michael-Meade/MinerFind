@@ -113,3 +113,20 @@ This list the top ten files that were downloaded by the attackers.
 ```
 It makes sense that the top file was a "/root/.ssh/authorized_keys". This file is used by attackers so they can 
 maintain access to the machine. 
+
+
+### Malicious Files Hash
+- https://www.virustotal.com/gui/file/f94d30030d2de8e1d51c6c0fb2f325abed19e4faa4144036102f3d36ab3d6269/detection 
+- https://www.virustotal.com/gui/file/ff6f81930943c96a37d7741cd547ad90295a9bd63b6194b2a834a1d32bc8f85d/detection
+- https://www.virustotal.com/gui/file/60d6733c1940b62f13cfe42d34c0c43aa73f3b8822d8c21cad5d3ebd6b9f94e2/detection
+- https://www.virustotal.com/gui/file/585377407888c0c67400c98c7f82f778fe0a6de7aee7b2d4c8c455e4cf669118/detection
+- https://www.virustotal.com/gui/file/7c8b1ee9c8b72aae908c4275bc425b7520c84630da89483ae4f38c977ac4d5e7/detection
+- https://www.virustotal.com/gui/file/8fc4e21ce648b1f8be81f87f4e763d83dffe48635563a74a332ae05fa8e87c4b/detection
+- https://www.virustotal.com/gui/file/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855/detection
+- https://www.virustotal.com/gui/file/e4fafd804c7c9cf29326d4203a74333b211799798cb49d87adb45b9c52938bec/detection
+- https://www.virustotal.com/gui/file/1fa16aa1aaebe7a28ce893329d06d34b243ecafd34afd4c8d0a17aa4cc3f3563/detection
+- https://www.virustotal.com/gui/file/a8460f446be540410004b1a8db4083773fa46f7fe76fa84219c93daa1669f8f2/detection
+- https://www.virustotal.com/gui/file/535bec00a71b8e721a29274c0ccbd88a8d3c43a7f6072730b20e6c21d24fd6bb/detection
+- https://www.virustotal.com/gui/file/17c7d210942fda92f998834a01608c1e7154c2caaa4a5cb1a9121a130ca96352/detection
+
+some of the file that are text are not even detected as malicious. While others are detected by VirusTotal. 
