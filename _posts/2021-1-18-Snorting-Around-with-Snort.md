@@ -69,7 +69,8 @@ alert tcp any any -> any any (msg:"NULL Scan"; flags: 0;sid:9000002;)
 ```
 ### SQL Injection
 ![Sql-Injection](https://i.imgur.com/R4ugepU.png)
-If an attacker was to able to compromised a work station used by a employee, they might use that access to try to attack the SQL server. The following Snort rules can be used to try to detect a SQL Injection attack on the network. 
+If an attacker was to able to compromised a work station used by a employee, they might use that access to try to attack the SQL server. The following Snort rules can be used to try to detect a SQL Injection attack on the network.  <a href="https://github.com/sqlmapproject/sqlmap"> SQLMAP</a> was used to try to find a SQL injection vulnerability in a URL. 
+
 These rules probally could also be used to try to detect SQL injection attempts on the comany's site. 
 ```
 alert tcp any any -> any any (msg: "Error Based SQL Injection Detected"; content: "%27" ; sid:100000011; )
