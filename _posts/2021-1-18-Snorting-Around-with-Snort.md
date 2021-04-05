@@ -36,7 +36,17 @@ Figure 1 shows that the IP 192.168.52.143 was pinging itself. Snort also detecte
 
 ### Fin Scan
 ![Fin_scan](https://i.imgur.com/mkpxZ0r.png=100x20)
+Figure shows the Fin scan in action. 
+
 The Figure above shows what it looks like to Snort when a Fin scan is performed on a machine. Snort is able to detect the scan using the following rule.
 ```
 alert tcp any  any -> any any (msg:"SCAN FIN"; flow:stateless; flags:F,12; reference:arachnids,27; classtype:attempted-recon; sid:621; rev:7;)
+```
+
+### Xmas Scan
+![xmas_scan](https://i.imgur.com/Y46MsP9.png=100x20)
+The XMAS scan will send packets with the FIN, PSH, and URG flags. The Xmas scan got it's name becuase when it is viewed in WireShark, it lights up like a chrismas tree. The image above shows what the scan looks like to Snort. 
+The rule that I used to detect this scan looks like this:
+```
+alert tcp any  any -> any any (msg:"SCAN XMAS"; flow:stateless; flags:SRAFPU,12; reference:arachnids,144; classtype:attempted-recon; sid:625; rev:7;)
 ```
