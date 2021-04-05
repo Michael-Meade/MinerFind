@@ -58,3 +58,12 @@ TCP SYN scans are frequently used when scanning a large set of IPs or even IP ra
 ```
 alert icmp any any -> any any (msg: "NMAP ping sweep Scan"; dsize:0;sid:10000004; rev: 1;)
 ```
+
+
+### Null Scan
+![NullScan](https://i.imgur.com/MDWzT7k.png)
+During the Null scan the TCP flag header is set to 0. 
+Using the Snort below we were able to detect a Null scan being performed on the network.
+```
+alert tcp any any -> any any (msg:"NULL Scan"; flags: 0;sid:9000002;)
+```
