@@ -50,3 +50,11 @@ The rule that I used to detect this scan looks like this:
 ```
 alert tcp any  any -> any any (msg:"SCAN XMAS"; flow:stateless; flags:SRAFPU,12; reference:arachnids,144; classtype:attempted-recon; sid:625; rev:7;)
 ```
+
+### TCP SYN 
+![tcp_SYN](https://i.imgur.com/nwobyUU.png)
+
+TCP SYN scans are frequently used when scanning a large set of IPs or even IP ranges.  TCP SYN scan is considered a steath scan because it never finishes the threeway handshake. The attackers will send a SYN packet. If the port is opened on the victims machine it will send a SYN/ACK packet back, which tells the attackers that the port open. During a normal three way hanshake, the attacker would send back an AWK packet to tell the other computer that it wants to connect. The image above shows that the snort rule, 
+```
+alert icmp any any -> any any (msg: "NMAP ping sweep Scan"; dsize:0;sid:10000004; rev: 1;)
+```
