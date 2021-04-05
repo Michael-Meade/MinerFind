@@ -68,7 +68,7 @@ Using the Snort below we were able to detect a Null scan being performed on the 
 alert tcp any any -> any any (msg:"NULL Scan"; flags: 0;sid:9000002;)
 ```
 ### SQL Injection
-[Sql-Injection](https://i.imgur.com/R4ugepU.png)
+![Sql-Injection](https://i.imgur.com/R4ugepU.png)
 If an attacker was to able to compromised a work station used by a employee, they might use that access to try to attack the SQL server. The following Snort rules can be used to try to detect a SQL Injection attack on the network. 
 These rules probally could also be used to try to detect SQL injection attempts on the comany's site. 
 ```
