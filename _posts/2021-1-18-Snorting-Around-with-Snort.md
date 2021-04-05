@@ -67,3 +67,18 @@ Using the Snort below we were able to detect a Null scan being performed on the 
 ```
 alert tcp any any -> any any (msg:"NULL Scan"; flags: 0;sid:9000002;)
 ```
+### SQL Injection
+[Sql-Injection](https://i.imgur.com/R4ugepU.png)
+If an attacker was to able to compromised a work station used by a employee, they might use that access to try to attack the SQL server. The following Snort rules can be used to try to detect a SQL Injection attack on the network. 
+These rules probally could also be used to try to detect SQL injection attempts on the comany's site. 
+```
+alert tcp any any -> any any (msg: "Error Based SQL Injection Detected"; content: "%27" ; sid:100000011; )
+alert tcp any any -> any any (msg: "Error Based SQL Injection Detected"; content: "22" ; sid:100000012; )
+
+
+
+alert tcp any any -> any any (msg: "AND SQL Injection Detected"; content: "and" ; nocase; sid:100000060; )
+alert tcp any any -> any any (msg: "OR SQL Injection Detected"; content: "or" ; nocase; sid:100000061; )
+
+```
+Databases usually store sensitive such passwords and other personal information that could be abused by attackers to perform identity theft on the users. The passwords, emails or other data could be used to hack certain users on other platforms if they reused the same password. It is important for companys to have some type of detection mechanism in place for SQL injections to warn them of any attempts. If they fail to secure their user data, they might be fined a large sum of money for failure to protect their user's information. 
