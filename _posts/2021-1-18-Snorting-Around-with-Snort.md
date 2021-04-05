@@ -36,7 +36,7 @@ Figure 1 shows that the IP 192.168.52.143 was pinging itself. Snort also detecte
 
 ### Fin Scan
 ![Fin_scan](https://i.imgur.com/mkpxZ0r.png=100x20)
-Figure shows the Fin scan in action. 
+Figure 2 shows the Fin scan in action. 
 
 The Figure above shows what it looks like to Snort when a Fin scan is performed on a machine. Snort is able to detect the scan using the following rule.
 ```
