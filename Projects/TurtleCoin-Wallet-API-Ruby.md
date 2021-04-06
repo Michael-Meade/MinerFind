@@ -104,7 +104,7 @@ Wallet.new.balances
 ```
 ```
 require 'json'
-
+require_relative 'lib/TurtleCoin'
 w = Wallet.new
 JSON.parse(w.balances).each {|key, value| puts "Address: #{key["address"]}\nUnlocked: #{key["unlocked"]}\nLocked: #{key["locked"]}\n\n"}
 ```
@@ -135,6 +135,7 @@ Wallet.new.status
 ```
 ```ruby
 require 'json'
+require_relative 'lib/TurtleCoin'
 status = JSON.parse(Wallet.new.status)
 status.each { |key, value| puts  "#{key}: #{value}\n"  }
 ```
