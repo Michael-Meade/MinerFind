@@ -163,12 +163,6 @@ File.open("wallet2.json", "w") { |file| file.write(wallet) }
 
 ## List TRTL Addresses
 ```ruby
-t = Wallet.new
-t.list_addresses.each do |addr|
-    puts addr
-end
-```
-```ruby
 require 'json'
 wallet = JSON.parse(Wallet.new.list_addresses)
 wallet["addresses"].each { |addr| puts addr }
