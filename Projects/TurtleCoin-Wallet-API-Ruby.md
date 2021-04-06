@@ -102,6 +102,12 @@ Gets all the wallets Balances
 ```ruby
 Wallet.new.balances
 ```
+```
+require 'json'
+
+w = Wallet.new
+JSON.parse(w.balances).each {|key, value| puts "Address: #{key["address"]}\nUnlocked: #{key["unlocked"]}\nLocked: #{key["locked"]}\n\n"}
+```
 
 ## Key Mnemonic
 Gets the mnemonic seed for the address
