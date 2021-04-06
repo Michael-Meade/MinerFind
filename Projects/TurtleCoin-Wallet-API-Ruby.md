@@ -127,6 +127,11 @@ Get Wallet Status
 ```ruby
 Wallet.new.status
 ```
+```ruby
+require 'json'
+status = JSON.parse(Wallet.new.status)
+status.each { |key, value| puts  "#{key}: #{value}\n"  }
+```
 
 
 ## Set Node
@@ -163,7 +168,11 @@ t.list_addresses.each do |addr|
     puts addr
 end
 ```
-
+```ruby
+require 'json'
+wallet = JSON.parse(Wallet.new.list_addresses)
+wallet["addresses"].each { |addr| puts addr }
+```
 ### Check Balance
 ```ruby
 require_relative 'lib'
