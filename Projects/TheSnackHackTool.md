@@ -67,3 +67,31 @@ The code snippet above shows the robots.txt module that will be used to give the
 Next the code wil save the results array in a file named robots_score.txt. Each time a IP or domain is ran the code will automatically create a new directory with the name of the site. This is where it will save the robots_score.txt file. We next create a variable named score with the value of `0`.  Since URLS contain backslashes and other text that is not allowed to be in file names, we have to use Ruby's gsub method to remove any characters that are not allowed. Next we use Ruby's File.readlines method to loop through the robots_score.txt file line by line. First we have to use the strip method to remove any newlines or "\r". Now the code will visit take the URL and the path of the URL that was found in the robots.txt file and use the File.join method to create a valid URL. The code will visit the URL and check to see what status code the server sent back. If the server responds with a 200 status code then the code will += the score variable. 
 
 The last thing that the code will do is calculate the score by adding the total of the items in the robots.txt file and then divide the results by the score of valid web paths. 
+
+
+### Default Pages Module
+```ruby
+require 'excon'
+require './lib/utils'
+module SnackHack
+    module DefaultPages
+        def self.scanning_file
+            File.join("lists", "default_status.txt")
+        end
+        def self.run(url)
+            score = 0
+            File.readlines(self.scanning_file).each do |path|
+                response = Excon.get(File.join("https://", url, path.strip))
+                content  = response.body
+                # first we should check to make sure that the server gave us a 200 status code back
+                if response.status.to_i == 200
+                    score += 1
+                    puts "Detected default status page at :#{File.join(url, path.strip)}"
+                    Reports.new(url, path, "default_status_pages.txt" ).save_txt
+                end
+            end
+        Scoring.new(score, File.join("lists", "default_status.txt")).calc
+        end
+    end
+end
+```
