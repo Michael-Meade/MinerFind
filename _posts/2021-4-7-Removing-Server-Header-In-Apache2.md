@@ -5,7 +5,7 @@ being attacked if the version has a vulnerability. Especially if the version has
 
 ### Removing the Server Header content from Apache2
 This tutorial assumes that you already have Apache2 installed. Now open up the following file in your favorite editor,
-```/etc/apache2/conf-enabled/security.conf```.
+`/etc/apache2/conf-enabled/security.conf`.
 
 Now look for the line that contains `ServerTokens OS` to `ServerTokens Prod`. Also change the line that contains 
 the text `ServerSignature On` to `ServerSignature Off`
