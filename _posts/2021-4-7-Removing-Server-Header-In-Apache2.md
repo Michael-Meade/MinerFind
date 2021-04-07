@@ -4,16 +4,16 @@ A web Site admin might want to limit information like this becuase the informati
 being attacked if the version has a vulnerability. Especially if the version has a public exploit floating around on the web. 
 
 ### Removing the Server Header content from Apache2
-This tutorial assumes that you already have Apache2 installed. Now open up the following file in your favorite editor,
-`/etc/apache2/conf-enabled/security.conf`.
+This tutorial assumes that you already have Apache2 installed. Now open up the following file in your favorite editor.
+`/etc/apache2/conf-enabled/security.conf`
 
 Now look for the line that contains `ServerTokens OS` to `ServerTokens Prod`. Also change the line that contains 
 the text `ServerSignature On` to `ServerSignature Off`
 
 Now we have to use the following command to restart the Apache2 service.
-```
+`
 sudo service apache2 restart
-```
+`
 
 Next we have to install libapache2-mod-security2, enter the following command to install the package.
 ```
