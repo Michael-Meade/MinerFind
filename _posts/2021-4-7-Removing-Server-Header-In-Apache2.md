@@ -28,7 +28,7 @@ sudo a2enmod security2
 Apache2 has to restarted again for the firewall to be deployed. 
 
 Next open up `/etc/apache2/apache.conf` with your favorite text editor. If the text below is not in the file, add the text to the file. If the text is already in the file, change it to match the text below. 
-The 
+
 
 ```
 <IfModule security2_module>
