@@ -38,4 +38,14 @@ The
 </IfModule> 
 ```
 If you wanted to change the server name to something else, add the text between the two qoutes. 
+Now restart the Apache2 service again.
+
+### Checking to see if it worked
+Open up a web browser and enter the following URL, "http://localhost:80". 
+Now right click on the page and open up a inspect element and click the networking tab. You might need to refresh the page to see any requests. Now click on the request and look at the header information for the request. It should look like something like the image below. 
 ![no-server-header](https://i.imgur.com/NdrKKrc.png=100x20)<br>
+
+cURL coul also be used to check to see if the server name has been remove. 
+Run the following command in a terminal, `curl --head http://localhost`
+The output of the command should look similar to the Figure below.
+![curl](https://i.imgur.com/413YWes.png=100x20)<br>
