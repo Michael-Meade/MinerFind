@@ -27,4 +27,14 @@ sudo a2enmod security2
 
 Apache2 has to restarted again for the firewall to be deployed. 
 
+Next open up `/etc/apache2/apache.conf` with your favorite text editor. If the text below is not in the file, add the text.
+
+```
+<IfModule security2_module>
+    SecRuleEngine on
+    ServerTokens Min
+    SecServerSignature " "
+</IfModule> 
+```
+If you wanted to change the server name to something else, add the text between the two qoutes. 
 <a href="https://i.imgur.com/NdrKKrc.png">
