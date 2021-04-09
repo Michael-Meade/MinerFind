@@ -26,3 +26,5 @@ sudo a2enmod security2
 ```
 
 Apache2 has to restarted again for the firewall to be deployed. 
+
+<a href="https://i.imgur.com/NdrKKrc.png">
