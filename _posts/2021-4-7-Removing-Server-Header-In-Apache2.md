@@ -11,9 +11,9 @@ Now look for the line that contains `ServerTokens OS` to `ServerTokens Prod`. Al
 the text `ServerSignature On` to `ServerSignature Off`
 
 Now we have to use the following command to restart the Apache2 service.
-`
+```
 sudo service apache2 restart
-`
+```
 
 Next we have to install libapache2-mod-security2, enter the following command to install the package.
 ```
