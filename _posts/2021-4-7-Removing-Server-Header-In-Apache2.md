@@ -19,7 +19,7 @@ Next we have to install libapache2-mod-security2, enter the following command to
 ```
 sudo apt-get install libapache2-mod-security2
 ```
-<a href="https://www.digitalocean.com/community/tutorials/how-to-install-configure-and-use-modules-in-the-apache-web-server">kk</a> is a open source firewall that will protect the server from common web vulnerabilities. 
+modsecurity is a open source firewall that will protect the server from common web vulnerabilities. 
 Now that Mod2 is installed, we have to enable firewall by entering the command below. 
 ```
 sudo a2enmod security2
