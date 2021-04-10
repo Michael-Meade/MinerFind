@@ -29,9 +29,39 @@ The command used to gather the results is: `cat cowrie.json* | jq '. | select(.u
 
 ### Top TCP-IPs
 ```
-
+  64006 "23.235.255.50"
+  59573 "i.instagram.com"
+  46773 "ip-who.com"
+  39797 "67.205.145.217"
+  25264 "www.google.ru"
+  23137 "ya.ru"
+  22283 "www.google.com"
+  21841 "23.52.19.209"
+  17731 "2a00:1148:db00::8"
+  15890 "23.194.4.99"
 ```
 The command used: `cat cowrie.json* | jq '. | select(.eventid | contains("cowrie.direct-tcpip.request")) .dst_ip' | sort | uniq -c | sort -bgr | head -n 10`
+### Top FAILED IPs
+These are the top 10 IPs that tired to login into the honeypot unsuccessfully.
+```
+    245 "199.195.248.34"
+    203 "51.158.123.160"
+    184 "159.65.128.182"
+    183 "49.232.161.195"
+    183 "134.122.69.50"
+    183 "106.13.55.94"
+    179 "8.40.143.51"
+    179 "106.38.158.131"
+    174 "170.106.155.226"
+    173 "203.99.62.158"
+```
+The command used was `cat cowrie.json* | jq '. | select(.eventid | contains("cowrie.login.failed")) .src_ip' | sort | uniq -c | sort -bgr | head -n 10`
+
+### Top SUCCESSFUL IPs
+These are the top IPs that where successfully able to login into the honeypot.
+```
+```
+The command use to get the results: `cat cowrie.json* | jq '. | select(.eventid | contains("cowrie.login.success")) .src_ip' | sort | uniq -c | sort -bgr | head -n 10`
 
 ### Top Commands
 ```
