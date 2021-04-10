@@ -26,6 +26,10 @@
     413 "git"
 ```
 The command used to gather the results is: `cat cowrie.json* | jq '. | select(.username) | .username'  | sort | uniq -c | sort -bgr | head -10`
+### Download URLs
+```
+```
+The commad used was: `cat cowrie.json* | jq '. | select(.eventid | contains("cowrie.session.file_download")) | .url' | grep -v "null" | sort | uniq -c | sort -bgr | head -n 10`
 
 ### Top TCP-IPs
 ```
