@@ -28,6 +28,16 @@
 The command used to gather the results is: `cat cowrie.json* | jq '. | select(.username) | .username'  | sort | uniq -c | sort -bgr | head -10`
 ### Download URLs
 ```
+     156 "http://107.172.249.148/x86_64"
+     54 "http://134.122.65.100/yoyobins.sh"
+     40 "http://88.218.17.110/bins/Oblivion121.x86"
+     36 "tftp://134.122.65.100/yoyotftp2.sh"
+     36 "tftp://134.122.65.100/yoyotftp1.sh"
+     26 "http://71.127.148.69/.x/2sh"
+     26 "http://71.127.148.69/.x/1sh"
+     24 "http://45.14.149.204/x86_64"
+     18 "http://109.104.151.108/mtro/mbot.x86"
+     13 "http://71.127.148.69/.x/3sh"
 ```
 The commad used was: `cat cowrie.json* | jq '. | select(.eventid | contains("cowrie.session.file_download")) | .url' | grep -v "null" | sort | uniq -c | sort -bgr | head -n 10`
 
