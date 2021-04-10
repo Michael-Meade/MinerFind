@@ -60,8 +60,32 @@ The command used was `cat cowrie.json* | jq '. | select(.eventid | contains("cow
 ### Top SUCCESSFUL IPs
 These are the top IPs that where successfully able to login into the honeypot.
 ```
+  33761 "47.113.95.46"
+  17731 "194.88.107.163"
+  11377 "190.2.144.57"
+   8345 "45.227.255.163"
+   8101 "194.88.107.165"
+   7842 "5.188.86.174"
+   5942 "45.227.255.205"
+   3339 "190.2.144.45"
+   3145 "89.39.105.84"
+   2538 "5.182.39.62"
 ```
 The command use to get the results: `cat cowrie.json* | jq '. | select(.eventid | contains("cowrie.login.success")) .src_ip' | sort | uniq -c | sort -bgr | head -n 10`
+
+### Downloads
+```
+    16510 "/root/.ssh/authorized_keys"
+    113 "/var/tmp/.var03522123"
+    110 "/tmp/up.txt"
+     36 "/yoyotftp2.sh"
+     36 "/yoyotftp1.sh"
+     18 "/cp"
+      9 "/home/phil/.ssh/authorized_keys"
+      4 ""
+      2 "/var/tmp/.systemcache436621"
+```
+The command used was: `cat cowrie.json* | jq '. | select(.eventid | contains("cowrie.session.file_download")) | .destfile' |  grep -v "null" | sort | uniq -c | sort -bgr | head -n 10`
 
 ### Top Commands
 ```
