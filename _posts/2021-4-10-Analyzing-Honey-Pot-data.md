@@ -25,6 +25,7 @@
     432 "ftpuser"
     413 "git"
 ```
+The command used to gather the results is: `cat cowrie.json* | jq '. | select(.username) | .username'  | sort | uniq -c | sort -bgr | head -10`
 
 ### Top IPs
 ```
