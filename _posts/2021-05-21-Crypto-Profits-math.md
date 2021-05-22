@@ -22,19 +22,17 @@ class Crypto
         @bought_price   = bought_price
         @amount         = amount
     end
-    def amount
-        @amount
-    end
-    def current_amount
-        @current_amount
-    end
-    def bought_price
-        @bought_price
-    end
+    
     def calc
-        BigDecimal(current_amount.to_i - bought_price.to_i ) * amount
+        BigDecimal(@current_amount.to_i - @bought_price.to_i ) * @amount
     end
 end
 c = Crypto.new(37121.70, 10000, 0.1000)
 puts c.calc.to_f
 ```
+With the help of the <a href="https://ruby-doc.org/stdlib-2.5.1/libdoc/bigdecimal/rdoc/BigDecimal.html">BigDecimal gem</a> we are able to use numbers that are decimals with ease.
+The number '37121.70' is the current price of Bitcoin in USD. The '10000' number is the price that we bought the coins at. This number is also in USD. The '0.1000' number is the amount of coins that we bought. 
+
+The numbers are used as values to the instace variables: current_amount, bought_price and amount, respectively.
+
+The calc method is what we need to call for the class to do the math. It will take the instance variables and do the math and return the results. Note that the we used .to_f so that it will put the decimal in the right position.
