@@ -5,7 +5,7 @@
 
 
 ## The formula 
-The formula that will be used in this project is ( current_price - price_bought_at ) - amount. 
+The formula that will be used in this project is ( current_price - price_bought_at ) * amount. 
 As of right now, Bitcoin is worth $37,121.70. Lets say that we bought Bitcoin when it was $10,000. The amount of Bitcoin that we bought is .1000.
 
 The formula would look like this: 
