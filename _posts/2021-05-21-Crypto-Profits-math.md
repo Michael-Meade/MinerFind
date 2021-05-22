@@ -39,5 +39,6 @@ class Crypto
         BigDecimal(current_amount.to_i - bought_price.to_i ) * amount
     end
 end
-puts Crypto.new(37121.70, 10000, 0.1000).calc.to_f
+c = Crypto.new(37121.70, 10000, 0.1000)
+puts c.calc.to_f
 ```
