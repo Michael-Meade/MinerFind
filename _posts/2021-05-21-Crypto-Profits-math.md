@@ -5,7 +5,7 @@ title:  "Crypto-Profits-math"
 by:     "Michael Meade"
 ---
 
-<meta name="keywords" content="xmr linux malware, monero miner" />
+<meta name="keywords" content="Cryptocurrency profits" />
 
 
 ## The formula 
