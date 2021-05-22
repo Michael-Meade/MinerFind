@@ -1,11 +1,7 @@
 
----
-layout: post
-title:  "Crypto-Profits-math"
-by:     "Michael Meade"
----
 
-<meta name="keywords" content="Cryptocurrency profits" />
+
+<meta name="keywords" content="Cryptocurrency profits formula" />
 
 
 ## The formula 
