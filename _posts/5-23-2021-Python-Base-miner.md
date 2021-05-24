@@ -129,7 +129,7 @@ If the result of the ping to bash.givemexyz.in is not greator than 0, than the c
 The Figure below shows some information about the IP. 
 <img src="https://i.imgur.com/nKvnALf.png" alt="209.141.40.190">
 
-The figure below shows the results of the <a href="https://github.com/maurosoria/dirsearch">dirsearch results.</a>It shows the password & user list as well as a couple other binaries. 
+The figure below shows the results of the <a href="https://github.com/maurosoria/dirsearch">dirsearch results.</a>It shows the password & user list as well as a couple other binaries. The user and password list could be used by the attackers as a word lists when they brute force SSH services that are exposed on the internet. 
 <img src="https://i.imgur.com/CTaCkih.png">
 
 
