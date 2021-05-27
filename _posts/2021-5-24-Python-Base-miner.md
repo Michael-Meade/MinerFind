@@ -128,6 +128,9 @@ then
 
 fi
 ```
+
+Figure 5 contains the decoded string from Figure 4.
+
 The first thing the bash script does is run the following command:
 `ping -c 1 bash.givemexyz.in 2>/dev/null|grep "bytes of data" | wc -l ) -gt '0'`. The command will ping 'bash.givemexyz[.]in'. The '|' operator tells the command that after the machine is done pinging the domain, to now use the grep command to look for the string "bytes of data". Once again the script uses the '|' oeprator to now use the wc -l comamnd. This will tell the machine to count the lines but only give one output per line.  In bash -gt means greator then. When running the command on my machine, it outputed the '1'. The -gt is saying that the output must be greator than one. 
 
