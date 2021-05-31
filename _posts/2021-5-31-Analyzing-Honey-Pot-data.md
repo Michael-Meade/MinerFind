@@ -115,3 +115,22 @@ These are IPS that are attempting to use the honey pot as a proxy.
 The command used to get this data from the logs is: 
 
 `cat cowrie.json* | jq '. | select(.eventid | contains("cowrie.direct-tcpip.request")) .dst_ip' | sort | uniq -c | sort -bgr | head -n 10`
+
+
+### Squid Logs
+
+The following command was used to get the top ten .com domains in the Squid proxy Log. 
+
+```ruby
+    1091 www.newegg.com:443
+    619 990.us.claroadsxml.com:80
+    588 www.claroadsclick.com:80
+    551 redirect.claroads.com:80
+    496 www.shopdisney.com:443
+    401 www.amazon.com:443
+    328 www.homedepot.com:443
+    278 www.gamestop.com:443
+    211 api.tidal.com:443
+    207 lumtest.com:80
+```
+It does make sense that the newegg.com is the most common domain used. Attckers might use my honey pot and other computers on the internet for the attackers buy bots. Attackers might also use open proxies so that they brute force websites login. Most companies will block any logins that has attempted   multiple logins. By using random computers on the interet they can attempt to login into thousdands of attempted logins. 
