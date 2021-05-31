@@ -94,3 +94,22 @@ The command below is the command that was used to get the Top ten succesful Logi
 
 `cat cowrie.json* | jq '. | select(.eventid | contains("cowrie.login.success")) .src_ip' | sort | uniq -c | sort -bgr | head -n 10`
 
+
+
+### Top TCP IP
+
+These are IPS that are attempting to use the honey pot as a proxy.
+```ruby
+  54007 "ip-who.com"
+  52300 "23.235.255.50"
+  49043 "i.instagram.com"
+  29920 "67.205.145.217"
+  19518 "www.google.ru"
+  16513 "ya.ru"
+  15778 "rogers-fido.janraincapture.com"
+  15644 "23.52.19.209"
+  14804 "2a00:1148:db00::8"
+  14292 "www.google.com"
+```
+
+The command used to get this data from the logs is: cat cowrie.json* | jq '. | select(.eventid | contains("cowrie.direct-tcpip.request")) .dst_ip' | sort | uniq -c | sort -bgr | head -n 10
