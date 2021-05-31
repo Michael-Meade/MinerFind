@@ -112,4 +112,6 @@ These are IPS that are attempting to use the honey pot as a proxy.
   14292 "www.google.com"
 ```
 
-The command used to get this data from the logs is: cat cowrie.json* | jq '. | select(.eventid | contains("cowrie.direct-tcpip.request")) .dst_ip' | sort | uniq -c | sort -bgr | head -n 10
+The command used to get this data from the logs is: 
+
+`cat cowrie.json* | jq '. | select(.eventid | contains("cowrie.direct-tcpip.request")) .dst_ip' | sort | uniq -c | sort -bgr | head -n 10`
