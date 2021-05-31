@@ -134,3 +134,6 @@ The following command was used to get the top ten .com domains in the Squid prox
     207 lumtest.com:80
 ```
 It does make sense that the newegg.com is the most common domain used. Attckers might use my honey pot and other computers on the internet for the attackers buy bots. Attackers might also use open proxies so that they brute force websites login. Most companies will block any logins that has attempted   multiple logins. By using random computers on the interet they can attempt to login into thousdands of attempted logins. 
+
+The command used to scrape the Squid log was 
+` awk '{print $7}' access.log | sort | uniq -c | sort -bgr | grep -i ".com" | head -n 10`
