@@ -137,3 +137,18 @@ It does make sense that the newegg.com is the most common domain used. Attckers 
 
 The command used to scrape the Squid log was 
 ` awk '{print $7}' access.log | sort | uniq -c | sort -bgr | grep -i ".com" | head -n 10`
+
+
+```ruby
+     57 static.xx.fbcdn.net:443
+     29 c.netund.com:80
+     21 us.postsupport.net:443
+     13 cdn.jsdelivr.net:443
+     11 networksdk.ssacdn.com:443
+      9 scontent.xx.fbcdn.net:443
+      6 s3t3d2y7.ackcdn.net:443
+      4 creationdansecouture.centerblog.net:80
+      3 bcp.crwdcntrl.net:80
+      2 dcba.popcash.net:443
+```
+The data above shows the same commmand being ran but instead of searching for .com sites the command looks for .net
