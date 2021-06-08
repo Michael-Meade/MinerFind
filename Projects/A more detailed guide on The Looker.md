@@ -91,3 +91,9 @@ The next header is all the IPS and URLS that was found in the sample.
 The program has a feature that allows the user to create a list of intresting words or strings that they want to look for in the sample. 
 
 The last header of the file is the file hash header. It is important to get the hash of the sample. This is because it allows other people to find the same sample and makes sure that the sample was not changed. Changing one thing in the file would cause the hash to be a different.
+
+
+The image below shows all the files that the program downloaded. The URL to these files were found in the 
+script that the program analyzed. 
+![Downloadsfolder](https://i.imgur.com/G2k8Eqr.png)
+
