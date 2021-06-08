@@ -1,5 +1,5 @@
 # More Detailed Look At The Looker
-[MoreDetailedLookAtTheLooker](./Projects/A-more-detailed-guide-on-the-Looker.md)<br>
+[TheLooker](./Projects/A-more-detailed-guide-on-the-Looker.md)<br>
 June 4, 2021
 
 # SnackHackTool
