@@ -1,3 +1,7 @@
+# Wlan AutoConfig
+[WlanAutoConfig](./Projects/Powershell-script-starts-wlanSVC.md)<br>
+June 19, 2021
+
 # More Detailed Look At The Looker
 [TheLooker](./Projects/A-more-detailed-guide-on-the-Looker.md)<br>
 June 4, 2021
