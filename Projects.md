@@ -2,10 +2,6 @@
 [TheLooker](./Projects/A-more-detailed-guide-on-the-Looker.md)<br>
 June 4, 2021
 
-# SnackHackTool
-[SnackHackTool](./Projects/TheSnackHackTool.md)<br>
-April 2, 2021
-
 # Covid Alert
 [Covid-Alert](./Projects/CovidAlert.md)<br>
 Jan 10, 2021
