@@ -4,9 +4,9 @@ A couple weeks ago my laptop started to act funny. After the computer was booted
 
 
 ### The script
-The first thing it does it use the Get=Service cmd-let to get the name of the service,  ( WlanSvc ). It stored the output of the command as $wlanservice. Next we use a If statement to make sure that the proccess is stopped. 
+The first thing the snippet does is use the Get=Service cmd-let to get the name of the service,  ( WlanSvc ). The code stores the output of the command as $wlanservice. Next we use a If statement to make sure that the proccess is stopped. 
 
-By using the variable #wlanservice we are able to add .Status to it to only get the state of the service. If the state of the service is equal to Stopped then the code will print out "Starting WlanSVC" and use the Start-Service cmdlet to start the service.
+To get the state of the service we do: `$wlanservice.Status`. This will get the state of the service, if it is running or not. We use the "-eq" comparison operator to check if the status of the service is Stopped. If it is then we use Write-Output to print out a message stating that we are starting wlanSVC. After the message is printed we use the Start-Service to start the service.  Now we should be able to see all the networks that are within range. 
 
 
 ```powershell
