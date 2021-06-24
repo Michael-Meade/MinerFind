@@ -34,17 +34,18 @@ class GenPayId
     return payid + fingerprints
     end
 end
+class ExtractKey
+    def get_key(key)
+        key.split(//)[24..63].join
+    end
+end
+
 w       = Wallet.new
 h       = GenPayId.new("5AC5C5D28F1DE43CA2AB60733478C7E0057ADA34")
 addr    = w.address_primary.to_h["address"]
 address = JSON.parse(w.create_integrated_address(addr, h.generate_payid))["integratedAddress"]
 
 
-class ExtractKey
-    def get_key(key)
-        key.split(//)[24..63].join
-    end
-end
 puts "New address: #{address}\n"
 
 k   = ExtractKey.new
