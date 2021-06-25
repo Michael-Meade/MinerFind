@@ -65,7 +65,7 @@ address = JSON.parse(w.create_integrated_address(addr, h.generate_payid))["integ
 puts "New address: #{address}\n"
 
 k   = ExtractKey.new
-pay = k.get_key("2115a6439a759906db7bdea35ac5c5d28f1de43ca2ab60733478c7e0057ada34")
+pay = k.get_key(h.generate_payid)
 
 puts "GPG fingerprint: #{pay}"
 ```
