@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Messing-with-TurtleCoin-Payment-Ids"
+tags: [ TurtleCoin, paymentid ]
+---
+
+
 ### What is TurtleCoin?
 <a href="https://turtlecoin.lol/">TurtleCoin</a> is a decentralized privacy coin. It's purpose is to be used a currency, to allow the users to quickly and easily send money to businesses, friends and family. 
 The coins natural privacy features make it so that the user does not have to worry about getting tainted coins that came from a sketch source.
