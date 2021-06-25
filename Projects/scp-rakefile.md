@@ -25,5 +25,5 @@ The code snippet above is the code that allows the user to easily upload content
 The following command can be used to run the rakefile. 
 
 ```
-rake scp[the_file_you_Want_to_upload_to_your_vps, the_location_and_name_of_Where_you_want_to_save_it_as]
+rake scp[the_file_you_Want_to_upload_to_your_vps, he_location_and_name_of_Where_you_want_to_save_it_as]
 ```
