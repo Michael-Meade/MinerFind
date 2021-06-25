@@ -1,3 +1,7 @@
+# scp rakefile
+[scp-rakefile](./Projects/scp-rakefile.md)<br>
+June 25, 2021
+
 # Wlan AutoConfig
 [WlanAutoConfig](./Projects/Powershell-script-starts-wlanSVC.md)<br>
 June 19, 2021
