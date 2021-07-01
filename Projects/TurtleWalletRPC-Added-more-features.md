@@ -148,3 +148,5 @@ puts "New address: #{address}\n"
 SavePayment.new(payid)
 ```
 The first thing the script does is to create an instance of Wallet and store it as the variable w. Next we use the GenPayId to create a random hex, the class will then append the users fingerprint to the random hex. Next we use the wallet api to get the address of the wallet. After that is finished the code wall use the newly generated payment id and the address we obtained from the wallet to generate an integrated. The results will be used by the end user to pay for the service. The last thing the code does is use the SavePayment class to save the payment. The code above this will use this file to check for incomming transcations.
+
+A more detailed look can be found <a href="https://michael-meade.github.io/2021/06/23/Messing-with-TurtleCoin-Payment-Ids.html">here.</a>
