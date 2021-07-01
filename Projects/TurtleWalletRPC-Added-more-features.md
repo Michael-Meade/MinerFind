@@ -106,4 +106,45 @@ The script above should be ran by a cronjob. When a payment is created, the paym
 
 The code uses the fingerprint of their GPG public key. The code will generate a random string of hex, add the users public key at the end of the string. Next the code will create a integrated wallet with the payment id. 
 
+### The main script
+```ruby 
+require 'securerandom'
+require 'json'
+require 'TurtleCoin'
 
+class GenPayId
+    def initialize(fingerprints)
+        @fingerprints = fingerprints
+    end
+    def fingerprints
+        @fingerprints
+    end
+    def hex
+        SecureRandom.hex(32)
+    end
+    def generate_payid
+        payid = hex.split(//)[0..63 - fingerprints.length.to_i ].join
+    return payid + fingerprints
+    end
+end
+
+
+
+
+class SavePayment
+    def initialize(payment_id)
+        @payment_id = payment_id.downcase
+        puts "PPPP> #{@payment_id}"
+        File.open(File.join("waiting_payment.txt").to_s, 'a') { |file| file.write("\n" + @payment_id) }
+    end
+
+end
+w       = Wallet.new
+payid   = GenPayId.new("5AC5C5D28F1DE43CA2AB60733478C7E0057ADA34").generate_payid
+addr    = w.address_primary.to_h["address"]
+address = JSON.parse(w.create_integrated_address(addr, payid))["integratedAddress"]
+puts "#{payid}"
+puts "New address: #{address}\n"
+SavePayment.new(payid)
+```
+The first thing the script does is to create an instance of Wallet and store it as the variable w. Next we use the GenPayId to create a random hex, the class will then append the users fingerprint to the random hex. Next we use the wallet api to get the address of the wallet. After that is finished the code wall use the newly generated payment id and the address we obtained from the wallet to generate an integrated. The results will be used by the end user to pay for the service. The last thing the code does is use the SavePayment class to save the payment. The code above this will use this file to check for incomming transcations.
