@@ -150,3 +150,64 @@ SavePayment.new(payid)
 The first thing the script does is to create an instance of Wallet and store it as the variable w. Next we use the GenPayId to create a random hex, the class will then append the users fingerprint to the random hex. Next we use the wallet api to get the address of the wallet. After that is finished the code wall use the newly generated payment id and the address we obtained from the wallet to generate an integrated. The results will be used by the end user to pay for the service. The last thing the code does is use the SavePayment class to save the payment. The code above this will use this file to check for incomming transcations.
 
 A more detailed look can be found <a href="https://michael-meade.github.io/2021/06/23/Messing-with-TurtleCoin-Payment-Ids.html">here.</a>
+
+
+```ruby
+require 'json'
+require "fileutils"
+require 'securerandom'
+require_relative 'lib/TurtleCoin'
+class Json_temp
+    def initialize(user = nil)
+        if not user.nil?
+            @user = User
+        end
+    end
+    def json
+        json = {
+            "payment_id": SecureRandom.hex(32),
+            "credits": "6"
+        }.to_json
+    end
+end
+class Users
+    J    = Json_temp.new
+    def initialize(user)
+        @user = user
+        FileUtils.mkdir_p(File.join("users", @user))
+        if !(File.exist?(File.join("users", @user, "info.json")))
+            File.open(File.join("users", @user, "info.json"), 'w') { |file| file.write(J.json) }
+        end
+    end
+    def payment_id
+        r = File.join("users", @user, "info.json")
+        j = JSON.parse(File.read(r))["payment_id"]
+    end
+    def get_integrated
+        w     = Wallet.new
+        addr  = w.create_integrated_address("TRTLuxL46JJa4bTYMyQGLi4euHoe3QUNQQ5niiPOYah15pc6ESFdZJ59KmtLUzedHASfDRYPxVbEpYQsXUtBmQRL18pDdK72F5i", payment_id)
+        j     = JSON.parse(addr)["integratedAddress"]
+    end
+    def add_credits
+        r = File.join("users", @user, "info.json")
+        j = JSON.parse(File.read(r))
+        c = j["credits"].to_i
+        c += 6
+        j["credits"] = c
+    File.open(File.join("users", @user, "info.json"), 'w') { |file| file.write(j.to_json) }
+    end
+    def remove_credit
+        r = File.join("users", @user, "info.json")
+        j = JSON.parse(File.read(r))
+        c = j["credits"].to_i
+        c -= 1
+        j["credits"] = c
+    File.open(File.join("users", @user, "info.json"), 'w') { |file| file.write(j.to_json) }
+    end
+end
+
+k = Users.new("Mc")
+puts k.remove_credit
+```
+
+The code above could be used to add or remove credits. A system that will keep credits of who paid and how many credits they have left.
