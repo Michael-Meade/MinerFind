@@ -34,29 +34,85 @@ Next the script will create 2 new address.
 ### Checks Wallet Info
 ```ruby
 require_relative 'module_example'
-print("=========Wallet=========\n")
-puts TurtleCoin.get_balances
-print("=========Info=========\n")
-print("Address Count: " + TurtleCoin.address_count.to_s)
-print("\n")
-print("Saving addresses in addresses.txt...\n")
-
-status = TurtleCoin.status
-
-j = JSON.parse(status)
+require 'colorize'
+require 'terminal-table'
+require 'io/console'
 
 
-print("\n=========Status=========\n")
-print("Wallet Block Count: #{j["walletBlockCount"]}\n")
-print("Local Daemon Block Count: #{j["localDaemonBlockCount"]}\n")
-print("Network Block Count: #{j["networkBlockCount"]}\n")
-print("Peer Count: #{j["peerCount"]}\n")
-print("Hash Rate: #{j["hashrate"]}\n")
-print("View Wallet: #{j["isViewWallet"]}\n")
-print("Sub Wallet: #{j["subWalletCount"]}\n")
 
 
-TurtleCoin.save_addresses
+#status = TurtleCoin.status
+#j = JSON.parse(status)
+def view_wallet_switch(wallet)
+    if wallet 
+        return "true".green
+    else
+        return "false".red
+    end
+end
+
+while true
+
+    print("\n1] Node Info\n2] Balance\n3] Create integrated\n4] Create New Addr\n5] List Addresses\n6] Get view Key")
+    print("Enter cmd:\n")
+    cmd = gets
+    $stdout.clear_screen
+    if cmd.to_i == 1
+        user_table = Terminal::Table.new do |v|
+          v.title = "Wallet Info"
+          v.headings = 'Network Block Count', 'Peer Count', 'Local Daemon Block Count', 'Hash Rate', 'View Wallet', 'SubWallet #'
+          v << [ j["networkBlockCount"].to_s.green, j["peerCount"].to_s.green, j["localDaemonBlockCount"].to_s.green, j["hashrate"].to_s.green, view_wallet_switch(j["isViewWallet"]), j["subWalletCount"].to_s.green]
+          v.style = { :border_left => false, :border_right => false, :border => :unicode, :all_separators => true }
+        end
+    puts user_table
+    n = TurtleCoin.node
+    user_table = Terminal::Table.new do |v|
+          v.title = "Node Info"
+          v.headings = 'Daemon Host', 'Daemon Port', 'SSL', 'Node Fee', 'Node Address'
+          v << [ n["daemonHost"].to_s.green, n["daemonPort"].to_s.green, n["daemonSSL"].to_s.green, n["nodeFee"].to_s.green, n["nodeAddress"]]
+          v.style = { :border_left => false, :border_right => false, :border => :unicode, :all_separators => true }
+        end
+    puts user_table
+    elsif cmd.to_i == 2
+        l = TurtleCoin.get_balances_array
+        user_table = Terminal::Table.new do |v |
+          v.title = "Balances"
+          v.headings = 'Address', 'Unlocked', 'locked'
+          v << [ l[0][0], l[0][1], l[0][2]]
+          v.style = { :border_left => false, :border_right => false, :border => :unicode, :all_separators => true }
+        end
+    puts user_table
+    elsif cmd.to_i == 3
+        print("Enter address:")
+        addr = gets.strip
+        print("\n\n\n")
+        puts "Address: " + TurtleCoin.create_integrated(addr)["integratedAddress"].green
+    elsif cmd.to_i == 4
+        new_addr = TurtleCoin.create_addresses
+        puts new_addr
+    elsif cmd.to_i == 5
+        i = 0
+        TurtleCoin.all_addresses["addresses"].each do |a|
+            if i.even?
+                puts a.green
+            else
+                puts a.red
+            end
+            i+=1
+        end
+    elsif cmd.to_i == 6
+        key = TurtleCoin.keys
+        user_table = Terminal::Table.new do |v |
+          v.title = "Keys"
+          v.headings = [ 'Private View Key' ]
+          v << [ key["privateViewKey"]]
+          v.style = { :border_left => false, :border_right => false, :border => :unicode, :all_separators => true }
+        end
+    puts user_table
+    end
+
+end
+
 ```
 
 ### Payment Id 
@@ -211,3 +267,9 @@ puts k.remove_credit
 ```
 
 The code above could be used to add or remove credits. A system that will keep credits of who paid and how many credits they have left.
+
+The `User` class main purpose is to keep track of users credits when they buy credits. This could also be done with sqlite. It should be done in sqlite but was done with text file because I wnated to keep it simple. 
+
+When the class is instantized, the code will check to see if a directory exists called `users`. It will also create a new directory with the users name if it does not exists. The class will store all the information in the `info.json` file. The `add_credits` method should be ran after the payment id is detected with the users fingerprint. By default 6 credits are added. 
+
+
