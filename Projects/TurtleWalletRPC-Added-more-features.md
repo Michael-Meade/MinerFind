@@ -273,3 +273,20 @@ The `User` class main purpose is to keep track of users credits when they buy cr
 When the class is instantized, the code will check to see if a directory exists called `users`. It will also create a new directory with the users name if it does not exists. The class will store all the information in the `info.json` file. The `add_credits` method should be ran after the payment id is detected with the users fingerprint. By default 6 credits are added. 
 
 
+
+### Transaction Info
+
+```ruby
+i     = TurtleCoin.transaction_info("9770e")
+trans = i["transfers"].shift
+puts i["hash"]
+puts trans["address"]
+puts i["paymentID"]
+puts i["blockHeight"]
+puts i["fee"]
+puts i["timestamp"]
+puts trans["amount"]
+puts i["unlockTime"]
+puts i["isCoinbaseTransaction"]
+```
+Note that you have to supply a transaction ID. I removed most of mine for privacy. 
