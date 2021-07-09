@@ -118,5 +118,7 @@ puts hex.split(//)[0..63 - pay.length.to_i ].join + pay
 The contents of hexspeak.txt can be downloaded by running the following command.
 `wget -O hexspeak.txt https://gist.githubusercontent.com/gabrielfalcao/c942f6602401f0697c206e30f0aa4bad/raw/768da56222c1ad3439b3a54879a220aaa699855f/hexspeak`
 
+An exampple of the ouput of the script that is above is:
 
+`53a96f80d134bcB100D1E55BOILEDCOOSDISCLOSESCASIOA115ADECLASSIFIES`
 
