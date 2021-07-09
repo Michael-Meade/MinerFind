@@ -13,7 +13,7 @@
 ```
 The following command was used to gather the top 10 Succesful IPs that were able to login.<br>
 `cat cowrie.json* | jq '. | select(.eventid | contains("cowrie.login.success")) .src_ip' | sort | uniq -c | sort -bgr | head -n 10`
-
+<br><br>
 
 ### Failed Login IPs
 ```ruby
@@ -30,6 +30,8 @@ The following command was used to gather the top 10 Succesful IPs that were able
 ```
 The following command was used to gather the top 10 IPs that failed to gain access. <br>
 `cat cowrie.json* | jq '. | select(.eventid | contains("cowrie.login.failed")) .src_ip' | sort | uniq -c | sort -bgr | head -n 10`
+<br><br>
+
 
 ### Top 10 usernames used
 ```ruby
@@ -47,7 +49,7 @@ The following command was used to gather the top 10 IPs that failed to gain acce
 The folowing command was used to gather the top 10 usernames.<br>
 `cat cowrie.json* | jq '. | select(.username) | .username'  | sort | uniq -c | sort -bgr | head -10`
 
-
+<br><br>
 ### Top 10 passwords used
 ```ruby
   7238 "admin"
@@ -64,6 +66,8 @@ The folowing command was used to gather the top 10 usernames.<br>
 
 The following command was used to gather the top Passwords. <br>
 `cat cowrie.json* | jq '. | select(.password) | .password'  | sort | uniq -c | sort -bgr | head -10`
+<br><br>
+
 
 ### Top 10 Commands
 ```ruby
@@ -80,11 +84,12 @@ The following command was used to gather the top Passwords. <br>
 ```
 The following command was used to gather this information.<br>
 `cat cowrie.json* | jq '. | select(.eventid | contains("cowrie.command.input")) | .input' | sort | uniq -c | sort -bgr | head -n 10`
+<br><br>
 
 ### Top 10 TCP IP
 The list contains a list of websites that was visited by people that were using the honeypot as a proxy
 ```ruby
-   raker6944 "ip-who.com"
+   6944 "ip-who.com"
    4110 "i.instagram.com"
    4014 "23.235.255.50"
    4007 "www.google.ru"
@@ -98,6 +103,7 @@ The list contains a list of websites that was visited by people that were using 
 ```
 The following command was used to gathered the top 10 sites that were visited using the proxy. <br>
 `cat cowrie.json* | jq '. | select(.eventid | contains("cowrie.direct-tcpip.request")) .dst_ip' | sort | uniq -c | sort -bgr | head -n 10`
+<br><br>
 
 ### Top files that was downloaded
 ```ruby
@@ -106,6 +112,8 @@ The following command was used to gathered the top 10 sites that were visited us
 ```
 The following command was ued to gather the top 10 files that were downloaded. <br>
 `cat cowrie.json* | jq '. | select(.eventid | contains("cowrie.session.file_download")) | .destfile' |  grep -v "null" | sort | uniq -c | sort -bgr | head -n 10`
+<br><br>
+
 
 ### Top 10 URLs
 ```ruby
@@ -118,3 +126,4 @@ The following command was ued to gather the top 10 files that were downloaded. <
 The following command was used to gather URLS that were used to download files. <br>
 `cat cowrie.json* | jq '. | select(.eventid | contains("cowrie.session.file_download")) | .url' | grep -v "null" | sort | uniq -c | sort -bgr | head -n 10`
 
+<br><br>
