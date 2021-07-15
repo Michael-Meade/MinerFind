@@ -12,6 +12,12 @@ The command below will show all the Ips, username and passwords that were used t
 tail -f cowrie.json | jq -r '. | select(.eventid | contains("cowrie.login.success")) | "IP:" +  .src_ip,"Username:" + .username,"Password: " + .password + "\r\nn" '
 ```
 
+### Displaying information about failed logins attempts
+This is the same command that was used for the succesful logins but `cowrie.login.success` was replaced with `cowrie.login.failed`. 
+```bash
+tail -f cowrie.json | jq -r '. | select(.eventid | contains("cowrie.login.failed")) | "IP:" +  .src_ip,"Username:" + .username,"Password: " + .password + "\r\nn" '
+```
+
 ### Displaying information about commands
 The command below can be used to view information about commands that are entered on the honeypot. The command will display three pieces of information such as the command entered, the Session ID and the Source IP. 
 
