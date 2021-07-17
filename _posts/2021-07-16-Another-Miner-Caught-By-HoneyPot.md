@@ -13,7 +13,7 @@ The image below shows the results of the DirSearch scan of 209.141.32[.]204. The
 
 ### The hidden .ssh directory
 The image below shows the contents of `http://209.141.32[.]204/.ssh`. Right of away, two files grab my attention. The `config.json` and the `krane` file. These grab my attention because those files were created just three days ago. 
-<img src="https://i.imgur.com/SGZIAVk.png" alt="http://209.141.32[.]204/.ssh" width="35" height="35%">
+<img src="https://i.imgur.com/SGZIAVk.png" alt="http://209.141.32[.]204/.ssh" width="35%" height="35%">
 
 ## Config.json
 The `config.json` file also caught my eye because config.json files are often used by miners for mining. 
@@ -24,6 +24,6 @@ The following Monero address was being used for the mining. The pool that was be
 
 
 ### IOC
-dfa6d202fc24623a5aadf3684aadcfbce72ee8aa  config.json
-f1cb326ee8ab4217cf9191f395e35fe684dd426a  a
-bfa1d6ecc6a4f2da893b88f15b96a96320dd27c5  b
+dfa6d202fc24623a5aadf3684aadcfbce72ee8aa  config.json<br>
+f1cb326ee8ab4217cf9191f395e35fe684dd426a  a<br>
+bfa1d6ecc6a4f2da893b88f15b96a96320dd27c5  b<br>
