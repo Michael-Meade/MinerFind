@@ -8,3 +8,4 @@ The command below was used in the screenshot above to scrape & print information
 ```bash
 tail -f cowrie.json | jq -r '. | select(.eventid | contains("cowrie.command.input")) | "CMD: " + .input, "Session: " + .session,  "SRC IP: " + .src_ip + "\r\n"'
 ```
+<img src="https://i.imgur.com/h0Qd29D.png" alt="http://209.141.32.204" width="35%" height="35%">
