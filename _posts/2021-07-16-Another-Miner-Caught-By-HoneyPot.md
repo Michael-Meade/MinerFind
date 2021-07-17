@@ -168,8 +168,7 @@ while true; do
          echo "$random" >> oK
 done
 ```
-The rx.sh script contains a couple of comments like `Aici incarcam parolele!!`. Using Google translate the author was able to figure out that the author of the malware might be a native Romanian speaker. The English translation of `Aici incarcam parolele!!` is `
-Here we upload the passwords !!` according to Google Translate. 
+The rx.sh script contains a couple of comments like `Aici incarcam parolele!!`. Using Google translate the author was able to figure out that the author of the malware might be a native Romanian speaker. The English translation of `Aici incarcam parolele!!` is 'Here we upload the passwords !!' according to Google Translate. 
 
 Another comment inside the bash file contained the Romanian text, `Aici stergem fisierele anterioare si scanam unele noi!!`. The English translation is `Here we delete the previous files and scan new ones !!`.
 
