@@ -34,7 +34,7 @@ The image above shows the contents of pass.txt. The pass.txt file contains popul
 ### K 
 The 'k' file can be found at `http://209.141.32[.]204/k`. In order to ungzip the file, we need to use the `cp k k.gz` commmand to add the 
 gz extension to the file. This is needed so we can ungzip the file. Next we used `gzip -d k.gz` to ungzip the file. The result ended with a new file named `k.tar`. Once again we have to use the command `cp k k.tar` to change the file's extension to .tar. Lastly we use the command 
-`tar -xvf k.tar` to untar the file. The results are a new hidden folder named `.k`. 
+`tar -xvf k.tar` to untar the file. The results are a new hidden folder named `.k.tar`. 
 
 ```
 a:             ASCII text
