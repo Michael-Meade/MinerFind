@@ -33,7 +33,7 @@ The image above shows the contents of pass.txt. The pass.txt file contains popul
 
 ### K 
 The 'k' file can be found at `http://209.141.32[.]204/k`. In order to ungzip the file, we need to use the `cp k k.gz` commmand to add the 
-gz extension to the file. This is needed so we can ungzip the file. Next we used `gzip -d k.gz` to ungzip the file. The result ended with a new file named 'k.tar`. Once again we have to use the command `cp k k.tar` to change the file's extension to .tar. Lastly we use the command 
+gz extension to the file. This is needed so we can ungzip the file. Next we used `gzip -d k.gz` to ungzip the file. The result ended with a new file named `k.tar`. Once again we have to use the command `cp k k.tar` to change the file's extension to .tar. Lastly we use the command 
 `tar -xvf k.tar` to untar the file. The results are a new hidden folder named `.k`. 
 
 ```
@@ -58,13 +58,13 @@ bfa1d6ecc6a4f2da893b88f15b96a96320dd27c5  b<br>
 d987680671c4c35610d659dd5dc2e0f4d387e0b4  pass.txt<br>
 3fbbd4ef15e064bd2f4b8b643aacbafdfc347833  dump.txt<br>
 16e358574ef61f841f8b6ddb45188446c7da8c7d  k<br>
-ad4649a79b67c1db9a8343e18af3b7c0d323172c  a
-a9c7d059a22fed787f48698c5c10b0b5146f616d  boner
-9c9a96383883601d9ad8a7d78eb3995a7dfbc350  k_config.json
-2ccf0c37b004b1793dd79792dc6ffd83e7438137  main
-1f8f3d751b578242e9c2b32391c8a162e154c7b2  ra
-e5dcaab24fab63b050a5a80b50f5a9ad17d127f1  rx
-638108b2217b21843ba7f1c80a95f756e5e2310d  send_vuln.py
-a82a8eda9177b2ef1e8936784d0aa5d79fa2ddce  ta
-e85c6b190d672884a4a37039cb35dfc73a84318a  tx
+ad4649a79b67c1db9a8343e18af3b7c0d323172c  a<br>
+a9c7d059a22fed787f48698c5c10b0b5146f616d  boner<br>
+9c9a96383883601d9ad8a7d78eb3995a7dfbc350  k_config.json<br>
+2ccf0c37b004b1793dd79792dc6ffd83e7438137  main<br>
+1f8f3d751b578242e9c2b32391c8a162e154c7b2  ra<br>
+e5dcaab24fab63b050a5a80b50f5a9ad17d127f1  rx<br>
+638108b2217b21843ba7f1c80a95f756e5e2310d  send_vuln.py<br>
+a82a8eda9177b2ef1e8936784d0aa5d79fa2ddce  ta<br>
+e85c6b190d672884a4a37039cb35dfc73a84318a  tx<br>
 f5f323005f8c71324c53c864d28db4cbed8e78ac  x<br>
