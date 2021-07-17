@@ -24,7 +24,7 @@ The following Monero address was being used for the mining. The pool that was be
 Most miners have a feature built into the miner that allows the user to donate some of their hashes to the developers. This miner might donate all their hashes to the developers 1 minute every hour. The value was set as 1, this is intresting becauase they author of the malware was donating their hash power to the developers.  This might be on purpose or a careless mistake of a inexperienced malware author. 
 
 ### The .db directory
-<img src="https://i.imgur.com/DI2TCio.png" alt="http://209.141.32[.]204/.db" width="35%" height="35%">
+<img src="https://i.imgur.com/DI2TCio.png" alt="http://209.141.32[.]204/.db" width="35%" height="35%"><br>
 The image above shows the contents of the .db directory. The directory contains a handful of text files that are used by the malware to brute force machines that have SSH exposed.<br>
 
 <img src="https://i.imgur.com/DFAvqKD.png" alt="http://209.141.32[.]204/.db" width="35%" height="35%"><br>
