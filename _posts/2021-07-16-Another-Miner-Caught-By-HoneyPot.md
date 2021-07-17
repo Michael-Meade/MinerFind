@@ -25,7 +25,7 @@ Most miners have a feature built into the miner that allows the user to donate s
 
 ### The .db directory
 <img src="https://i.imgur.com/DI2TCio.png" alt="http://209.141.32[.]204/.db" width="35%" height="35%">
-The image above shows the contents of the .db directory. The directory contains a handful of text files that are used by the malware to brute force machines that have SSH exposed. 
+The image above shows the contents of the .db directory. The directory contains a handful of text files that are used by the malware to brute force machines that have SSH exposed.<br>
 
 <img src="https://i.imgur.com/DFAvqKD.png" alt="http://209.141.32[.]204/.db" width="35%" height="35%">
 The image above shows the contents of pass.txt. The pass.txt file contains popular passswords and usernames. 
