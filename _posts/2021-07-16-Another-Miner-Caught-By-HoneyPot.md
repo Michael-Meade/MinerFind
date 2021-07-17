@@ -23,10 +23,15 @@ The following Monero address was being used for the mining. The pool that was be
 
 Most miners have a feature built into the miner that allows the user to donate some of their hashes to the developers. This miner might donate all their hashes to the developers 1 minute every hour. The value was set as 1, this is intresting becauase they author of the malware was donating their hash power to the developers.  This might be on purpose or a careless mistake of a inexperienced malware author. 
 
+### The .db directory
+<img src="https://i.imgur.com/DI2TCio.png" alt="http://209.141.32[.]204/.db" width="35%" height="35%">
+The image above shows the contents of the .db directory. The directory contains a handful of text files that are used by the malware to brute force machines that have SSH exposed. 
 
-
+<img src="https://i.imgur.com/DFAvqKD.png" alt="http://209.141.32[.]204/.db" width="35%" height="35%">
+The image above shows the contents of pass.txt. The pass.txt file contains popular passswords and usernames. 
 
 ### IOC
 dfa6d202fc24623a5aadf3684aadcfbce72ee8aa  config.json<br>
 f1cb326ee8ab4217cf9191f395e35fe684dd426a  a<br>
 bfa1d6ecc6a4f2da893b88f15b96a96320dd27c5  b<br>
+d987680671c4c35610d659dd5dc2e0f4d387e0b4  pass.txt<br>
