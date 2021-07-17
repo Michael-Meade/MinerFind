@@ -21,6 +21,9 @@ The following Monero address was being used for the mining. The pool that was be
 
 `49ubSTdDp9hPmYE7paRM6PZFLmqvsedZ56MXLUT8mvYnTzjVCKGDbpuW4RVdvZon228uWnkjoJN8S6w5S4LdgeK8UBMMEhJ`
 
+Most miners have a feature built into the miner that allows the user to donate some of their hashes to the developers. This miner might donate all their hashes to the developers 1 minute every hour. The value was set as 1, this is intresting becauase they author of the malware was donating their hash power to the developers.  This might be on purpose or a careless mistake of a inexperienced malware author. 
+
+
 
 
 ### IOC
