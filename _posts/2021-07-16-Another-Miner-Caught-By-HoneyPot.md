@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title:  "Another-Miner-Caught-By-HoneyPot"
